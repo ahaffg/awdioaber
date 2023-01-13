@@ -1,3 +1,4 @@
+# Awdio Aber
 ## Backstory
 For my fourth Milestone project with Code Institute I want to create a n app that will really push me outside of my comfort zone and show my ability to create solutions to problems outside my immediate field of knowledge.
 My father gave me the initial seed of an idea that I should build an app for my husband. So, from there, this is how the idea had grown.
@@ -5,14 +6,12 @@ My father gave me the initial seed of an idea that I should build an app for my 
 My husband is an audiophile. This means that he ~~spends all our savings on expensive MP3players~~ collects, tests and reviews audio equipment. Over the past few years he has built up a global network of contacts with audio companies and manufacturers, professional reviewers and journalists and members of the music industry.  
 His primary hub for this has been [Head-Fi](https://www.head-fi.org/), a forum for audio enthusiasts. Here this community exchange opinions on equipment and over time, if (like my husband) their opinions are trusted and respected, they are often approached to review equipment on behalf of companies such as Bang and Olufsen or for their advice on equipment by musicians. *ahem* Nine Inch Nails *ahem*.
 
-I seem to forever be posting and receiving equipment for my husband to the point where it feels like our home is part of an audio equipment conveyor belt! Members of this community are always swapping equipment as a sort of informal “try before you buy” arrangement. We especially are challenged by our location (living in far west Wales) and are unable to pop to a local audio shop to browse or buy.
-Also, sites like Amazon and Ebay are not ideal for selling as the second-hand market is treacherous for sellers with the risk of unhappy customers and high commission costs.
+I seem to forever be posting and receiving equipment for my husband to the point where it feels like our home is part of an audio equipment conveyor belt! Members of this community are always swapping equipment as a sort of informal “try before you buy” arrangement. We especially are challenged by our location (living in far west Wales) and are unable to pop to a local audio shop to browse or buy. Also, sites like Amazon and Ebay are not ideal for selling as the second-hand market is treacherous for sellers with the risk of unhappy customers and high commission costs.
+
 To that end, based on what I see as an opportunity within this community and driven by my husband’s knowledge and passion, I want to build an app that would allow my husband to establish as formal membership programme whereby members could sign up to hire equipment either to buy or just to try.
 
-
-
 ## Contents
-
+---
 * [User Experience](#user-experience)
   * [Strategy Plane](#strategy-plane)
     * [Project Goals](#project-goals)
@@ -51,9 +50,53 @@ To that end, based on what I see as an opportunity within this community and dri
   * [Media](#media)
   * [Acknowledgments](#acknowledgments)
 
+## User Experience
+---
+### Strategy Plane
+#### **Project Goals**
+Awdio Aber is a Business to Consumer (B2C) e-commerce site.
 
-## Structure Plane
-### User Stories
+The sites primary audience will be audiophiles, largely men in the 25+ age range. It will cater to beginners through to experts, by selling and hiring a range of equiptment over different price points. 
+
+Awdio Aber aims to allow customers to engage with the website on different levels through browsing, buying, reading and posting on a forum, reading blogs or becoming a member to hire equipment. It aims to establish a community that is trusted for its reviews and opinions, as well as allowing them to buy or hire equipment all on one website.
+
+### Scope Plane
+
+#### **Feature Planning**
+
+Below is a table of opportunities for the project, together with a score of their importance level and viability (rated low to high, 1-5). Products that score highly on importance and viability will be features that must be addressed first as part of the MVP. Features that are scored mid range are should have features, which will be added to the project once it has achieved MVP status. Low scored features, are could have features and if not attended to in this development version will be marked to be addressed in a future version.
+
+| Feature | Importance | Viability |  | Delivered |
+| :--- | :---: | :---: | :---: | :---: |
+| User roles | 5 | 5 | MVP |  |
+| Sign up for an account | 4 | 5 | MVP |  |
+| Account Profile | 4 | 5 | MVP |  |
+| Password recovery | 5 | 5 | MVP |  |
+| Use social media to sign up/log in | 2 | 4 | | |
+| Search and filter through products | 5 | 5 | MVP |  |
+| Checkout system | 5 | 5 | MVP |  |
+| Guest Checkout | 3 | 4 | |  |
+| Payment Via Stripe | 5 | 5 | MVP |  |
+| Receive email confirmation for order | 5 | 5 | MVP | |
+| Order History | 4 | 5 | |  |
+| Admin - add product | 5 | 5 | MVP |  |
+| Admin - edit/update product | 5 | 5 | MVP |  |
+| Admin - delete product | 5 | 5 | MVP |  |
+| Admin - Basic Stock management | 2 | 3 | |  |
+| Admin - Sales Reporting | 1 | 2 | | |
+| Terms and Conditions | 3 | 5 | |  |
+| Privacy Policy | 3 | 5 | |  |
+| Delivery Terms | 3 | 5 | |  |
+| Social Media Links | 3 | 5 | |  |
+| Contact form | 3 | 3 | |  |
+| Wishlist | 3 | 3 | | |
+| Product Reviews | 3 | 4 | | |
+| Blog | 1 | 3 |  | |
+| Forum | 1 | 3 |  | |
+
+
+### Structure Plane
+#### **User Stories**
 
 ![User journey](/static/images/readme/userjourney.png)
 
