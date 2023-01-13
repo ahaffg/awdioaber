@@ -73,39 +73,50 @@ Admin.
 - I want o be able to offer and take secure payments.
 - I want to be able to moderate any forum issues.
 
-| User Story | As a/an | I want to be able to ... | So that I can... |
-| :--- | :--- | :--- | :---|
+| As a/an | I want to be able to ... | So that I can... |
+| :--- | :--- | :---|
 | **VIEWING & NAVIGATION** |
-| 1 | First Timer | Easily navigate the site | Find products/information that I am require |
-| 2 | First Timer | View a category of products/filter products | Find specific items I am interested in without having to scroll through all products |
-| 3 | First Timer | View more detail on products | to make an informed decision of if the item suits my requirements |
-| 4 | First Timer | View items on clearance/sale easily | Save money  |
-| 5 | First Timer | View my running total of purchases throughout my visit | Make sure I don't overspend & am able to track whether I meet any thresholds for site offers (e.g. free delivery) |
-| 6 | First Timer | View the items I currently have selected for purchase | to enable me to check I still wish to purchase the items, or amend quantities if required |
-| 7 | First Timer | View ratings for products | make informed decisions about purchasing products |
+| First Timer | Easily navigate the site | Find products/information that I am require |
+| First Timer | View a category of products/filter products | Find specific items I am interested in without having to scroll through all products |
+| First Timer | View more detail on products | to make an informed decision of if the item suits my requirements |
+| First Timer | View my running total of purchases throughout my visit | Make sure I don't overspend & am able to track whether I meet any thresholds for site offers (e.g. free delivery) |
+| First Timer | View the items I currently have selected for purchase | to enable me to check I still wish to purchase the items, or amend quantities if required |
+| First Timer | View ratings for products | make informed decisions about purchasing products |
 | **REGISTRATION & USER ACCOUNTS** |
-| 8 | Shopper | Register for an account | Have an account with the site and view my profile |
-| 9 | Shopper | Receive an email to confirm my registration | Verify my account was created successfully |
-| 10 | Shopper | Log in and out | Keep my account information secure |
-| 11 | Shopper | View a profile page | Set a default delivery address and view previous purchases |
-| 12 | Shopper | Reset my password | Recover my account |
+| Registered User | Register for an account | Have an account with the site and view my profile |
+| Registered User | Receive an email to confirm my registration | Verify my account was created successfully |
+| Registered User | Log in and out | Keep my account information secure |
+| Registered User | View a profile page | Set a default delivery address and view previous purchases |
+| Registered User | Reset my password | Recover my account |
+| Registered User | Create/read/update/delete forum posts | have full CRUD functionality over my forum posts |
+| **MEMBER ACCOUNTS** |
+| Member | Register for a member account account | Have an account with the site and view my profile |
+| Member | Easily enter my payment information | Check out quickly and with no hassles |
+| Member | Know my personal and payment information is safe and secure | Confidently provide the needed information to become a member |
+| Member | Sort the list of available products by name or category | Easily identify the best rated, best priced and categorically sort products |
+| Member | "Book" my desired product | View item in my bag to be hired |
+| Member | View an order confirmation after booking | Verify that I haven't made any mistakes |
+| Member | Receive an email confirmation after booking | Keep the confirmation of what I've hired for my records |
 | **SORTING & SEARCHING** |
-| 13 | Shopper | Sort the list of available products | Easily identify the best rated, best priced and categorically sort products |
-| 14 | Shopper | Sort a specific category of products | Find the best-priced or best-rated product in a specific category, or sort the products in that category by name |
-| 15 | Shopper | Sort multiple categories of products simultaneously | Find the best-priced or best-rated products across broad categories, such as fabric or haberdashery |
-| 16 | Shopper | Search for a product by name or description | Find a specific product I'd like to purchase |
-| 17 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
+| Shopper | Sort the list of available products | Easily identify the best rated, best priced and categorically sort products |
+| Shopper | Sort a specific category of products | Find the best-priced or best-rated product in a specific category, or sort the products in that category by name |
+| Shopper | Sort multiple categories of products simultaneously | Find the best-priced or best-rated products across broad categories, such as DAPs or headphones |
+| Shopper | Search for a product by name or description | Find a specific product I'd like to purchase |
+| Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
 | **PURCHASING & CHECKOUT** |
-| 18 | Shopper | Easily select the quantity of a product when purchasing it | Ensure I don't accidentally select the wrong product quantity |
-| 19 | Shopper | View items in my bag to be purchased | Identify the total cost of my purchase and all items I will receive |
-| 20 | Shopper | Adjust the quantity of individual items in my bag | Easily make changes to my purchase before checkout |
-| 21 | Shopper | Easily enter my payment information | Check out quickly and with no hassles |
-| 22 | Shopper | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase |
-| 23 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes |
-| 24 | Shopper | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records |
+| Shopper | Easily select the quantity of a product when purchasing it | Ensure I don't accidentally select the wrong product quantity |
+| Shopper | View items in my bag to be purchased | Identify the total cost of my purchase and all items I will receive |
+| Shopper | Adjust the quantity of individual items in my bag | Easily make changes to my purchase before checkout |
+| Shopper | Easily enter my payment information | Check out quickly and with no hassles |
+| Shopper | Know my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase |
+| Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes |
+| Shopper | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records |
 | **ADMIN & STORE MANAGEMENT** |
-| 25 | Store Owner | Add a product | Add new items to my store |
-| 26 | Store Owner | Edit/update a product | Change product prices, descriptions, images and other product criteria |
-| 27 | Store Owner | Delete a product | Remove items that are no longer for sale |
+| Admin| Add a product | Add new items to my store |
+| Admin | Edit/update a product | Change product prices, descriptions, images and other product criteria |
+| Admin | Delete a product | Remove items that are no longer for sale |
+| Admin | Moderate forum | Remove unsuitable posts |
+| Admin | Create/read/update/delete blog posts | have full CRUD functionality over the blog |
+| Admin | Create/read/update/delete registered profiles | have full CRUD functionality over registered profiles |
 
 
