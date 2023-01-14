@@ -146,6 +146,7 @@ Admin.
 | Shopper | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records |
 | **REGISTRATION & USER ACCOUNTS** |
 | Registered User | Register for an account | Have an account with the site and view my profile |
+| Registered User | Register for an account using social media| use social media accounts to speed up registration and use google or apple pay |
 | Registered User | Receive an email to confirm my registration | Verify my account was created successfully |
 | Registered User | Log in and out | Keep my account information secure |
 | Registered User | View a profile page | Set a default delivery address and view previous purchases |
