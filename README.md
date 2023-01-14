@@ -120,26 +120,16 @@ Admin.
 | :--- | :--- | :---|
 | **VIEWING & NAVIGATION** |
 | First Timer | Easily navigate the site | Find products/information that I am require |
-| First Timer | View a category of products/filter products | Find specific items I am interested in without having to scroll through all products |
-| First Timer | View more detail on products | to make an informed decision of if the item suits my requirements |
-| First Timer | View my running total of purchases throughout my visit | Make sure I don't overspend & am able to track whether I meet any thresholds for site offers (e.g. free delivery) |
-| First Timer | View the items I currently have selected for purchase | to enable me to check I still wish to purchase the items, or amend quantities if required |
-| First Timer | View ratings for products | make informed decisions about purchasing products |
-| **REGISTRATION & USER ACCOUNTS** |
-| Registered User | Register for an account | Have an account with the site and view my profile |
-| Registered User | Receive an email to confirm my registration | Verify my account was created successfully |
-| Registered User | Log in and out | Keep my account information secure |
-| Registered User | View a profile page | Set a default delivery address and view previous purchases |
-| Registered User | Reset my password | Recover my account |
-| Registered User | Create/read/update/delete forum posts | have full CRUD functionality over my forum posts |
-| **MEMBER ACCOUNTS** |
-| Member | Register for a member account account | Have an account with the site and view my profile |
-| Member | Easily enter my payment information | Check out quickly and with no hassles |
-| Member | Know my personal and payment information is safe and secure | Confidently provide the needed information to become a member |
-| Member | Sort the list of available products by name or category | Easily identify the best rated, best priced and categorically sort products |
-| Member | "Book" my desired product | View item in my bag to be hired |
-| Member | View an order confirmation after booking | Verify that I haven't made any mistakes |
-| Member | Receive an email confirmation after booking | Keep the confirmation of what I've hired for my records |
+| First Timer | View blog posts | Read reviews and opinions from the site owner |
+| First Timer | View forum posts | Read reviews and opinions from site members |
+| First Timer | Find and read TCs, FAQs and Membership info | Find answers to any queries I might have without registration |
+| **SHOPPING** |
+| Shopper | View individual product details | so that I can identify price, product description, product rating and the product image. |
+| Shopper | View a category of products/filter products | Find specific items I am interested in without having to scroll through all products |
+| Shopper | View ratings for products | make informed decisions about purchasing products |
+| Shopper | View more detail on products | to make an informed decision to see if the item suits my requirements |
+| Shopper | View my running total of purchases throughout my visit | Make sure I don't overspend & am able to track whether I meet any thresholds for site offers (e.g. free delivery) |
+| Shopper | View the items I currently have selected for purchase | to enable me to check I still wish to purchase the items, or amend quantities if required |
 | **SORTING & SEARCHING** |
 | Shopper | Sort the list of available products | Easily identify the best rated, best priced and categorically sort products |
 | Shopper | Sort a specific category of products | Find the best-priced or best-rated product in a specific category, or sort the products in that category by name |
@@ -154,6 +144,21 @@ Admin.
 | Shopper | Know my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase |
 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes |
 | Shopper | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records |
+| **REGISTRATION & USER ACCOUNTS** |
+| Registered User | Register for an account | Have an account with the site and view my profile |
+| Registered User | Receive an email to confirm my registration | Verify my account was created successfully |
+| Registered User | Log in and out | Keep my account information secure |
+| Registered User | View a profile page | Set a default delivery address and view previous purchases |
+| Registered User | Reset my password | Recover my account |
+| Registered User | Create/read/update/delete forum posts | have full CRUD functionality over my forum posts |
+| **MEMBER ACCOUNTS** |
+| Member | Register for a member account account | Have an account with the site and view my profile |
+| Member | Easily enter my payment information | Check out quickly and with no hassles |
+| Member | Know my personal and payment information is safe and secure | Confidently provide the needed information to become a member |
+| Member | Sort the list of available products by name or category | Easily identify the best rated, best priced and categorically sort products |
+| Member | "Book" my desired product | View item in my bag to be hired |
+| Member | View an order confirmation after booking | Verify that I haven't made any mistakes |
+| Member | Receive an email confirmation after booking | Keep the confirmation of what I've hired for my records | 
 | **ADMIN & STORE MANAGEMENT** |
 | Admin| Add a product | Add new items to my store |
 | Admin | Edit/update a product | Change product prices, descriptions, images and other product criteria |
