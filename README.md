@@ -60,6 +60,8 @@ The sites primary audience will be audiophiles, largely men in the 25+ age range
 
 Awdio Aber aims to allow customers to engage with the website on different levels through browsing, buying, reading and posting on a forum, reading blogs or becoming a member to hire equipment. It aims to establish a community that is trusted for its reviews and opinions, as well as allowing them to buy or hire equipment all on one website.
 
+---
+
 ### Scope Plane
 
 #### **Feature Planning**
@@ -95,26 +97,12 @@ Below is a table of opportunities for the project, together with a score of thei
 | Forum | 1 | 3 |  | |
 
 
+---
+
 ### Structure Plane
 #### **User Stories**
 
 ![User journey](/static/images/readme/userjourney.png)
-
-First time visitor.
-- I want to be able to easily navigate the site.
-- I want to be able to browse, search and potentially buy equipment on offer.
-- I want to be able to view membership details, FAQs and be able to easily contact site admin should I have further questions.
-
-Return visitor.
-- I want to be able to create an account to read reviews by other members as well as post my own.
-- I want to be able to sign up and become a member to hire equipment.
-- I want to be able to review my profile and membership details.
-
-Admin.
-- I want to be able to manage any issues relating to membership and provide a quality service in a timely manner.
-- I want to be able to add and remove items for sale or hire.
-- I want o be able to offer and take secure payments.
-- I want to be able to moderate any forum issues.
 
 | As a/an | I want to be able to ... | So that I can... |
 | :--- | :--- | :---|
@@ -164,6 +152,128 @@ Admin.
 
 #### **Database Schema**
 
+I have decided to use a relational database as this will best suit my requirements, given the type of Data that I will be using in this project.
+
+![Database Schema V1](/static/images/readme/drawSQL-awdio-aber-export-2023-01-23.png)
+
+This is the first version of the Schema I intend to use for the project. I decided to focus on the sales aspect of the app and ensure that was all running correctly before building the "Hire" functionality, though I expect this to work in a similar way to a "Wishlist" function. The profile schema will pull username and email data from the registration database. Potentially this process could also be used to part autofill the order form.
+
+---
+
 ### Skeleton Plane
 
 #### **Wireframes**
+
+Wireframes for the project were created using [Publisher](https://www.microsoft.com/en-us/microsoft-365/publisher)
+
+Base Template - This template contains the header and footer which are used throughout the website. This template is used as a base and then other pages content will be injected into main section using django template language.
+
+Base Template Wireframe
+
+Home Page
+
+Register Page - The register page will allow users to register for an account with Seaside Sewing in one of two ways - registering for an account with a username/email or via a social account.
+
+The username/email path will require users to choose a username, a password which will be entered twice to confirm the user hasn't made an error when entering the password and their email address, which again will be required to be entered twice to confirm there are no mistakes in the users input.
+
+The social media account path will allow users to sign up for an account on Seaside Sewing by using a social media account.
+
+Register Page Wireframe
+
+Login Page - The login page will allow users to sign into their account with either their username, or using their linked social account.
+
+Login Page Wireframe
+
+Logout Page - The logout page will ask the user to confirm they wish to logout. If the user clicks the logout button they will be logged out of their account and redirected to the home page.
+
+Log out Page Wireframe
+
+Profile Page - The profile page displays a users default delivery information, and if they have previously made any orders using their account, their past purchases will also be displayed. The user can click on the order No for their previous orders and they will be taken to a detailed view of that previous order.
+
+Profile Page Wireframe
+
+Bag Page (Empty Bag) - The bag page will display the following message to users if there are no products in their bag.
+
+Empty Bag Page Wireframe
+
+Bag Page - When a user has items in their bag, they will be shown an image of the item, the title
+
+Bag Page Wireframe
+
+Wish list (empty wish list) - The wish list page will display a message to the user to let them know there are no products currently in their wish list and will give instructions on how to add a product to their wish list. There will also be a button that redirects the user to the products page.
+
+Empty Wish list Page Wireframe
+
+Wish list Page - The wish list page is very similar in layout to the bag page. It displays an image of the item, the title, selected size and sku for the product along with the product price. There is also has a button to remove the product from their wish list. The user can add an item from their wish list to their bag by clicking on the product which will take them to the product details page where they can select sizes and quantity.
+
+Wish list Page Wireframe
+
+Checkout Page - The checkout page requires the user to fill in their details, along with a delivery address. They are given the option via a checkbox to save the information they input to their profile. If the user has already filled in their information in their profile, the form will be pre-populated with this information.
+
+Underneath the users delivery information will be the payment input where the user will be required to enter their card information. If there are any errors with this input, an error message will be displayed under the input. Beneath this are the complete order buttons (which has a small message underneath it to let the user know the amount being charged to their card) and a button which redirects users back to their bag to amend their order.
+
+The user will also be shown a summary of the products they are purchasing. This consists of an image of the product, the title of the product, a size if applicable, the quantity they are purchasing and the subtotal for that product. Underneath the summary are the subtotal, delivery costs and grand total.
+
+Checkout Page Wireframe
+
+Payment Processing Overlay - once the user has submitted correct payment details and clicks on the button to complete their order a payment processing overlay with an animated spinner will be displayed over the checkout page while payment is processed. Once this has processed, the user will be shown the checkout success page.
+
+Payment Processing Overlay Wireframe
+
+Checkout Success - The checkout success page will give the user their order details, showing the order number, the date and time of the order and the items purchased.
+
+Checkout Success Page Wireframe
+
+Products - The products page will display an image for each item along with the title for item, price, category and rating underneath. Screen size will determine how many products are displayed in a row.
+
+Products Page Wireframe
+
+Products (Admin View) - The Admin view of the products page is identical to that for a user, except for the addition of an edit and delete button below each item. This will allow the admin to be able to edit or delete products easily from the products view page.
+
+Products Admin View Page Wireframe
+
+Product Detail - The product detail page features an image of the product, along with the title, price, category and rating for the product.
+
+There is also a text description of the product which gives further information to the user to enable them to decide if the product meets their needs.
+
+Underneath the description is a quantity box for the user to select how many of the product they would like to purchase, along with an add to wish list button.
+
+The Add to bag button and back to products buttons are placed below.
+
+Product Detail Page Wireframe
+
+Product Detail (Admin View) - The admin view of the product detail page is identical to the product detail page, except for the addition of the edit and delete buttons to allow the admin to edit and delete a product directly from their details page.
+
+Product Detail Page Admin View Wireframe
+
+Edit Product - The Edit product page is only available to admin users. It displays a form with the products details pre-populated ready for the admin to edit. The admin may also delete the current image or choose a new image to upload and display.
+
+Edit Product Page Wireframe
+
+Delete Product - The Delete product page is only available to admin users. Its displays the product image, title, category and SKU along with a message asking the admin if they are sure they want to delete the product. It also warns them that this action cannot be undone. They are given a cancel button and a delete button.
+
+Delete Product Page Wireframe
+
+404 Error - The 404 page lets the user know there has been a problem and displays a button to redirect them to the products.
+
+404 Error Page Wireframe
+
+Privacy Policy - The privacy policy page contains the privacy policy for the site.
+
+Privacy Policy Page Wireframe
+
+Terms & Conditions - The terms & conditions page contains the terms and conditions for the site.
+
+Terms & Conditions Page Wireframe
+
+Delivery Information - The delivery page contains further information for the user on delivery options.
+
+Delivery Information Page Wireframe
+
+Add review - If a user wants to add a review for a product, they will be redirected to the add review page. This will display the name of the product along with an image they would like to review. They are then given an input field to create a title for their review and a text area for the actual review. Underneath this will be a rating for the product along with a cancel and submit review button.
+
+Add Review Page Wireframe
+
+Toasts - Toasts are used to display messages to the user depending on their actions on the site. They can let users know if an action has been successful, if there has been an error or for displaying a general message. This is also reflected in the colour at the top of the toast. Toasts will also be used to display to a user what they currently have in their bag when they add a new product. Toasts can be dismissed by clicking the X on the toast.
+
+Toasts Wireframe
