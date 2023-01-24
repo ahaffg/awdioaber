@@ -166,9 +166,9 @@ This is the first version of the Schema I intend to use for the project. I decid
 
 Wireframes for the project were created using [Publisher](https://www.microsoft.com/en-us/microsoft-365/publisher)
 
-Base Template - This template contains the header and footer which are used throughout the website. This template is used as a base and then other pages content will be injected into main section using django template language.
+**Base Template** - This template contains the header and footer which are used throughout the website. This template is used as a base and then other pages content will be injected into main section using django template language. The footer content on mobiles will be stacked due to width restrictions. For mobile screens, the search function will be hidden within the button, and will expand when clicked. The mobile burger on the left of the nav bar will expand to reveal further navigation options.
 
-Base Template Wireframe
+![Base Template Wireframe](/static/images/readme/base-template.png)
 
 Home Page
 
