@@ -152,7 +152,7 @@ Below is a table of opportunities for the project, together with a score of thei
 
 #### **Database Schema**
 
-I have decided to use a relational database as this will best suit my requirements, given the type of Data that I will be using in this project.
+I have decided to use a relational database as this will best suit my requirements, given the type of Data that I will be using in this project. [Draw Sql](https://drawsql.app/) has been used to provide a diagram of this schema.
 
 ![Database Schema V1](/static/images/readme/drawSQL-awdio-aber-export-2023-01-23.png)
 
@@ -277,3 +277,20 @@ Add Review Page Wireframe
 Toasts - Toasts are used to display messages to the user depending on their actions on the site. They can let users know if an action has been successful, if there has been an error or for displaying a general message. This is also reflected in the colour at the top of the toast. Toasts will also be used to display to a user what they currently have in their bag when they add a new product. Toasts can be dismissed by clicking the X on the toast.
 
 Toasts Wireframe
+
+---
+
+## Surface Plane
+### **Colour Scheme**
+
+The aesthetic for the website is going to be far more masculine than in previous projects.  I designed the logo using [Publisher](https://www.microsoft.com/en-us/microsoft-365/publisher) and is a play on electricity and soundwaves. I'm really keen for the site to maintain high levels of accesibility, so colors will be kept to a minimum and will have a high level of contrast.
+
+
+![Surface Plane](/static/images/readme/surface-plane.png)
+
+
+I used [Fontjoy](https://fontjoy.com) to help me pick fonts. [Megrim](https://fonts.google.com/specimen/Megrim) will be used as the Logo font as I really love its retro/futuristic feel but would be too hard to read if used widely. [Dosis](https://fonts.google.com/specimen/Dosis) will be used for any header text as I like its stylish look across a range of weight, as well as it being easy to read. [Ubuntu](https://fonts.google.com/specimen/Ubuntu) will be used for any body text. I feel it pairs really well with Dosis and is very easy to read. Text will mostly be black, with some use of grey ensuring that it is still readable and high contrast.
+
+![Fontjoy](/static/images/readme/fontjoy.png)
+
+---
