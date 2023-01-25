@@ -170,7 +170,11 @@ Wireframes for the project were created using [Publisher](https://www.microsoft.
 
 ![Base Template Wireframe](/static/images/readme/base-template.png)
 
-Home Page
+**Home Page** - The home or landing page will give people thrie first impression of the company and whats on offer. Though over time the content may be changed to represent offers, new stock or even product highlights, for the purposes of this project it will highlight the 6 main categories of products. Desktop amps, portable amps, headphones, IEMs, DAPs and DACs.
+
+On the desktop screen the products will be stacked 3 wide, 2 wide on tablets and one on top of another for mobiles due to width restrictions, to ensure content is easily viewable and readable.
+
+![Home Page Wireframe](/static/images/readme/home-page.png)
 
 Register Page - The register page will allow users to register for an account with Seaside Sewing in one of two ways - registering for an account with a username/email or via a social account.
 
