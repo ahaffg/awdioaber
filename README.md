@@ -176,13 +176,13 @@ On the desktop screen the products will be stacked 3 wide, 2 wide on tablets and
 
 ![Home Page Wireframe](/static/images/readme/home-page.png)
 
-Register Page - The register page will allow users to register for an account with Seaside Sewing in one of two ways - registering for an account with a username/email or via a social account.
+**Register Page** - The register page will allow users to register for an account with Seaside Sewing in one of two ways - registering for an account with a username/email or via a social account.
 
 The username/email path will require users to choose a username, a password which will be entered twice to confirm the user hasn't made an error when entering the password and their email address, which again will be required to be entered twice to confirm there are no mistakes in the users input.
 
 The social media account path will allow users to sign up for an account on Seaside Sewing by using a social media account.
 
-Register Page Wireframe
+![Register Page Wireframe](/static/images/readme/register-page.png)
 
 Login Page - The login page will allow users to sign into their account with either their username, or using their linked social account.
 
