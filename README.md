@@ -186,15 +186,15 @@ The social media account path will allow users to sign up for an account by usin
 
 Login Page - The login page will allow users to sign into their account with either their username, or using their linked social account.
 
-Login Page Wireframe
+![Login Page Wireframe](/static/images/readme/login-page.png)
 
 **Logout Page** - The logout page will ask the user to confirm they wish to logout. If the user clicks the logout button they will be logged out of their account and redirected to the home page.
 
 ![Log out Page Wireframe](/static/images/readme/logout-page.png)
 
-Profile Page - The profile page displays a users default delivery information, and if they have previously made any orders using their account, their past purchases will also be displayed. The user can click on the order No for their previous orders and they will be taken to a detailed view of that previous order.
+**Profile Page** - The profile page displays a users default delivery information, and if they have previously made any orders using their account, their past purchases will also be displayed. The user can click on the order No for their previous orders and they will be taken to a detailed view of that previous order.
 
-Profile Page Wireframe
+![Profile Page Wireframe](/static/images/readme/profile-page.png)
 
 Bag Page (Empty Bag) - The bag page will display the following message to users if there are no products in their bag.
 
