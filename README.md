@@ -246,13 +246,13 @@ Edit Product - The Edit product page is only available to admin users. It displa
 
 Edit Product Page Wireframe
 
-Delete Product - The Delete product page is only available to admin users. Its displays the product image, title, category and SKU along with a message asking the admin if they are sure they want to delete the product. It also warns them that this action cannot be undone. They are given a cancel button and a delete button.
+**Delete Product** - The Delete product page is only available to admin users. Its displays the product image, title, category and SKU along with a message asking the admin if they are sure they want to delete the product. It also warns them that this action cannot be undone. They are given a cancel button and a delete button.
 
-Delete Product Page Wireframe
+![Delete Product Page Wireframe](/static/images/readme/product-delete.png)
 
-404 Error - The 404 page lets the user know there has been a problem and displays a button to redirect them to the products.
+**404 Error** - The 404 page lets the user know there has been a problem and displays a button to redirect them to the products.
 
-404 Error Page Wireframe
+![404 Error Page Wireframe](/static/images/readme/404.png)
 
 Privacy Policy - The privacy policy page contains the privacy policy for the site.
 
