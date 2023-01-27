@@ -220,15 +220,15 @@ The user will also be shown a summary of the products they are purchasing. This 
 
 ![Checkout Success Page Wireframe](/static/images/readme/success.png)
 
-Products - The products page will display an image for each item along with the title for item, price, category and rating underneath. Screen size will determine how many products are displayed in a row.
+**Products** - The products page will display an image for each item along with the title for item, price, category and rating underneath. Screen size will determine how many products are displayed in a row.
 
-Products Page Wireframe
+![Products Page Wireframe](/static/images/readme/products.png)
 
-Products (Admin View) - The Admin view of the products page is identical to that for a user, except for the addition of an edit and delete button below each item. This will allow the admin to be able to edit or delete products easily from the products view page.
+**Products (Admin View)** - The Admin view of the products page is identical to that for a user, except for the addition of an edit and delete button below each item. This will allow the admin to be able to edit or delete products easily from the products view page.
 
-Products Admin View Page Wireframe
+![Products Admin View Page Wireframe](/static/images/readme/products-admin.png)
 
-Product Detail - The product detail page features an image of the product, along with the title, price, category and rating for the product.
+**Product Detail** - The product detail page features an image of the product, along with the title, price, category and rating for the product.
 
 There is also a text description of the product which gives further information to the user to enable them to decide if the product meets their needs.
 
@@ -236,11 +236,11 @@ Underneath the description is a quantity box for the user to select how many of 
 
 The Add to bag button and back to products buttons are placed below.
 
-Product Detail Page Wireframe
+![Product Detail Page Wireframe](/static/images/readme/product-detail.png)
 
-Product Detail (Admin View) - The admin view of the product detail page is identical to the product detail page, except for the addition of the edit and delete buttons to allow the admin to edit and delete a product directly from their details page.
+**Product Detail (Admin View)** - The admin view of the product detail page is identical to the product detail page, except for the addition of the edit and delete buttons to allow the admin to edit and delete a product directly from their details page.
 
-Product Detail Page Admin View Wireframe
+![Product Detail Page Admin View Wireframe](/static/images/readme/product-detail-admin.png)
 
 Edit Product - The Edit product page is only available to admin users. It displays a form with the products details pre-populated ready for the admin to edit. The admin may also delete the current image or choose a new image to upload and display.
 
