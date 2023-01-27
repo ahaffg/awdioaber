@@ -196,37 +196,29 @@ Login Page - The login page will allow users to sign into their account with eit
 
 ![Profile Page Wireframe](/static/images/readme/profile-page.png)
 
-Bag Page (Empty Bag) - The bag page will display the following message to users if there are no products in their bag.
+**Bag Page (Empty Bag)** - The bag page will display the following message to users if there are no products in their bag.
 
-Empty Bag Page Wireframe
+![Empty Bag Page Wireframe](/static/images/readme/empty-bag-page.png)
 
-Bag Page - When a user has items in their bag, they will be shown an image of the item, the title
+**Bag Page** - When a user has items in their bag, they will be shown an image of the item, the title, price and ammount that the user has ordered. There is an option to edit the ammount or delete the product, as well as buttons to either return you to the shopping page or on to the checkout page.
 
-Bag Page Wireframe
+![Bag Page Wireframe](/static/images/readme/bag-page.png)
 
-Wish list (empty wish list) - The wish list page will display a message to the user to let them know there are no products currently in their wish list and will give instructions on how to add a product to their wish list. There will also be a button that redirects the user to the products page.
-
-Empty Wish list Page Wireframe
-
-Wish list Page - The wish list page is very similar in layout to the bag page. It displays an image of the item, the title, selected size and sku for the product along with the product price. There is also has a button to remove the product from their wish list. The user can add an item from their wish list to their bag by clicking on the product which will take them to the product details page where they can select sizes and quantity.
-
-Wish list Page Wireframe
-
-Checkout Page - The checkout page requires the user to fill in their details, along with a delivery address. They are given the option via a checkbox to save the information they input to their profile. If the user has already filled in their information in their profile, the form will be pre-populated with this information.
+**Checkout Page** - The checkout page requires the user to fill in their details, along with a delivery address. They are given the option via a checkbox to save the information they input to their profile. If the user has already filled in their information in their profile, the form will be pre-populated with this information.
 
 Underneath the users delivery information will be the payment input where the user will be required to enter their card information. If there are any errors with this input, an error message will be displayed under the input. Beneath this are the complete order buttons (which has a small message underneath it to let the user know the amount being charged to their card) and a button which redirects users back to their bag to amend their order.
 
 The user will also be shown a summary of the products they are purchasing. This consists of an image of the product, the title of the product, a size if applicable, the quantity they are purchasing and the subtotal for that product. Underneath the summary are the subtotal, delivery costs and grand total.
 
-Checkout Page Wireframe
+![Checkout Page Wireframe](/static/images/readme/checkout.png)
 
-Payment Processing Overlay - once the user has submitted correct payment details and clicks on the button to complete their order a payment processing overlay with an animated spinner will be displayed over the checkout page while payment is processed. Once this has processed, the user will be shown the checkout success page.
+**Payment Processing Overlay** - once the user has submitted correct payment details and clicks on the button to complete their order a payment processing overlay with an animated spinner will be displayed over the checkout page while payment is processed. Once this has processed, the user will be shown the checkout success page.
 
-Payment Processing Overlay Wireframe
+![Payment Processing Overlay Wireframe](/static/images/readme/checkout-overlay.png)
 
-Checkout Success - The checkout success page will give the user their order details, showing the order number, the date and time of the order and the items purchased.
+**Checkout Success** - The checkout success page will give the user their order details, showing the order number, the date and time of the order and the items purchased.
 
-Checkout Success Page Wireframe
+![Checkout Success Page Wireframe](/static/images/readme/success.png)
 
 Products - The products page will display an image for each item along with the title for item, price, category and rating underneath. Screen size will determine how many products are displayed in a row.
 
