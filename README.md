@@ -184,7 +184,7 @@ The social media account path will allow users to sign up for an account by usin
 
 ![Register Page Wireframe](/static/images/readme/register-page.png)
 
-Login Page - The login page will allow users to sign into their account with either their username, or using their linked social account.
+**Login Page** - The login page will allow users to sign into their account with either their username, or using their linked social account.
 
 ![Login Page Wireframe](/static/images/readme/login-page.png)
 
@@ -242,9 +242,9 @@ The Add to bag button and back to products buttons are placed below.
 
 ![Product Detail Page Admin View Wireframe](/static/images/readme/product-detail-admin.png)
 
-Edit Product - The Edit product page is only available to admin users. It displays a form with the products details pre-populated ready for the admin to edit. The admin may also delete the current image or choose a new image to upload and display.
+**Edit Product** - The Edit product page is only available to admin users. It displays a form with the products details pre-populated ready for the admin to edit. The admin may also delete the current image or choose a new image to upload and display.
 
-Edit Product Page Wireframe
+![Edit Product Page Wireframe](/static/images/readme/productedit.png)
 
 **Delete Product** - The Delete product page is only available to admin users. Its displays the product image, title, category and SKU along with a message asking the admin if they are sure they want to delete the product. It also warns them that this action cannot be undone. They are given a cancel button and a delete button.
 
@@ -266,9 +266,9 @@ Edit Product Page Wireframe
 
 ![Delivery Information Page Wireframe](/static/images/readme/shipping.png)
 
-Add review - If a user wants to add a review for a product, they will be redirected to the add review page. This will display the name of the product along with an image they would like to review. They are then given an input field to create a title for their review and a text area for the actual review. Underneath this will be a rating for the product along with a cancel and submit review button.
+**Add review** - If a user wants to add a review for a product, they will be redirected to the add review page. This will display the name of the product along with an image they would like to review. They are then given an input field to create a title for their review and a text area for the actual review. Underneath this will be a rating for the product along with a cancel and submit review button.
 
-Add Review Page Wireframe
+![Add Review Page Wireframe](/static/images/readme/review.png)
 
 **Toasts** - Toasts are used to display messages to the user depending on their actions on the site. They can let users know if an action has been successful, if there has been an error or for displaying a general message. This is also reflected in the colour at the top of the toast. Toasts will also be used to display to a user what they currently have in their bag when they add a new product. Toasts can be dismissed by clicking the X on the toast.
 
