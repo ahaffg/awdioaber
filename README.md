@@ -289,4 +289,10 @@ I used [Fontjoy](https://fontjoy.com) to help me pick fonts. [Megrim](https://fo
 
 ![Fontjoy](/static/images/readme/fontjoy.png)
 
+### **Imagery**
+
+**Base Mockup**
+
+![Base Mockup](/static/images/readme/base-mockup.png)
+
 ---
