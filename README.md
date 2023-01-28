@@ -291,6 +291,10 @@ I used [Fontjoy](https://fontjoy.com) to help me pick fonts. [Megrim](https://fo
 
 ### **Imagery**
 
+![Imagery](/static/images/readme/imagery.png)
+
+The images for this site have been taken from 
+
 **Base Mockup**
 
 ![Base Mockup](/static/images/readme/base-mockup.png)
