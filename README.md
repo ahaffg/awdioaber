@@ -300,3 +300,57 @@ The images for this site have been taken from
 ![Base Mockup](/static/images/readme/base-mockup.png)
 
 ---
+
+## Technologies Used
+### **Languages Used**
+HTML, CSS, JavaScript, Python
+
+### **Database Used**
+sqlite3 for development.
+
+ElephantSQL for deployment.
+
+### **Frameworks Used**
+Django - Version 3.2.16 - A high-level Python web framework that encourages rapid development and clean, pragmatic design.
+
+Bootstrap - Version 4.6.2 - A framework for building responsive, mobile-first sites.
+
+Libraries & Packages Used
+jQuery - Version 3.6.2 - A JavaScript Framework
+
+Font Awesome - Version 6.2.1 - Used for the iconography of the site, this was added using a CDN link.
+
+Django Allauth - Version 0.41.0 - Used for authentication, registration & account management.
+
+django_crispy_forms - provides a tag and filter that lets you quickly render forms
+
+gunicorn - a Python WSGI HTTP Server
+
+pillow - Python imaging library
+
+dj_databsae_url - allows us to utilise the DATABASE_URL variable
+
+psycopg2 - a postgres database adapter which allow us to connect with a postgres database
+
+django-storages - a storage backend library
+
+magnify.js - Used to add the magnify lens to the product details product image
+
+Programs Used
+
+Am I Responsive - To create the responsive images of the site on a variety of device sizes.
+
+DrawSQL.app - Used to create the database schema.
+
+Favicon.io - To create the favicon.
+
+Git - For version control.
+
+GitHub - To save and store the files for this project.
+
+Google Dev Tools - To troubleshoot, test features and solve issues with responsiveness and styling.
+
+Pip - A tool for installing Python packages.
+
+Stripe
+Stripe has been used in the project to implement the payment system.
