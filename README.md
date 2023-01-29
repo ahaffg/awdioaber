@@ -291,11 +291,31 @@ I used [Fontjoy](https://fontjoy.com) to help me pick fonts. [Megrim](https://fo
 
 ### **Imagery**
 
+The images used for this site have been taken from [Headfonics](https://headfonics.com). *awaiting permission* The reason I chose this website was because their product photograpy is excelent! They are fantastic high quality images, with large clean backgrounds, allowing for focus on the products themselves and giving a really streamlined proffessional feel to the site.
+
+I will also adapt text from their reviews to provide product descriptions and ratings for this site.
+
 ![Imagery](/static/images/readme/imagery.png)
 
-The images for this site have been taken from 
+Although the Site will look largely the same across all media sizes there will be some differences as a result of the screen widths available. For example;
+
+**Mobile Site** - It is likely that the image used for the head hero image will be different due to the smaller width space available. I will adapt this image accordingly and use media queries to allow for the need for different sized images to be used.
+
+Content will be largely stacked one on top of another so that it remains accesible. The footer image may be left as a text-logo instead of a photo-image- depending on size and how it looks on-screen.
+
+**Tablet Site**  -  As tablets offer wider screens, this will give me the opportunity to have a hero image that is more spacious, adding to the overall sleek look of the site. It is likely that this image will be repeated or a similar image used as the footer.
+
+Depending on the content, images and text may be doubled on screen. Like the mobile site, the menu will appear as a hamburger on the left hand side, as well as short-cuts to search, login and shopping bag functions being represented by anchored icons on the right hand side of the nav area.
+
+**Desktop Site** - On the desktop site, the photography will be shown off to it's best advantage, with large images, and lots of white-space to allow the products to stand out.
+
+The Nav area will look slightly different with the text logo placed in the top-left hand corner, with the clickable login and bag items in the right hand corner. The search bar however will be permenently accesableat the top center of the screen no matter what page is open.
+
+If at all possible I would really like to find a way for the hero images to change every time the page is refreshed. I would also like to include the hero-zoom animation from the [Love Running](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSE101+2020_Q2/courseware/be0e510a3aca4bccb6e0bba4cf7cf06b/15fe9d557bcc4af5a117465b9150454f/) project. I think this would add a nice touch to the site and further seperate it from the [Boutique Ado](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d3188bf68530497aa5fba55d07a9d7d7/) site.
 
 **Base Mockup**
+
+
 
 ![Base Mockup](/static/images/readme/base-mockup.png)
 
