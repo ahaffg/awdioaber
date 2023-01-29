@@ -1,3 +1,28 @@
+
+/*----- GOOGLE FONTS IMPORT -----*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&family=Megrim&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+/*----- ROOT VARIABLES -----*/
+:root {
+    /*----- Typography -----*/
+    --title-text: font-family: 'Megrim', cursive;
+    --header-text: font-family: 'Dosis', sans-serif;
+    --content-text: font-family: 'Ubuntu', sans-serif;
+
+        /*----- Colours -----*/
+        --white: #ffffff;
+        --black: #000000;
+        --light-blue: #00b7af;
+        --grey:#4f4f4f;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        }
+    
+    /*----- Headings & Text -----*/
+
 html {
     height: 100%;
 }
@@ -7,7 +32,7 @@ body {
 	background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: "Dosis";
+    font-family: 'Dosis';
 }
 
 /* from Bulma */
@@ -19,7 +44,9 @@ body {
     width: 1.5rem;
 }
 
+
 .logo-font {
+    
     text-transform: uppercase;
 }
 
