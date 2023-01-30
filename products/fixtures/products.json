@@ -137,5 +137,146 @@
             "image_url": " https://headfonics.com/wp-content/uploads/2022/06/abyss-headphones-diana-tc-review-2.jpg.webp",
             "image": " abyss-headphones-diana.jpg"
         }
-    }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5002761055",
+          "name": " Noble Audio Viking Ragnar",
+          "description": "The Noble Audio Viking Ragnar is probably the company's most high-fidelity in-ear monitor to date. It is also unique from the competition in its spatial grandeur but no less of a technical performer with impressive levels of precise imaging and detail. Superb resolution. Intricate design. Excellent passive isolation.",
+          "price": 4000,
+          "category": 5,
+          "rating": 4.5,
+          "image_url": "https://headfonics.com/wp-content/uploads/2022/11/noble-audio-viking-ragnar-review-featured-image2.jpg.webp",
+          "image": "noble-audio-viking-ragnar.jpg"
+        }
+      },
+      {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5002820069",
+          "name": " Aroma Audio Jewel",
+          "description": " There is no doubt that the Aroma Audio Jewel is a gem. Not just because of how it looks but in relation to its ability to produce a highly resolving and coherent listening experience with precision. Impeccable coherency. Crystal Clear Midrange. Incredible soundstage, imaging & layering.",
+          "price": 5146,
+          "category": 5,
+          "rating": 4.6,
+          "image_url": " https://headfonics.com/wp-content/uploads/2022/11/Aroma-Audio-Jewel-review-featured-image.jpg.webp",
+          "image": " Aroma-Audio-Jewel.jpg"
+        }
+      },
+      {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5002820147",
+          "name": " Empire Ears Odin",
+          "description": "The Odin is a technical beast bar none with masterful levels of control from the dual subwoofer configuration right up to that nuanced treble tuning. Nothing is overdone, even those forward upper mids are beautifully tempered by a coherent treble tuning. ",
+          "price": 3399,
+          "category": 5,
+          "rating": 4.2,
+          "image_url": "https://headfonics.com/wp-content/uploads/2020/09/DSCF4215b.jpg.webp",
+          "image": " empire-ears-odin.jpg"
+        }
+      },
+      {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5002910572",
+          "name": " Lime Ears Anima",
+          "description": " The Lime Ears Anima is a balanced yet joyful tuning with a deep resonating bass performance and almost ethereal highs with plenty of headroom from those e-stat drivers. It competes well with other hybrid electrostatic standard-bearers such as the Odin and the EXT but is unique enough to set it apart as a viable alternative on your shopping list.",
+          "price": 3400,
+          "category": 5,
+          "rating": 4.7,
+          "image_url": " https://headfonics.com/wp-content/uploads/2022/03/lime-ears-anima-review.jpg.webp",
+          "image": " lime-ears-anima.jpg"
+        }
+      },
+      {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5002990740",
+          "name": " Vision Ears EXT",
+          "description": "I can still see vocal lovers cling dearly to their Elysium but for those who wanted bombastic lows and a much bigger soundstage whilst still retaining the magic of a dynamic driver timbre for the mids then the EXT should answer that and then some. ",
+          "price": 2650,
+          "category": 5,
+          "rating": 4.8,
+          "image_url": "https://headfonics.com/wp-content/uploads/2021/12/DSCF6058.jpg.webp",
+          "image": " vision-ears-ext.jpg"
+        }
+      },
+      {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003050248",
+          "name": " Campfire Audio Solaris SE",
+          "description": " The sound is smoother, more coherent with a better mids presence. The timbre is more natural to my ear and sweeter sounding for vocals and instrumental notes. This is a clever tuning with less of an apparent traditional hybrid driver separation from the lows to the highs.",
+          "price": 1899,
+          "category": 5,
+          "rating": 4.4,
+          "image_url": " https://headfonics.com/wp-content/uploads/2020/01/DSCF2576.jpg.webp",
+          "image": " campfire-audio-solaris-SE.jpg"
+        }
+      },
+      {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003070787",
+          "name": " Vision Ears Phonix",
+          "description": " The Vision Ears Phönix is a pricey but beautifully designed high-end monitor built for blissful and stress-free listening. Its coherent timbre has an inviting and intoxicating blend of smooth-sounding mids and gorgeously rich vocals backed up by a punchy low-end performance when called upon. Coherent smooth tuning. Beautiful design. Comfortable to wear
+    ",
+          "price": 3500,
+          "category": 5,
+          "rating": 4.4,
+          "image_url": " https://headfonics.com/wp-content/uploads/2022/02/Vision-Ears-Phonix-Review-1.jpg.webp",
+          "image": " Vision-Ears-Phonix.jpg"
+        }
+      },
+      {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003090182",
+          "name": " Audeze LCDi4",
+          "description": " Despite the fact this will be filed under earphones/IEMs the LCDi4 is anything but that. Its unique design, presentation, and in-depth DSP pulls it above into some sort of super-tiny headphone category but with a sound quality that is anything but super tiny.",
+          "price": 2495,
+          "category": 5,
+          "rating": 4,
+          "image_url": "https://headfonics.com/wp-content/uploads/2018/07/lcdi4-title.jpg.webp",
+          "image": " audeze-lcdi4.jpg"
+        }
+      },
+      {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003090186",
+          "name": " Noble Audio Sultan",
+          "description": "I honestly cannot pick any holes in the Sultan's performance, at least from a personal perspective. It is a vivid and exciting blend of different driver timbres that tease out some excellent power, clarity, and above-average headroom. If you are sitting on the Savant II wondering where to go to next then this is it.",
+          "price": 2900,
+          "category": 5,
+          "rating": 4,
+          "image_url": "https://headfonics.com/wp-content/uploads/2020/06/DSCF3631.jpg.webp",
+          "image": "noble-ausio-sultan.jpg"
+        }
+      },
+      {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003161326",
+          "name": " Sennheiser IE 600",
+          "description": " The IE 600 is probably the most credible-sounding monitor I have tested from Sennheiser in a while. Granted, I have not heard the rest of the new releases but compared to their classics the dynamic driver tuning is relevant, modern, and more engaging. Proper midrange tuning. Very comfortable in the ear. Balanced 4.4mm cable welcomed.",
+          "price": 699.95,
+          "category": 5,
+          "rating": 4.7,
+          "image_url": "https://headfonics.com/wp-content/uploads/2022/09/sennheiser-ie600-review-feature-image.jpg.webp",
+          "image": " sennheiser-ie600.jpg"
+        }
+      }
 ]
