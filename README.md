@@ -297,7 +297,7 @@ I will also adapt text from their reviews to provide product descriptions and ra
 
 ![Imagery](/static/images/readme/imagery.png)
 
-Although the Site will look largely the same across all media sizes there will be some differences as a result of the screen widths available. For example;
+Although the Site will look largely the same across all media sizes there will be some differences as a result of the screen widths available. For example, Products will stack on mobile, be side-by-side on small and medium screens, split into three columns on large and four columns on extra-large.
 
 **Mobile Site** - It is likely that the image used for the head hero image will be different due to the smaller width space available. I will adapt this image accordingly and use media queries to allow for the need for different sized images to be used.
 
@@ -322,55 +322,67 @@ If at all possible I would really like to find a way for the hero images to chan
 ---
 
 ## Technologies Used
-### **Languages Used**
+
+### Languages Used
+
 HTML, CSS, JavaScript, Python
 
-### **Database Used**
+### Database Used
+
 sqlite3 for development.
 
-ElephantSQL for deployment.
+[ElephantSQL](https://www.elephantsql.com/) for deployment.
 
-### **Frameworks Used**
-Django - Version 3.2.16 - A high-level Python web framework that encourages rapid development and clean, pragmatic design.
+### Frameworks Used
 
-Bootstrap - Version 4.6.2 - A framework for building responsive, mobile-first sites.
+[Django](https://www.djangoproject.com/) - Version 3.2.16 - A high-level Python web framework that encourages rapid development and clean, pragmatic design.
 
-Libraries & Packages Used
-jQuery - Version 3.6.2 - A JavaScript Framework
+[Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Version 4.6.2 - A framework for building responsive, mobile-first sites.
 
-Font Awesome - Version 6.2.1 - Used for the iconography of the site, this was added using a CDN link.
+### Libraries & Packages Used
 
-Django Allauth - Version 0.41.0 - Used for authentication, registration & account management.
+[jQuery](https://jquery.com/) - Version 3.6.2 - A JavaScript Framework
 
-django_crispy_forms - provides a tag and filter that lets you quickly render forms
+[Font Awesome](https://fontawesome.com/) - Version 6.2.1 - Used for the iconography of the site, this was added using a CDN link.
 
-gunicorn - a Python WSGI HTTP Server
+[Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - Version 0.41.0 - Used for authentication, registration & account management.
 
-pillow - Python imaging library
+[django-countries](https://pypi.org/project/django-countries/7.2.1/) - Version 7.2.1 - This is the latest stable version that is compatible with GitPod.
 
-dj_databsae_url - allows us to utilise the DATABASE_URL variable
+[django_crispy_forms](https://pypi.org/project/django-crispy-forms/) - provides a tag and filter that lets you quickly render forms
 
-psycopg2 - a postgres database adapter which allow us to connect with a postgres database
+[gunicorn](https://pypi.org/project/gunicorn/) - a Python WSGI HTTP Server
 
-django-storages - a storage backend library
+[pillow](https://pypi.org/project/Pillow/) - Python imaging library
 
-magnify.js - Used to add the magnify lens to the product details product image
+[dj_databsae_url](https://pypi.org/project/dj-database-url/) - allows us to utilise the DATABASE_URL variable
 
-Programs Used
+[psycopg2](https://pypi.org/project/psycopg2/) - a postgres database adapter which allow us to connect with a postgres database
 
-Am I Responsive - To create the responsive images of the site on a variety of device sizes.
+[django-storages](https://pypi.org/project/django-storages/) - a storage backend library
 
-DrawSQL.app - Used to create the database schema.
+[magnify.js](https://thdoan.github.io/magnify/) - Used to add the magnify lens to the product details product image
 
-Favicon.io - To create the favicon.
+### Programs Used
 
-Git - For version control.
+[Am I Responsive](https://ui.dev/amiresponsive) - To create the responsive images of the site on a variety of device sizes.
 
-GitHub - To save and store the files for this project.
+[Balsamiq](https://balsamiq.com/) - Used to create wireframes.
 
-Google Dev Tools - To troubleshoot, test features and solve issues with responsiveness and styling.
+[DrawSQL.app](https://drawsql.app/) - Used to create the database schema.
 
-Pip - A tool for installing Python packages.
+[Favicon.io](https://favicon.io/) - To create the favicon.
 
-Stripe
-Stripe has been used in the project to implement the payment system.
+[Git](https://git-scm.com/) - For version control.
+
+[GitHub](https://github.com/) - To save and store the files for this project.
+
+[Google Dev Tools](https://developer.chrome.com/docs/devtools/) - To troubleshoot, test features and solve issues with responsiveness and styling.
+
+[Pip](https://pypi.org/project/pip/) - A tool for installing Python packages.
+
+### Stripe
+
+[Stripe](https://stripe.com/gb) has been used in the project to implement the payment system.
+
+Stripe for the website is currently in developer mode, which allows us to be able to process test payments to check the function of the site.

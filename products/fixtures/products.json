@@ -1,142 +1,141 @@
-[
-    {
-      "pk": 1,
-      "model": "products.product",
-      "fields": {
-        "sku": "pp5001340155",
-        "name": "Dekoni Audio Blue",
-        "description": "If you’re looking for a fun headphone to listen to, one with further improvement capability and robust enough so you don’t have to handle them with white gloves then give the Dekoni Audio Blue a try by all means. Dark V shaped and fun sound signature. Rugged construction. Leagues above the original variant in comfort levels.",
-        "price": 249.99,
-        "category": 3,
-        "rating": 4.6,
-        "image_url": "https://headfonics.com/wp-content/uploads/2023/01/dekoni-audio-blue-review-feature-image.jpg.webp",
-        "image": "dekoni-audio-blue.jpg"
-      }
+[{
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340155",
+            "name": "Dekoni Audio Blue",
+            "description": "If you’re looking for a fun headphone to listen to, one with further improvement capability and robust enough so you don’t have to handle them with white gloves then give the Dekoni Audio Blue a try by all means. Dark V shaped and fun sound signature. Rugged construction. Leagues above the original variant in comfort levels.",
+            "price": 249.99,
+            "category": 3,
+            "rating": 4.6,
+            "image_url": "https://headfonics.com/wp-content/uploads/2023/01/dekoni-audio-blue-review-feature-image.jpg.webp",
+            "image": "dekoni-audio-blue.jpg"
+        }
     },
     {
-      "pk": 2,
-      "model": "products.product",
-      "fields": {
-        "sku": "pp5001600425",
-        "name": " HIFIMAN Sundara Closed Back Review",
-        "description": " Is the HIFIMAN Sundara Closed Back better than the original Sundara? Each model has its selling points. The Closed Back seems to be unveiled, but it lacks some low-end grunt which can be easily remedied up to a point. So there’s the tradeoff. Very good midrange definition. Excellent isolation levels and very little bleed. Beautiful Beechwood cups",
-        "price": 399,
-        "category": 3,
-        "rating": 4.7,
-        "image_url": " https://headfonics.com/wp-content/uploads/2022/12/HIFIMAN-Sundara-Closed-Back-Featured-Image.jpg.webp",
-        "image": " HIFIMAN-Sundara-Closed-Back.jpg"
-      }
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600425",
+            "name": " HIFIMAN Sundara Closed Back Review",
+            "description": " Is the HIFIMAN Sundara Closed Back better than the original Sundara? Each model has its selling points. The Closed Back seems to be unveiled, but it lacks some low-end grunt which can be easily remedied up to a point. So there’s the tradeoff. Very good midrange definition. Excellent isolation levels and very little bleed. Beautiful Beechwood cups",
+            "price": 399,
+            "category": 3,
+            "rating": 4.7,
+            "image_url": " https://headfonics.com/wp-content/uploads/2022/12/HIFIMAN-Sundara-Closed-Back-Featured-Image.jpg.webp",
+            "image": " HIFIMAN-Sundara-Closed-Back.jpg"
+        }
     },
     {
-      "pk": 3,
-      "model": "products.product",
-      "fields": {
-        "sku": "pp5001730010",
-        "name": "ZMF Headphones Caldera",
-        "description": "The ZMF Headphones Caldera is an incredible high-end debut planar headphone. I was simply not expecting this huge emotionally enjoyable sound complete with that trademark easy-to-listen-to tuning. It also looks the 'biz' with those White Oak wood cup designs. Emotional sound signature. Beautiful Wood grain. Comfortable to wear",
-        "price": 3499,
-        "category": 3,
-        "rating": 4.7,
-        "image_url": "https://headfonics.com/wp-content/uploads/2022/11/zmf-headphones-caldera-review-feature-2.jpg.webp",
-        "image": "zmf-headphones-caldera.jpg"
-      }
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001730010",
+            "name": "ZMF Headphones Caldera",
+            "description": "The ZMF Headphones Caldera is an incredible high-end debut planar headphone. I was simply not expecting this huge emotionally enjoyable sound complete with that trademark easy-to-listen-to tuning. It also looks the 'biz' with those White Oak wood cup designs. Emotional sound signature. Beautiful Wood grain. Comfortable to wear",
+            "price": 3499,
+            "category": 3,
+            "rating": 4.7,
+            "image_url": "https://headfonics.com/wp-content/uploads/2022/11/zmf-headphones-caldera-review-feature-2.jpg.webp",
+            "image": "zmf-headphones-caldera.jpg"
+        }
     },
     {
-      "pk": 4,
-      "model": "products.product",
-      "fields": {
-        "sku": "pp5001890157",
-        "name": " Moondrop Void",
-        "description": " The Moondrop Void might not be making headlines due to its display of modest technicalities. However, Moondrop succeeded in developing a well-rounded product for their first in-house-built headphone while giving it an easily appreciated tuning. Warmth appreciated by bass lovers. Reasonably easy to pair. Sits comfortably on the head",
-        "price": 199.99,
-        "category": 3,
-        "rating": 4,
-        "image_url": " https://headfonics.com/wp-content/uploads/2022/12/moondrop-void-review-featured-image.jpg.webp",
-        "image": " moondrop-void.jpg"
-      }
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001890157",
+            "name": " Moondrop Void",
+            "description": " The Moondrop Void might not be making headlines due to its display of modest technicalities. However, Moondrop succeeded in developing a well-rounded product for their first in-house-built headphone while giving it an easily appreciated tuning. Warmth appreciated by bass lovers. Reasonably easy to pair. Sits comfortably on the head",
+            "price": 199.99,
+            "category": 3,
+            "rating": 4,
+            "image_url": " https://headfonics.com/wp-content/uploads/2022/12/moondrop-void-review-featured-image.jpg.webp",
+            "image": " moondrop-void.jpg"
+        }
     },
     {
-      "pk": 5,
-      "model": "products.product",
-      "fields": {
-        "sku": "pp5002111605",
-        "name": " Dan Clark Audio EXPANSE",
-        "description": "The Dan Clark Audio EXPANSE is one of those rare headphones that can elicit both an emotive response from a purely listening perspective and an admiration for its technical capability at the same time. Balanced natural tone. Beautiful design & high levels of comfort. Gorgeous pairing with tube amps. ",
-        "price": 3999.99,
-        "category": 3,
-        "rating": 4.5,
-        "image_url": "https://headfonics.com/wp-content/uploads/2022/10/dan-clark-audio-expanse-review-featured-image.jpg.webp",
-        "image": " dan-clark-audio-expanse.jpg"
-      }
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002111605",
+            "name": " Dan Clark Audio EXPANSE",
+            "description": "The Dan Clark Audio EXPANSE is one of those rare headphones that can elicit both an emotive response from a purely listening perspective and an admiration for its technical capability at the same time. Balanced natural tone. Beautiful design & high levels of comfort. Gorgeous pairing with tube amps. ",
+            "price": 3999.99,
+            "category": 3,
+            "rating": 4.5,
+            "image_url": "https://headfonics.com/wp-content/uploads/2022/10/dan-clark-audio-expanse-review-featured-image.jpg.webp",
+            "image": " dan-clark-audio-expanse.jpg"
+        }
     },
     {
-      "pk": 6,
-      "model": "products.product",
-      "fields": {
-        "sku": "pp5002260206",
-        "name": "HarmonicDyne G200",
-        "description": "The dark tuning of the HarmonicDyne G200 may come as unfamiliar at first and a pad swap may be necessary but once adjusted to its quirks and biases, this headphone showcases the brand’s capacity to build high-end gears. Thick and inoffensive timbre. Solid build quality. Generous accessories including earpads and adaptors",
-        "price": 699,
-        "category": 3,
-        "rating": 4,
-        "image_url": " https://headfonics.com/wp-content/uploads/2022/10/harmonicdyne-G200-Review-featured-image.jpg.webp",
-        "image": "harmonicdyne-G200.jpg"
-      }
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002260206",
+            "name": "HarmonicDyne G200",
+            "description": "The dark tuning of the HarmonicDyne G200 may come as unfamiliar at first and a pad swap may be necessary but once adjusted to its quirks and biases, this headphone showcases the brand’s capacity to build high-end gears. Thick and inoffensive timbre. Solid build quality. Generous accessories including earpads and adaptors",
+            "price": 699,
+            "category": 3,
+            "rating": 4,
+            "image_url": " https://headfonics.com/wp-content/uploads/2022/10/harmonicdyne-G200-Review-featured-image.jpg.webp",
+            "image": "harmonicdyne-G200.jpg"
+        }
     },
     {
-      "pk": 7,
-      "model": "products.product",
-      "fields": {
-        "sku": "pp5002440521",
-        "name": " Audeze MM-500",
-        "description": " The Audeze MM-500 is going to appeal to a much wider audience beyond the pro-audio user with an enjoyable, high-energy tuning that works wonders with my own preferences such as hard rock, and, a design aesthetic that is simply gorgeous to hold and look at. Highly engaging tuning. Beautifully designed. Easy enough to drive.",
-        "price": 1699.99,
-        "category": 3,
-        "rating": 4.4,
-        "image_url": "https://headfonics.com/wp-content/uploads/2022/09/audeze-mm500-review-2.jpg.webp",
-        "image": " audeze-mm500.jpg"
-      }
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002440521",
+            "name": " Audeze MM-500",
+            "description": " The Audeze MM-500 is going to appeal to a much wider audience beyond the pro-audio user with an enjoyable, high-energy tuning that works wonders with my own preferences such as hard rock, and, a design aesthetic that is simply gorgeous to hold and look at. Highly engaging tuning. Beautifully designed. Easy enough to drive.",
+            "price": 1699.99,
+            "category": 3,
+            "rating": 4.4,
+            "image_url": "https://headfonics.com/wp-content/uploads/2022/09/audeze-mm500-review-2.jpg.webp",
+            "image": " audeze-mm500.jpg"
+        }
     },
     {
-      "pk": 8,
-      "model": "products.product",
-      "fields": {
-        "sku": "pp5002601115",
-        "name": " ZMF Headphones Atrium",
-        "description": " As introductions go, the ZMF Headphones Atrium is an excellent one to start with. It easily ranks as one of the most agreeable sounding dynamic driver headphones I have tested in a long time. Massive soundstage. Natural sounding timbre. Beautifully designed.",
-        "price": 2499.99,
-        "category": 3,
-        "rating": 4,
-        "image_url": " https://headfonics.com/wp-content/uploads/2022/05/zmf-headphones-atirum-review.jpg.webp",
-        "image": " zmf-headphones-atirum.jpg"
-      }
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002601115",
+            "name": " ZMF Headphones Atrium",
+            "description": " As introductions go, the ZMF Headphones Atrium is an excellent one to start with. It easily ranks as one of the most agreeable sounding dynamic driver headphones I have tested in a long time. Massive soundstage. Natural sounding timbre. Beautifully designed.",
+            "price": 2499.99,
+            "category": 3,
+            "rating": 4,
+            "image_url": " https://headfonics.com/wp-content/uploads/2022/05/zmf-headphones-atirum-review.jpg.webp",
+            "image": " zmf-headphones-atirum.jpg"
+        }
     },
     {
-      "pk": 9,
-      "model": "products.product",
-      "fields": {
-        "sku": "pp5002690715",
-        "name": " Final D8000",
-        "description": " The D8000 simply rocks. And I mean with just about every track or record or genre that means something to me from the vaults. Not many people know I started out in the late '80s as a music and live act reviewer so my collection is wide and deep but it's 'hard rock' and 'new wave synth' that I always go to first. This is a headphone with power. A headphone with a gutsy almost visceral low-end response that delivers a fantastic yet never overcooked bass fundamental to really drive hard rock and metal with enjoyable authority.",
-        "price": 3999,
-        "category": 3,
-        "rating": 4.7,
-        "image_url": " https://headfonics.com/wp-content/uploads/2018/10/final-d8000-tite.jpg.webp",
-        "image": " final-d8000.jpg"
-      }
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002690715",
+            "name": " Final D8000",
+            "description": " The D8000 simply rocks. And I mean with just about every track or record or genre that means something to me from the vaults. Not many people know I started out in the late '80s as a music and live act reviewer so my collection is wide and deep but it's 'hard rock' and 'new wave synth' that I always go to first. This is a headphone with power. A headphone with a gutsy almost visceral low-end response that delivers a fantastic yet never overcooked bass fundamental to really drive hard rock and metal with enjoyable authority.",
+            "price": 3999,
+            "category": 3,
+            "rating": 4.7,
+            "image_url": " https://headfonics.com/wp-content/uploads/2018/10/final-d8000-tite.jpg.webp",
+            "image": " final-d8000.jpg"
+        }
     },
     {
-      "pk": 10,
-      "model": "products.product",
-      "fields": {
-        "sku": "pp5002701115",
-        "name": " Abyss Headphones Diana TC",
-        "description": " It is hard to overstate just how good the Abyss Headphones Diana TC is for such a small and cute-looking planar headphone. It belies its diminutive form factor with a superlative and engrossing performance that takes the Phi pitch to the next level. Very fast and articulate performance. Compact and robust design. Much improved comfort levels.",
-        "price": 4495,
-        "category": 3,
-        "rating": 4.4,
-        "image_url": " https://headfonics.com/wp-content/uploads/2022/06/abyss-headphones-diana-tc-review-2.jpg.webp",
-        "image": " abyss-headphones-diana.jpg"
-      }
-    },
-]  
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002701115",
+            "name": " Abyss Headphones Diana TC",
+            "description": " It is hard to overstate just how good the Abyss Headphones Diana TC is for such a small and cute-looking planar headphone. It belies its diminutive form factor with a superlative and engrossing performance that takes the Phi pitch to the next level. Very fast and articulate performance. Compact and robust design. Much improved comfort levels.",
+            "price": 4495,
+            "category": 3,
+            "rating": 4.4,
+            "image_url": " https://headfonics.com/wp-content/uploads/2022/06/abyss-headphones-diana-tc-review-2.jpg.webp",
+            "image": " abyss-headphones-diana.jpg"
+        }
+    }
+]
