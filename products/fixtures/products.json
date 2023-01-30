@@ -228,8 +228,7 @@
         "fields": {
           "sku": "pp5003070787",
           "name": " Vision Ears Phonix",
-          "description": " The Vision Ears Phönix is a pricey but beautifully designed high-end monitor built for blissful and stress-free listening. Its coherent timbre has an inviting and intoxicating blend of smooth-sounding mids and gorgeously rich vocals backed up by a punchy low-end performance when called upon. Coherent smooth tuning. Beautiful design. Comfortable to wear
-    ",
+          "description": "The Vision Ears Phönix is a pricey but beautifully designed high-end monitor built for blissful and stress-free listening. Its coherent timbre has an inviting and intoxicating blend of smooth-sounding mids and gorgeously rich vocals backed up by a punchy low-end performance when called upon. Coherent smooth tuning. Beautiful design. Comfortable to wear",
           "price": 3500,
           "category": 5,
           "rating": 4.4,
@@ -277,6 +276,146 @@
           "rating": 4.7,
           "image_url": "https://headfonics.com/wp-content/uploads/2022/09/sennheiser-ie600-review-feature-image.jpg.webp",
           "image": " sennheiser-ie600.jpg"
+        }
+      },
+      {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003230723",
+          "name": " HiBy RS8",
+          "description": " The HiBy RS8 is one of the most complete DAPs launched to date. It has the most advanced operating system, a unique architecture evolved from the RS6, and quite obviously packs in my DAC of choice, R-2R. Not just R-2R for the sake of it but desktop decoding levels of R-2R and a level of audible quality that competes with the gold standard, the P6 Pro from Luxury and Precision. Natural and expansive R2R Sound. Android 12. Excellent Turbo Mode.",
+          "price": 3299,
+          "category": 6,
+          "rating": 4.6,
+          "image_url": " https://headfonics.com/wp-content/uploads/2022/11/hiby-rs8-review-featured-image.jpg.webp",
+          "image": " hiby-rs8.jpg"
+        }
+      },
+      {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003270936",
+          "name": "iBasso DX300 MAX",
+          "description": " The iBasso DX300 MAX is an utterly brilliant-sounding DAP and handily knocks the DX220 MAX off its award-winning 2020 perch. It is faster, more powerful, cleaner, and more resolving than the older version.",
+          "price": 2290,
+          "category": 6,
+          "rating": 4.6,
+          "image_url": "https://headfonics.com/wp-content/uploads/2021/10/ibasso-dx300-max-review.jpg.webp",
+          "image": " ibasso-dx300-max.jpg"
+        }
+      },
+      {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003360384",
+          "name": " FiiO M17",
+          "description": " The FiiO M17 is a huge DAP but with a huge sound. It is also probably one of the most complete portable audio devices I have reviewed to date. Both headphone and IEM users will find the M17 has both the deftness and the sheer grunt to satisfy both. DC Mode is a pure joy to use for demanding planar headphones in particular. Very powerful amplifier. Robust and unique design. Modern Android version.",
+          "price": 1799,
+          "category": 6,
+          "rating": 4.8,
+          "image_url": "https://headfonics.com/wp-content/uploads/2022/01/fiio-m17-review.jpg.webp",
+          "image": " fiio-m17.jpg"
+        }
+      },
+      {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003440111",
+          "name": " Luxury & Precision P6 Pro",
+          "description": " As a pure music player or for quality audio in a compact portable form factor, nothing can come close to the performance of the P6 Pro. It takes everything magical and wonderful about the R2R sound of the P6 and injects greater urgency, a slightly more accurate harmonic balance, and a big upgrade in dynamics.. ",
+          "price": 3899,
+          "category": 6,
+          "rating": 4,
+          "image_url": " https://headfonics.com/wp-content/uploads/2021/05/luxury-and-precision-p6-pro.jpg.webp",
+          "image": " luxury-and-precision-p6-pro.jpg"
+        }
+      },
+      {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003540313",
+          "name": " Lotoo PAW Gold Touch",
+          "description": " The combination of tech and sound tweaking is dangerously addictive. More importantly than that it's almost perfect for sensitive monitors with its transparent, hyper-detailed reference sound signature.",
+          "price": 3199,
+          "category": 6,
+          "rating": 3.8,
+          "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP1108201317050996M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+          "image": " lotoo-PAW-gold.jpg"
+        }
+      },
+      {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003560513",
+          "name": " Cayin N8",
+          "description": " The N8 rightfully takes its chair at the TOTL digital media player table. Not because it is one of the best sounding players out there but simply because they dared to do something different and something that has not been done before in a DAP..",
+          "price": 3299,
+          "category": 6,
+          "rating": 4.4,
+          "image_url": " https://headfonics.com/wp-content/uploads/2018/10/DSC05343.jpg.webp",
+          "image": " cayin-n8.jpg"
+        }
+      },
+      {
+        "pk": 27,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003560948",
+          "name": " Hidizs AP80 Pro-X Red Copper Edition",
+          "description": " The Hidizs AP80 Pro-X Red Copper Edition treble is stunning. The build quality is absurdly great, the output power is getting close to negating the need for portable amplifiers, and the UI is ungodly fast and potent compared to the past models that feel much more sluggish and slower. Good power for a small DAP. Beautiful finishing and materials.",
+          "price": 249,
+          "category": 6,
+          "rating": 3.8,
+          "image_url": "https://headfonics.com/wp-content/uploads/2022/10/AP80-PRO-X-Red-Copper-Edition-Review-featured-image.jpg.webp",
+          "image": "AP80-PRO-X-Red-Copper-Edition.jpg"
+        }
+      },
+      {
+        "pk": 28,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003570628",
+          "name": " iBasso DX240",
+          "description": "The iBasso DX240 is much more than some sort of peace offering to the loyal amp card owners who didn't wish to upgrade to the new DX3XX card variants. It combines the speed of the DX300 with a more compact form factor and adds some new cards that really do the new flagship ES9038PRO chipset some serious justice. Flagship DAC chip. Backwards compatible with older AMP cards. Compact form factor. ",
+          "price": 219,
+          "category": 6,
+          "rating": 3.9,
+          "image_url": "https://headfonics.com/wp-content/uploads/2022/04/ibasso-dx240-review.jpg.webp",
+          "image": "ibasso-dx240.jpg"
+        }
+      },
+      {
+        "pk": 29,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003620308",
+          "name": " HiBy R6 Pro",
+          "description": " I still think the HiBy R6 Pro is a 'bang for buck' king for DAPs under 1k. The new tonal tuning gives it a more powerful sound and more pleasing timbre than the original R6. That lowered output impedance makes it much easier for sensitive IEM matchups.",
+          "price": 799,
+          "category": 6,
+          "rating": 3.8,
+          "image_url": " https://headfonics.com/wp-content/uploads/2019/02/hiby-r6-pro-title.jpg.webp",
+          "image": " hiby-r6-pro.jpg"
+        }
+      },
+      {
+        "pk": 30,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003690115",
+          "name": " HiBy R8",
+          "description": "The R8 is possibly the most complete DAP on the market at the time of writing. That will mean different things to different people, it just depends on what you want your DAP to do.",
+          "price": 1899,
+          "category": 6,
+          "rating": 4.2,
+          "image_url": "https://headfonics.com/wp-content/uploads/2020/09/DSCF4071.jpg",
+          "image": "HiBy-R8.jpg"
         }
       }
 ]
