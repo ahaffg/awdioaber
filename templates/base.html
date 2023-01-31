@@ -16,12 +16,10 @@
     {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Megrim&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Megrim&family=Ubuntu:wght@300&display=swap"
-    rel="stylesheet">
 
     {% endblock %}
 
@@ -45,7 +43,7 @@
         <div id="main-nav-header" class="row">
             <div  class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 id="aa" class="logo-font text-black my-0">Awdio Aber</h2>
+                    <h1 class="logo-font text-black my-0">Awdio Aber</h1>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -132,6 +130,69 @@
     {% block postloadjs %}
     {% endblock %}
 
+<footer class="container-fluid bottom">
+<div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text text-shadow">Awdio Aber
+          </h5>
+          <ul>
+            <li><a href="" class="nav-link main-logo-link logo-font text-black my-0">
+                Contact
+            </a></li>
+            <li><a href="" class="nav-link main-logo-link logo-font text-black my-0">
+                Terms and Conditions
+            </a></li>
+            <li><a href="" class="nav-link main-logo-link logo-font text-black my-0">
+                Privacy Policy
+            </a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect
+          </h5>
+          <ul>
+            <li>
+              <a class="white-text" href="https://en-gb.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook"> F a c e b o o k
+                </i>
+              </a>
+            </li>
+            <li>
+              <a class="white-text light" href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"> I n s t a g r a m
+                </i>
+              </a>
+            </li>
+            <li>
+              <a class="white-text light" href="https://twitter.com/" target="_blank">
+                <i class="fa-brands fa-twitter"> T w i t t e r
+                </i>
+              </a>
+            </li>
+            <li>
+              <a class="white-text light" href="https://www.tiktok.com/" target="_blank">
+                <i class="fa-brands fa-tiktok"> T i k T o k
+                </i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <p class="copyright text-muted white-text text-center">Copyright <script>
+            $("#copyright").text(new Date().getFullYear());
+        </script> Awdio Aber
+          <span id="copyright">
+          </span>
+        </p>
+      </div>
+    </div>
+</footer>
     
   </body>
 </html>

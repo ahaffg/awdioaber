@@ -22,8 +22,8 @@
             "price": 399,
             "category": 3,
             "rating": 4.7,
-            "image_url": " https://headfonics.com/wp-content/uploads/2022/12/HIFIMAN-Sundara-Closed-Back-Featured-Image.jpg.webp",
-            "image": " HIFIMAN-Sundara-Closed-Back.jpg"
+            "image_url": "https://headfonics.com/wp-content/uploads/2022/12/HIFIMAN-Sundara-Closed-Back-Featured-Image.jpg.webp",
+            "image": "HIFIMAN-Sundara-Closed-Back.jpg"
         }
     },
     {
@@ -46,12 +46,12 @@
         "fields": {
             "sku": "pp5001890157",
             "name": " Moondrop Void",
-            "description": " The Moondrop Void might not be making headlines due to its display of modest technicalities. However, Moondrop succeeded in developing a well-rounded product for their first in-house-built headphone while giving it an easily appreciated tuning. Warmth appreciated by bass lovers. Reasonably easy to pair. Sits comfortably on the head",
+            "description": "The Moondrop Void might not be making headlines due to its display of modest technicalities. However, Moondrop succeeded in developing a well-rounded product for their first in-house-built headphone while giving it an easily appreciated tuning. Warmth appreciated by bass lovers. Reasonably easy to pair. Sits comfortably on the head",
             "price": 199.99,
             "category": 3,
             "rating": 4,
-            "image_url": " https://headfonics.com/wp-content/uploads/2022/12/moondrop-void-review-featured-image.jpg.webp",
-            "image": " moondrop-void.jpg"
+            "image_url": "https://headfonics.com/wp-content/uploads/2022/12/moondrop-void-review-featured-image.jpg.webp",
+            "image": "moondrop-void.jpg"
         }
     },
     {
@@ -65,7 +65,7 @@
             "category": 3,
             "rating": 4.5,
             "image_url": "https://headfonics.com/wp-content/uploads/2022/10/dan-clark-audio-expanse-review-featured-image.jpg.webp",
-            "image": " dan-clark-audio-expanse.jpg"
+            "image": "dan-clark-audio-expanse.jpg"
         }
     },
     {
@@ -78,7 +78,7 @@
             "price": 699,
             "category": 3,
             "rating": 4,
-            "image_url": " https://headfonics.com/wp-content/uploads/2022/10/harmonicdyne-G200-Review-featured-image.jpg.webp",
+            "image_url": "https://headfonics.com/wp-content/uploads/2022/10/harmonicdyne-G200-Review-featured-image.jpg.webp",
             "image": "harmonicdyne-G200.jpg"
         }
     },
@@ -88,12 +88,12 @@
         "fields": {
             "sku": "pp5002440521",
             "name": " Audeze MM-500",
-            "description": " The Audeze MM-500 is going to appeal to a much wider audience beyond the pro-audio user with an enjoyable, high-energy tuning that works wonders with my own preferences such as hard rock, and, a design aesthetic that is simply gorgeous to hold and look at. Highly engaging tuning. Beautifully designed. Easy enough to drive.",
+            "description": "The Audeze MM-500 is going to appeal to a much wider audience beyond the pro-audio user with an enjoyable, high-energy tuning that works wonders with my own preferences such as hard rock, and, a design aesthetic that is simply gorgeous to hold and look at. Highly engaging tuning. Beautifully designed. Easy enough to drive.",
             "price": 1699.99,
             "category": 3,
             "rating": 4.4,
-            "image_url": "https://headfonics.com/wp-content/uploads/2022/09/audeze-mm500-review-2.jpg.webp",
-            "image": " audeze-mm500.jpg"
+            "image_url":"https://headfonics.com/wp-content/uploads/2022/09/audeze-mm500-review-2.jpg.webp",
+            "image": "audeze-mm500.jpg"
         }
     },
     {
@@ -102,12 +102,12 @@
         "fields": {
             "sku": "pp5002601115",
             "name": " ZMF Headphones Atrium",
-            "description": " As introductions go, the ZMF Headphones Atrium is an excellent one to start with. It easily ranks as one of the most agreeable sounding dynamic driver headphones I have tested in a long time. Massive soundstage. Natural sounding timbre. Beautifully designed.",
+            "description": "As introductions go, the ZMF Headphones Atrium is an excellent one to start with. It easily ranks as one of the most agreeable sounding dynamic driver headphones I have tested in a long time. Massive soundstage. Natural sounding timbre. Beautifully designed.",
             "price": 2499.99,
             "category": 3,
             "rating": 4,
-            "image_url": " https://headfonics.com/wp-content/uploads/2022/05/zmf-headphones-atirum-review.jpg.webp",
-            "image": " zmf-headphones-atirum.jpg"
+            "image_url": "https://headfonics.com/wp-content/uploads/2022/05/zmf-headphones-atirum-review.jpg.webp",
+            "image": "zmf-headphones-atirum.jpg"
         }
     },
     {
@@ -115,13 +115,13 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5002690715",
-            "name": " Final D8000",
-            "description": " The D8000 simply rocks. And I mean with just about every track or record or genre that means something to me from the vaults. Not many people know I started out in the late '80s as a music and live act reviewer so my collection is wide and deep but it's 'hard rock' and 'new wave synth' that I always go to first. This is a headphone with power. A headphone with a gutsy almost visceral low-end response that delivers a fantastic yet never overcooked bass fundamental to really drive hard rock and metal with enjoyable authority.",
+            "name": "Final D8000",
+            "description": "The D8000 simply rocks. And I mean with just about every track or record or genre that means something to me from the vaults. Not many people know I started out in the late '80s as a music and live act reviewer so my collection is wide and deep but it's 'hard rock' and 'new wave synth' that I always go to first. This is a headphone with power. A headphone with a gutsy almost visceral low-end response that delivers a fantastic yet never overcooked bass fundamental to really drive hard rock and metal with enjoyable authority.",
             "price": 3999,
             "category": 3,
             "rating": 4.7,
-            "image_url": " https://headfonics.com/wp-content/uploads/2018/10/final-d8000-tite.jpg.webp",
-            "image": " final-d8000.jpg"
+            "image_url": "https://headfonics.com/wp-content/uploads/2018/10/final-d8000-tite.jpg.webp",
+            "image": "final-d8000.jpg"
         }
     },
     {
@@ -130,12 +130,12 @@
         "fields": {
             "sku": "pp5002701115",
             "name": " Abyss Headphones Diana TC",
-            "description": " It is hard to overstate just how good the Abyss Headphones Diana TC is for such a small and cute-looking planar headphone. It belies its diminutive form factor with a superlative and engrossing performance that takes the Phi pitch to the next level. Very fast and articulate performance. Compact and robust design. Much improved comfort levels.",
+            "description": "It is hard to overstate just how good the Abyss Headphones Diana TC is for such a small and cute-looking planar headphone. It belies its diminutive form factor with a superlative and engrossing performance that takes the Phi pitch to the next level. Very fast and articulate performance. Compact and robust design. Much improved comfort levels.",
             "price": 4495,
             "category": 3,
             "rating": 4.4,
-            "image_url": " https://headfonics.com/wp-content/uploads/2022/06/abyss-headphones-diana-tc-review-2.jpg.webp",
-            "image": " abyss-headphones-diana.jpg"
+            "image_url": "https://headfonics.com/wp-content/uploads/2022/06/abyss-headphones-diana-tc-review-2.jpg.webp",
+            "image": "abyss-headphones-diana.jpg"
         }
     },
     {
@@ -143,7 +143,7 @@
         "model": "products.product",
         "fields": {
           "sku": "pp5002761055",
-          "name": " Noble Audio Viking Ragnar",
+          "name": "Noble Audio Viking Ragnar",
           "description": "The Noble Audio Viking Ragnar is probably the company's most high-fidelity in-ear monitor to date. It is also unique from the competition in its spatial grandeur but no less of a technical performer with impressive levels of precise imaging and detail. Superb resolution. Intricate design. Excellent passive isolation.",
           "price": 4000,
           "category": 5,
@@ -157,13 +157,13 @@
         "model": "products.product",
         "fields": {
           "sku": "pp5002820069",
-          "name": " Aroma Audio Jewel",
-          "description": " There is no doubt that the Aroma Audio Jewel is a gem. Not just because of how it looks but in relation to its ability to produce a highly resolving and coherent listening experience with precision. Impeccable coherency. Crystal Clear Midrange. Incredible soundstage, imaging & layering.",
-          "price": 5146,
+          "name": "FiR Audio Krypton 5",
+          "description": "The FiR Audio Krypton 5 is one seriously impressive custom monitor with perhaps the most exciting or 'driven' tuning profiles I have heard this year in an IEM. That Kinetic bass drops bombs left right and center without sounding fuzzy or overly bloomy. This is not a soft enveloping pillowy low-end, it's firm, defined, and breathtaking in its execution. High energy bass performance. Excellent isolation. Attractive design",
+          "price": 2999,
           "category": 5,
-          "rating": 4.6,
-          "image_url": " https://headfonics.com/wp-content/uploads/2022/11/Aroma-Audio-Jewel-review-featured-image.jpg.webp",
-          "image": " Aroma-Audio-Jewel.jpg"
+          "rating": 4.8,
+          "image_url": "https://headfonics.com/wp-content/uploads/2022/11/fir-audio-krypton-5-review-featured-image.jpg.webp",
+          "image": "fir-audio-krypton.jpg"
         }
       },
       {
@@ -177,7 +177,7 @@
           "category": 5,
           "rating": 4.2,
           "image_url": "https://headfonics.com/wp-content/uploads/2020/09/DSCF4215b.jpg.webp",
-          "image": " empire-ears-odin.jpg"
+          "image": "empire-ears-odin.jpg"
         }
       },
       {
@@ -186,12 +186,12 @@
         "fields": {
           "sku": "pp5002910572",
           "name": " Lime Ears Anima",
-          "description": " The Lime Ears Anima is a balanced yet joyful tuning with a deep resonating bass performance and almost ethereal highs with plenty of headroom from those e-stat drivers. It competes well with other hybrid electrostatic standard-bearers such as the Odin and the EXT but is unique enough to set it apart as a viable alternative on your shopping list.",
+          "description": "The Lime Ears Anima is a balanced yet joyful tuning with a deep resonating bass performance and almost ethereal highs with plenty of headroom from those e-stat drivers. It competes well with other hybrid electrostatic standard-bearers such as the Odin and the EXT but is unique enough to set it apart as a viable alternative on your shopping list.",
           "price": 3400,
           "category": 5,
           "rating": 4.7,
-          "image_url": " https://headfonics.com/wp-content/uploads/2022/03/lime-ears-anima-review.jpg.webp",
-          "image": " lime-ears-anima.jpg"
+          "image_url": "https://headfonics.com/wp-content/uploads/2022/03/lime-ears-anima-review.jpg.webp",
+          "image": "lime-ears-anima.jpg"
         }
       },
       {
@@ -205,7 +205,7 @@
           "category": 5,
           "rating": 4.8,
           "image_url": "https://headfonics.com/wp-content/uploads/2021/12/DSCF6058.jpg.webp",
-          "image": " vision-ears-ext.jpg"
+          "image": "vision-ears-ext.jpg"
         }
       },
       {
@@ -218,8 +218,8 @@
           "price": 1899,
           "category": 5,
           "rating": 4.4,
-          "image_url": " https://headfonics.com/wp-content/uploads/2020/01/DSCF2576.jpg.webp",
-          "image": " campfire-audio-solaris-SE.jpg"
+          "image_url": "https://headfonics.com/wp-content/uploads/2020/01/DSCF2576.jpg.webp",
+          "image": "campfire-audio-solaris-SE.jpg"
         }
       },
       {
@@ -232,8 +232,8 @@
           "price": 3500,
           "category": 5,
           "rating": 4.4,
-          "image_url": " https://headfonics.com/wp-content/uploads/2022/02/Vision-Ears-Phonix-Review-1.jpg.webp",
-          "image": " Vision-Ears-Phonix.jpg"
+          "image_url": "https://headfonics.com/wp-content/uploads/2022/02/Vision-Ears-Phonix-Review-1.jpg.webp",
+          "image": "Vision-Ears-Phonix.jpg"
         }
       },
       {
@@ -242,12 +242,12 @@
         "fields": {
           "sku": "pp5003090182",
           "name": " Audeze LCDi4",
-          "description": " Despite the fact this will be filed under earphones/IEMs the LCDi4 is anything but that. Its unique design, presentation, and in-depth DSP pulls it above into some sort of super-tiny headphone category but with a sound quality that is anything but super tiny.",
+          "description": "Despite the fact this will be filed under earphones/IEMs the LCDi4 is anything but that. Its unique design, presentation, and in-depth DSP pulls it above into some sort of super-tiny headphone category but with a sound quality that is anything but super tiny.",
           "price": 2495,
           "category": 5,
           "rating": 4,
           "image_url": "https://headfonics.com/wp-content/uploads/2018/07/lcdi4-title.jpg.webp",
-          "image": " audeze-lcdi4.jpg"
+          "image": "audeze-lcdi4.jpg"
         }
       },
       {
@@ -275,7 +275,7 @@
           "category": 5,
           "rating": 4.7,
           "image_url": "https://headfonics.com/wp-content/uploads/2022/09/sennheiser-ie600-review-feature-image.jpg.webp",
-          "image": " sennheiser-ie600.jpg"
+          "image": "sennheiser-ie600.jpg"
         }
       },
       {
@@ -284,12 +284,12 @@
         "fields": {
           "sku": "pp5003230723",
           "name": " HiBy RS8",
-          "description": " The HiBy RS8 is one of the most complete DAPs launched to date. It has the most advanced operating system, a unique architecture evolved from the RS6, and quite obviously packs in my DAC of choice, R-2R. Not just R-2R for the sake of it but desktop decoding levels of R-2R and a level of audible quality that competes with the gold standard, the P6 Pro from Luxury and Precision. Natural and expansive R2R Sound. Android 12. Excellent Turbo Mode.",
+          "description": "The HiBy RS8 is one of the most complete DAPs launched to date. It has the most advanced operating system, a unique architecture evolved from the RS6, and quite obviously packs in my DAC of choice, R-2R. Not just R-2R for the sake of it but desktop decoding levels of R-2R and a level of audible quality that competes with the gold standard, the P6 Pro from Luxury and Precision. Natural and expansive R2R Sound. Android 12. Excellent Turbo Mode.",
           "price": 3299,
           "category": 6,
           "rating": 4.6,
-          "image_url": " https://headfonics.com/wp-content/uploads/2022/11/hiby-rs8-review-featured-image.jpg.webp",
-          "image": " hiby-rs8.jpg"
+          "image_url": "https://headfonics.com/wp-content/uploads/2022/11/hiby-rs8-review-featured-image.jpg.webp",
+          "image": "hiby-rs8.jpg"
         }
       },
       {
@@ -298,12 +298,12 @@
         "fields": {
           "sku": "pp5003270936",
           "name": "iBasso DX300 MAX",
-          "description": " The iBasso DX300 MAX is an utterly brilliant-sounding DAP and handily knocks the DX220 MAX off its award-winning 2020 perch. It is faster, more powerful, cleaner, and more resolving than the older version.",
+          "description": "The iBasso DX300 MAX is an utterly brilliant-sounding DAP and handily knocks the DX220 MAX off its award-winning 2020 perch. It is faster, more powerful, cleaner, and more resolving than the older version.",
           "price": 2290,
           "category": 6,
           "rating": 4.6,
           "image_url": "https://headfonics.com/wp-content/uploads/2021/10/ibasso-dx300-max-review.jpg.webp",
-          "image": " ibasso-dx300-max.jpg"
+          "image": "ibasso-dx300-max.jpg"
         }
       },
       {
@@ -312,12 +312,12 @@
         "fields": {
           "sku": "pp5003360384",
           "name": " FiiO M17",
-          "description": " The FiiO M17 is a huge DAP but with a huge sound. It is also probably one of the most complete portable audio devices I have reviewed to date. Both headphone and IEM users will find the M17 has both the deftness and the sheer grunt to satisfy both. DC Mode is a pure joy to use for demanding planar headphones in particular. Very powerful amplifier. Robust and unique design. Modern Android version.",
+          "description": "The FiiO M17 is a huge DAP but with a huge sound. It is also probably one of the most complete portable audio devices I have reviewed to date. Both headphone and IEM users will find the M17 has both the deftness and the sheer grunt to satisfy both. DC Mode is a pure joy to use for demanding planar headphones in particular. Very powerful amplifier. Robust and unique design. Modern Android version.",
           "price": 1799,
           "category": 6,
           "rating": 4.8,
           "image_url": "https://headfonics.com/wp-content/uploads/2022/01/fiio-m17-review.jpg.webp",
-          "image": " fiio-m17.jpg"
+          "image": "fiio-m17.jpg"
         }
       },
       {
@@ -326,12 +326,12 @@
         "fields": {
           "sku": "pp5003440111",
           "name": " Luxury & Precision P6 Pro",
-          "description": " As a pure music player or for quality audio in a compact portable form factor, nothing can come close to the performance of the P6 Pro. It takes everything magical and wonderful about the R2R sound of the P6 and injects greater urgency, a slightly more accurate harmonic balance, and a big upgrade in dynamics.. ",
+          "description": "As a pure music player or for quality audio in a compact portable form factor, nothing can come close to the performance of the P6 Pro. It takes everything magical and wonderful about the R2R sound of the P6 and injects greater urgency, a slightly more accurate harmonic balance, and a big upgrade in dynamics.. ",
           "price": 3899,
           "category": 6,
           "rating": 4,
-          "image_url": " https://headfonics.com/wp-content/uploads/2021/05/luxury-and-precision-p6-pro.jpg.webp",
-          "image": " luxury-and-precision-p6-pro.jpg"
+          "image_url": "https://headfonics.com/wp-content/uploads/2021/05/luxury-and-precision-p6-pro.jpg.webp",
+          "image": "luxury-and-precision-p6-pro.jpg"
         }
       },
       {
@@ -340,12 +340,12 @@
         "fields": {
           "sku": "pp5003540313",
           "name": " Lotoo PAW Gold Touch",
-          "description": " The combination of tech and sound tweaking is dangerously addictive. More importantly than that it's almost perfect for sensitive monitors with its transparent, hyper-detailed reference sound signature.",
+          "description": "The combination of tech and sound tweaking is dangerously addictive. More importantly than that it's almost perfect for sensitive monitors with its transparent, hyper-detailed reference sound signature.",
           "price": 3199,
           "category": 6,
           "rating": 3.8,
           "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP1108201317050996M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-          "image": " lotoo-PAW-gold.jpg"
+          "image": "lotoo-PAW-gold.jpg"
         }
       },
       {
@@ -354,12 +354,12 @@
         "fields": {
           "sku": "pp5003560513",
           "name": " Cayin N8",
-          "description": " The N8 rightfully takes its chair at the TOTL digital media player table. Not because it is one of the best sounding players out there but simply because they dared to do something different and something that has not been done before in a DAP..",
+          "description": "The N8 rightfully takes its chair at the TOTL digital media player table. Not because it is one of the best sounding players out there but simply because they dared to do something different and something that has not been done before in a DAP..",
           "price": 3299,
           "category": 6,
           "rating": 4.4,
-          "image_url": " https://headfonics.com/wp-content/uploads/2018/10/DSC05343.jpg.webp",
-          "image": " cayin-n8.jpg"
+          "image_url": "https://headfonics.com/wp-content/uploads/2018/10/DSC05343.jpg.webp",
+          "image": "cayin-n8.jpg"
         }
       },
       {
@@ -368,7 +368,7 @@
         "fields": {
           "sku": "pp5003560948",
           "name": " Hidizs AP80 Pro-X Red Copper Edition",
-          "description": " The Hidizs AP80 Pro-X Red Copper Edition treble is stunning. The build quality is absurdly great, the output power is getting close to negating the need for portable amplifiers, and the UI is ungodly fast and potent compared to the past models that feel much more sluggish and slower. Good power for a small DAP. Beautiful finishing and materials.",
+          "description": "The Hidizs AP80 Pro-X Red Copper Edition treble is stunning. The build quality is absurdly great, the output power is getting close to negating the need for portable amplifiers, and the UI is ungodly fast and potent compared to the past models that feel much more sluggish and slower. Good power for a small DAP. Beautiful finishing and materials.",
           "price": 249,
           "category": 6,
           "rating": 3.8,
@@ -396,12 +396,12 @@
         "fields": {
           "sku": "pp5003620308",
           "name": " HiBy R6 Pro",
-          "description": " I still think the HiBy R6 Pro is a 'bang for buck' king for DAPs under 1k. The new tonal tuning gives it a more powerful sound and more pleasing timbre than the original R6. That lowered output impedance makes it much easier for sensitive IEM matchups.",
+          "description": "I still think the HiBy R6 Pro is a 'bang for buck' king for DAPs under 1k. The new tonal tuning gives it a more powerful sound and more pleasing timbre than the original R6. That lowered output impedance makes it much easier for sensitive IEM matchups.",
           "price": 799,
           "category": 6,
           "rating": 3.8,
-          "image_url": " https://headfonics.com/wp-content/uploads/2019/02/hiby-r6-pro-title.jpg.webp",
-          "image": " hiby-r6-pro.jpg"
+          "image_url": "https://headfonics.com/wp-content/uploads/2019/02/hiby-r6-pro-title.jpg.webp",
+          "image": "hiby-r6-pro.jpg"
         }
       },
       {
@@ -429,7 +429,7 @@
           "category": 1,
           "rating": 4.8,
           "image_url": "https://headfonics.com/wp-content/uploads/2020/02/DSCF2782.jpg.webp",
-          "image": " dCS-Bartok.jpg"
+          "image": "dCS-Bartok.jpg"
         }
       },
       {
@@ -438,11 +438,11 @@
         "fields": {
           "sku": "pp5003780391",
           "name": " Cayin HA-300MK2",
-          "description": " The Cayin HA-300MK2 is a fabulous sounding 300B SET flagship headphone amplifier. It has that classic slightly sweet or euphonic coloration combined with a seriously impressive holographic staging quality. Neither does it lack power for demanding headphones so dynamic range is never going to be an issue. Natural sound and wonderfully holographic soundstage. Incredible engineering quality. Versatile output power management",
+          "description": "The Cayin HA-300MK2 is a fabulous sounding 300B SET flagship headphone amplifier. It has that classic slightly sweet or euphonic coloration combined with a seriously impressive holographic staging quality. Neither does it lack power for demanding headphones so dynamic range is never going to be an issue. Natural sound and wonderfully holographic soundstage. Incredible engineering quality. Versatile output power management",
           "price": 4399,
           "category": 1,
           "rating": 4.8,
-          "image_url": " https://headfonics.com/wp-content/uploads/2022/06/cayin-ha-300mk2-review.jpg.webp",
+          "image_url": "https://headfonics.com/wp-content/uploads/2022/06/cayin-ha-300mk2-review.jpg.webp",
           "image": "cayin-ha-300mk2.jpg"
         }
       },
@@ -452,11 +452,11 @@
         "fields": {
           "sku": "pp5003790542",
           "name": " Feliks Audio Envy",
-          "description": " The Feliks Audio Envy is an absolute cracker of a tube amp. Yes, it is beyond affordable for many but for owners of the likes of the Susvara, Diana Phi, DCA Stealth, and any demanding headphone it is an almost mandatory demo just to see how well these headphones sing with this creation. Very powerful tuning. Excellent impedance matching. Gorgeous wood housing.",
+          "description": "The Feliks Audio Envy is an absolute cracker of a tube amp. Yes, it is beyond affordable for many but for owners of the likes of the Susvara, Diana Phi, DCA Stealth, and any demanding headphone it is an almost mandatory demo just to see how well these headphones sing with this creation. Very powerful tuning. Excellent impedance matching. Gorgeous wood housing.",
           "price": 6499,
           "category": 1,
           "rating": 4.5,
-          "image_url": " https://headfonics.com/wp-content/uploads/2022/03/feliks-audio-envy-review.jpg.webp",
+          "image_url": "https://headfonics.com/wp-content/uploads/2022/03/feliks-audio-envy-review.jpg.webp",
           "image": "feliks-audio-envy.jpg"
         }
       },
@@ -466,11 +466,11 @@
         "fields": {
           "sku": "pp5003831225",
           "name": " Violectric DHA V590",
-          "description": " The Violectric DHA V590 has a flagship-level amplifier performance with a smooth sounding integrated DAC and a quality volume control upgrade path. The resampleing feature is the icing on the cake.",
+          "description": "The Violectric DHA V590 has a flagship-level amplifier performance with a smooth sounding integrated DAC and a quality volume control upgrade path. The resampleing feature is the icing on the cake.",
           "price": 3499,
           "category": 1,
           "rating": 4.4,
-          "image_url": " https://headfonics.com/wp-content/uploads/2020/10/DSCF4230b.jpg",
+          "image_url": "https://headfonics.com/wp-content/uploads/2020/10/DSCF4230b.jpg",
           "image": "Violectric-DHA-V590.jpg"
         }
       },
@@ -480,12 +480,12 @@
         "fields": {
           "sku": "pp5003861402",
           "name": "Auris Audio HA-2SE",
-          "description": " The Auris Audio HA-2SE is a really excellent sounding headphone tube amp. More than that it is an amp that I find myself wanting to use both on a recreational casual listening level as well as the times when I want to take a more studied approach. It has an enticingly quiet, balanced, and analog-type sound with just a hint of wetness but nothing painfully slow. It is just so easy to listen to.",
+          "description": "The Auris Audio HA-2SE is a really excellent sounding headphone tube amp. More than that it is an amp that I find myself wanting to use both on a recreational casual listening level as well as the times when I want to take a more studied approach. It has an enticingly quiet, balanced, and analog-type sound with just a hint of wetness but nothing painfully slow. It is just so easy to listen to.",
           "price": 2070,
           "category": 1,
           "rating": 4.5,
-          "image_url": " https://headfonics.com/wp-content/uploads/2018/09/auris-ha-2se-title.jpg",
-          "image": " auris-ha-2se.jpg"
+          "image_url": "https://headfonics.com/wp-content/uploads/2018/09/auris-ha-2se-title.jpg",
+          "image": "auris-ha-2se.jpg"
         }
       },
       {
@@ -499,7 +499,7 @@
           "category": 1,
           "rating": 4.3,
           "image_url": "https://headfonics.com/wp-content/uploads/2018/06/formula-s-title.jpg.webp",
-          "image": " xi-audio-broadway.jpg"
+          "image": "xi-audio-broadway.jpg"
         }
       },
       {
@@ -512,7 +512,7 @@
           "price": 2395,
           "category": 1,
           "rating": 4,
-          "image_url": " https://headfonics.com/wp-content/uploads/2022/04/ferrum-erco-review.jpg.webp",
+          "image_url": "https://headfonics.com/wp-content/uploads/2022/04/ferrum-erco-review.jpg.webp",
           "image": "ferrum-erco.jpg"
         }
       },
@@ -536,12 +536,12 @@
         "fields": {
           "sku": "pp5003960062",
           "name": " XI Audio Broadway",
-          "description": " This is an excellent, compact, and very unique little high-end amplifier. It does not look like much, perhaps a little utilitarian but stacks beautifully with compact balanced DAC's such as the Topping D90 and the older Oppo Sonica DAC. The balanced design has some excellent grunt with minimal distortion levels and a low sound floor.",
+          "description": "This is an excellent, compact, and very unique little high-end amplifier. It does not look like much, perhaps a little utilitarian but stacks beautifully with compact balanced DAC's such as the Topping D90 and the older Oppo Sonica DAC. The balanced design has some excellent grunt with minimal distortion levels and a low sound floor.",
           "price": 2299,
           "category": 1,
           "rating": 4.5,
           "image_url": "https://headfonics.com/wp-content/uploads/2019/10/DSCF1222.jpg.webp",
-          "image": " xi-audio-broadway.jpg"
+          "image": "xi-audio-broadway.jpg"
         }
       },
       {
@@ -555,7 +555,7 @@
           "category": 1,
           "rating": 4.5,
           "image_url": "https://headfonics.com/wp-content/uploads/2022/11/earmen-ch-amp-review-featured-image.jpg.webp",
-          "image": "DP0430201405213832M.jpg"
+          "image": "earmen-ch-amp.jpg"
         }
       }    
 ]

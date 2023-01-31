@@ -136,10 +136,6 @@ body {
     background-color: white;
 }
 
-#searchbar {
-    background-color: white;
-}
-
-#icons-nav {
-    background-color: white;
+#main-nav-header h1 {
+    font-family: 'Megrim';
 }
