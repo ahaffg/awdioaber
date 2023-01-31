@@ -139,3 +139,13 @@ body {
 #main-nav-header h1 {
     font-family: 'Megrim';
 }
+
+#footer-div {
+    background-color: white;
+}
+
+#footer-div li {
+    padding: 1vh;
+    list-style:none;
+    color: #000;
+}

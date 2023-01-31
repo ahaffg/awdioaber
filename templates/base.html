@@ -2,182 +2,182 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
 
-    {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {% endblock %}
+<head>
 
-    {% block extra_meta %}
-    {% endblock %}
+  {% block meta %}
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {% endblock %}
 
-    {% block corecss %}
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Megrim&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap">
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  {% block extra_meta %}
+  {% endblock %}
 
-    {% endblock %}
+  {% block corecss %}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Megrim&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
 
-    {% block extra_css %}
-    {% endblock %}
+  {% endblock %}
 
-    {% block corejs %}
-    <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    {% endblock %}
+  {% block extra_css %}
+  {% endblock %}
 
-    {% block extra_js %}
-    {% endblock %}
+  {% block corejs %}
+  <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  {% endblock %}
 
-    <title>Awdio Aber {% block extra_title %}{% endblock %}</title>
-  </head>
-  <body>
-    <header  class="container-fluid fixed-top">
-        <div id="main-nav-header" class="row">
-            <div  class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h1 class="logo-font text-black my-0">Awdio Aber</h1>
-                </a>
+  {% block extra_js %}
+  {% endblock %}
+
+  <title>Awdio Aber {% block extra_title %}{% endblock %}</title>
+</head>
+
+<body>
+  <header class="container-fluid fixed-top">
+    <div id="main-nav-header" class="row">
+      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+        <a href="{% url 'home' %}" class="nav-link main-logo-link">
+          <h1 class="logo-font text-black my-0">Awdio Aber</h1>
+        </a>
+      </div>
+      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+        <form method="GET" action="{% url 'products' %}">
+          <div class="input-group w-100">
+            <input class="form-control border border-black rounded-0" type="text" name="q"
+              placeholder="Search our site">
+            <div class="input-group-append">
+              <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                <span class="icon">
+                  <i class="fas fa-search"></i>
+                </span>
+              </button>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <form method="GET" action="{% url 'products' %}">
-                    <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
-                        <div class="input-group-append">
-                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
-                                <span class="icon">
-                                    <i class="fas fa-search"></i>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                </form>
+          </div>
+        </form>
+      </div>
+      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+        <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+          <li class="list-inline-item dropdown">
+            <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <div class="text-center">
+                <div><i class="fas fa-user fa-lg"></i></div>
+                <p class="my-0">My Account</p>
+              </div>
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+              {% if request.user.is_authenticated %}
+              {% if request.user.is_superuser %}
+              <a href="" class="dropdown-item">Product Management</a>
+              {% endif %}
+              <a href="" class="dropdown-item">My Profile</a>
+              <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+              {% else %}
+              <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+              <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+              {% endif %}
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                    <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div class="text-center">
-                                <div><i class="fas fa-user fa-lg"></i></div>
-                                <p class="my-0">My Account</p>
-                            </div>
-                        </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                            {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                    <a href="" class="dropdown-item">Product Management</a>
-                                {% endif %}
-                                <a href="" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                            {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                            {% endif %}
-                        </div>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
-                            <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                <p class="my-0">
-                                    {% if grand_total %}
-                                        ${{ grand_total|floatformat:2 }}
-                                    {% else %}
-                                        $0.00
-                                    {% endif %}
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
-        </div>
-        <div class="row bg-white">
-            <nav class="navbar navbar-expand-lg navbar-light w-100">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                {% include 'includes/mobile-header.html' %}
-                {% include 'includes/main-nav.html' %}
-            </nav>
-        </div>
-        <div id="delivery-banner" class="row text-center">
-            <div class="col bg-black text-white">
-                <h4 class="logo-font my-1">First month free for new CLWB AWDIO members!</h4>                
-            </div>            
-        </div>
-    </header>
+          </li>
+          <li class="list-inline-item">
+            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+              <div class="text-center">
+                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                <p class="my-0">
+                  {% if grand_total %}
+                  ${{ grand_total|floatformat:2 }}
+                  {% else %}
+                  $0.00
+                  {% endif %}
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
+    </div>
+    <div class="row bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light w-100">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+          aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        {% include 'includes/mobile-header.html' %}
+        {% include 'includes/main-nav.html' %}
+      </nav>
+    </div>
+    <div id="delivery-banner" class="row text-center">
+      <div class="col bg-black text-white">
+        <h4 class="logo-font my-1">First month free for new CLWB AWDIO members!</h4>
+      </div>
+    </div>
+  </header>
 
-    {% if messages %}
-        <div class="message-container"></div>
-    {% endif %}
+  {% if messages %}
+  <div class="message-container"></div>
+  {% endif %}
 
-    {% block page_header %}
-    {% endblock %}
+  {% block page_header %}
+  {% endblock %}
 
-    {% block content %}
-    {% endblock %}
+  {% block content %}
+  {% endblock %}
 
-    {% block postloadjs %}
-    {% endblock %}
+  {% block postloadjs %}
+  {% endblock %}
 
-<footer class="container-fluid bottom">
-<div class="container">
+  <footer class="container-fluid bottom">
+    <div id="footer-div" class="container">
       <div class="row">
-        <div class="col l6 s12">
+        <div class="col l6 s12 text-center">
           <h5 class="white-text text-shadow">Awdio Aber
           </h5>
           <ul>
             <li><a href="" class="nav-link main-logo-link logo-font text-black my-0">
-                Contact
-            </a></li>
+            </i>Contact
+              </a></li>
             <li><a href="" class="nav-link main-logo-link logo-font text-black my-0">
                 Terms and Conditions
-            </a></li>
+              </a></li>
             <li><a href="" class="nav-link main-logo-link logo-font text-black my-0">
                 Privacy Policy
-            </a></li>
+              </a></li>
           </ul>
         </div>
         <div class="col l3 s12">
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Connect
+          <h5 class="text-center">Connect
           </h5>
-          <ul>
-            <li>
-              <a class="white-text" href="https://en-gb.facebook.com/" target="_blank">
-                <i class="fa-brands fa-facebook"> F a c e b o o k
-                </i>
-              </a>
-            </li>
-            <li>
-              <a class="white-text light" href="https://www.instagram.com/" target="_blank">
-                <i class="fa-brands fa-instagram"> I n s t a g r a m
-                </i>
-              </a>
-            </li>
-            <li>
-              <a class="white-text light" href="https://twitter.com/" target="_blank">
-                <i class="fa-brands fa-twitter"> T w i t t e r
-                </i>
-              </a>
-            </li>
-            <li>
-              <a class="white-text light" href="https://www.tiktok.com/" target="_blank">
-                <i class="fa-brands fa-tiktok"> T i k T o k
-                </i>
-              </a>
-            </li>
+          <ul class="text-center">
+            <li><a href="https://en-gb.facebook.com/" target="_blank"
+                class="nav-link main-logo-link logo-font text-black my-0">
+                Facebook
+              </a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"
+                class="nav-link main-logo-link logo-font text-black my-0">
+                Instagram
+              </a></li>
+            <li><a href="https://www.tiktok.com/" target="_blank"
+                class="nav-link main-logo-link logo-font text-black my-0">
+                Tik Tok
+              </a></li>
           </ul>
         </div>
       </div>
@@ -186,13 +186,14 @@
       <div class="container">
         <p class="copyright text-muted white-text text-center">Copyright <script>
             $("#copyright").text(new Date().getFullYear());
-        </script> Awdio Aber
+          </script> Awdio Aber
           <span id="copyright">
           </span>
         </p>
       </div>
     </div>
-</footer>
-    
+  </footer>
+
   </body>
-</html>
+
+  </html>
