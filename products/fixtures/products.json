@@ -557,5 +557,145 @@
           "image_url": "https://headfonics.com/wp-content/uploads/2022/11/earmen-ch-amp-review-featured-image.jpg.webp",
           "image": "earmen-ch-amp.jpg"
         }
-      }    
+      },
+      {
+        "pk": 41,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003960775",
+          "name": " Chord Electronics Mojo 2",
+          "description": "The Chord Electronics Mojo 2 stock sound feels more accurate and energetic compared to the V1. The new UHD DSP suite is seamless in terms of having no impact on dynamic range and a lack of volume attenuation. Rewarding DSP System. Improved dynamic range over the original. Addition of USB-C output. ",
+          "price": 449,
+          "category": 7,
+          "rating": 4.6,
+          "image_url": "https://headfonics.com/wp-content/uploads/2022/01/chord-electronics-mojo-2-review.jpg.webp",
+          "image": "chord-electronics-mojo-2.jpg"
+        }
+      },
+      {
+        "pk": 42,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003990736",
+          "name": " FiiO Q7",
+          "description": "The FiiO Q7 SRP is on point for me. This is an offering drenched in value if you need a transportable amp and DAC with huge power and loads of I/O options in a relatively compact and attractively made form factor. Energetic tuning. High output power. Excellent Bluetooth range.",
+          "price": 799,
+          "category": 7,
+          "rating": 4.5,
+          "image_url": "https://headfonics.com/wp-content/uploads/2022/11/fiio-q7-review-featured-image.jpg.webp",
+          "image": "fiio-q7.jpg"
+        }
+      },
+      {
+        "pk": 43,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003990746",
+          "name": "iFi Audio ZEN One Signature",
+          "description": "The iFi Audio ZEN One Signature DAC might have eliminated the need for their own ZEN Signature series DAC since it seems it is slightly improved sonically, particularly in noise floor and hiss production but not so much in tonality although the listed specifications would not make it seem so. Good sound quality. Low noise floor. Robust construction.",
+          "price": 349,
+          "category": 7,
+          "rating": 3.8,
+          "image_url": "https://headfonics.com/wp-content/uploads/2022/04/IFI-AUDIO-ZEN-ONE-SIGNATURE-review.jpg.webp",
+          "image": "IFI-AUDIO-ZEN-ONE.jpg"
+        }
+      },
+      {
+        "pk": 44,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5004111503",
+          "name": "Cayin C9",
+          "description": "The Cayin C9 is the company's most refined version yet of their DOA and timbre technology inside their portable audio gear. Not only that, but it also revitalizes tubes on the go, a traditional niche in our hobby that seems to be forgotten in the head-long rush to find that one DAP on steroids.",
+          "price": 1999,
+          "category": 7,
+          "rating": 4.5,
+          "image_url": "https://headfonics.com/wp-content/uploads/2021/01/cayin-c9-2.jpg",
+          "image": "cayin-c9-2.jpg"
+        }
+      },
+      {
+        "pk": 45,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5004230059",
+          "name": "Denafrips Ares II",
+          "description": "The sound is wide and natural with defined layering and neutral tonality. The Ares II’s attributes are not dripping in obvious coloration rather it has a beautifully natural sound that makes it easy to enjoy whilst still being strikingly accurate and detailed.",
+          "price": 772,
+          "category": 7,
+          "rating": 4.2,
+          "image_url": "https://headfonics.com/wp-content/uploads/2021/05/Denafrips-Ares-II-5.jpg.webp",
+          "image": "Denafrips-Ares-II.jpg"
+        }
+      },
+      {
+        "pk": 46,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5004310089",
+          "name": " EarMen Angel",
+          "description": "The EarMen Angel conceals in its cool form factor an excitingly transparent sound comparable to full-size desktop counterparts that inspires listening on the go with confidence.",
+          "price": 799,
+          "category": 7,
+          "rating": 4.2,
+          "image_url": "https://headfonics.com/wp-content/uploads/2022/11/earmen-angel-review-featured-image.jpg.webp",
+          "image": "earmen-angel.jpg"
+        }
+      },
+      {
+        "pk": 47,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5004610254",
+          "name": " iFi Audio xDSD Gryphon",
+          "description": "Besides the slight thump on operating the Xbass switch, the iFi Audio xDSD Gryphon is an almost, almost perfect portable solution that can go beyond its duty by also functioning as separate components. The excellent sound quality is just the cherry on top. Excellent output power. Bluetooth performance. Versatile features.",
+          "price": 599,
+          "category": 7,
+          "rating": 4.1,
+          "image_url": "https://headfonics.com/wp-content/uploads/2022/03/ifi-audio-xdsd-gryphon-review-2.jpg.webp",
+          "image": "ifi-audio-xdsd-gryphon.jpg"
+        }
+      },
+      {
+        "pk": 48,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5004650050",
+          "name": " Chord Electronics Hugo 2",
+          "description": "The Chord Hugo 2 is a DAC and then some. In some ways, I am convinced the Hugo 2 is the lovechild of the Mojo and Hugo 1 such is the degree of harmony of the two designs. Would the Hugo 2 have been possible without the Mojo? I doubt it.",
+          "price": 1800,
+          "category": 7,
+          "rating": 4.4,
+          "image_url": "https://headfonics.com/wp-content/uploads/2017/09/hugo-title.jpg.webp",
+          "image": "hugo-title.jpg"
+        }
+      },
+      {
+        "pk": 49,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5004821375",
+          "name": " iFi Audio Micro iDSD Signature",
+          "description": "The iFi Micro iDSD Signature series DAC amplifier is a fun machine capable of driving practically every headphone out there while at the same time remaining highly musical and hiss free and taking up a minimum amount of space on a desktop doing so..",
+          "price": 649,
+          "category": 7,
+          "rating": 3.9,
+          "image_url": "https://headfonics.com/wp-content/uploads/2021/03/iFi-Micro-iDSD-signature-series-2.jpg",
+          "image": "iFi-Micro-iDSD-signature-series-2.jpg"
+        }
+      },
+      {
+        "pk": 50,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5004900522",
+          "name": " Little Dot DAC VII",
+          "description": "The DAV VII has bags of energy, body, and excellent PRaT with our tested amps. Vocals are also to the fore, vivid and firm sounding. Nothing neutral, too clean, or sterile sounding so pick the right amp and this DAC will do a great job filling out a headphone with excellent bass potential.",
+          "price": 1199,
+          "category": 7,
+          "rating": 4.4,
+          "image_url": "https://headfonics.com/wp-content/uploads/2021/06/DSCF4189.jpg.webp",
+          "image": "little-dot-VII.jpg"
+        }
+      }
 ]
