@@ -4,7 +4,7 @@
         "fields": {
             "sku": "pp5001340155",
             "name": "Dekoni Audio Blue",
-            "description": "If you’re looking for a fun headphone to listen to, one with further improvement capability and robust enough so you don’t have to handle them with white gloves then give the Dekoni Audio Blue a try by all means. Dark V shaped and fun sound signature. Rugged construction. Leagues above the original variant in comfort levels.",
+            "description": "If you are looking for a fun headphone to listen to, one with further improvement capability and robust enough so you do not have to handle them with white gloves then give the Dekoni Audio Blue a try by all means. Dark V shaped and fun sound signature. Rugged construction. Leagues above the original variant in comfort levels.",
             "price": 249.99,
             "category": 3,
             "rating": 4.6,
@@ -18,7 +18,7 @@
         "fields": {
             "sku": "pp5001600425",
             "name": " HIFIMAN Sundara Closed Back Review",
-            "description": " Is the HIFIMAN Sundara Closed Back better than the original Sundara? Each model has its selling points. The Closed Back seems to be unveiled, but it lacks some low-end grunt which can be easily remedied up to a point. So there’s the tradeoff. Very good midrange definition. Excellent isolation levels and very little bleed. Beautiful Beechwood cups",
+            "description": " Is the HIFIMAN Sundara Closed Back better than the original Sundara? Each model has its selling points. The Closed Back seems to be unveiled, but it lacks some low-end grunt which can be easily remedied up to a point. So there is the tradeoff. Very good midrange definition. Excellent isolation levels and very little bleed. Beautiful Beechwood cups",
             "price": 399,
             "category": 3,
             "rating": 4.7,
@@ -417,5 +417,145 @@
           "image_url": "https://headfonics.com/wp-content/uploads/2020/09/DSCF4071.jpg",
           "image": "HiBy-R8.jpg"
         }
-      }
+    },
+    {
+        "pk": 31,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003690116",
+          "name": " dCS Bartok",
+          "description": "The dCS Bartok is probably the best sounding integrated DAC and headphone amplifier I have reviewed to date in the 10 years we have been operating this website. That is some statement but I will not future proof it because, well, the Bartok is modular, it is firmware upgradeable, and has plenty of legs in it to go on for a few years more and still stay relevant. Beautiful natural and weighted tone. Excellent Mosaic app integration. Robust build quality. ",
+          "price": 1725,
+          "category": 1,
+          "rating": 4.8,
+          "image_url": "https://headfonics.com/wp-content/uploads/2020/02/DSCF2782.jpg.webp",
+          "image": " dCS-Bartok.jpg"
+        }
+      },
+      {
+        "pk": 32,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003780391",
+          "name": " Cayin HA-300MK2",
+          "description": " The Cayin HA-300MK2 is a fabulous sounding 300B SET flagship headphone amplifier. It has that classic slightly sweet or euphonic coloration combined with a seriously impressive holographic staging quality. Neither does it lack power for demanding headphones so dynamic range is never going to be an issue. Natural sound and wonderfully holographic soundstage. Incredible engineering quality. Versatile output power management",
+          "price": 4399,
+          "category": 1,
+          "rating": 4.8,
+          "image_url": " https://headfonics.com/wp-content/uploads/2022/06/cayin-ha-300mk2-review.jpg.webp",
+          "image": "cayin-ha-300mk2.jpg"
+        }
+      },
+      {
+        "pk": 33,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003790542",
+          "name": " Feliks Audio Envy",
+          "description": " The Feliks Audio Envy is an absolute cracker of a tube amp. Yes, it is beyond affordable for many but for owners of the likes of the Susvara, Diana Phi, DCA Stealth, and any demanding headphone it is an almost mandatory demo just to see how well these headphones sing with this creation. Very powerful tuning. Excellent impedance matching. Gorgeous wood housing.",
+          "price": 6499,
+          "category": 1,
+          "rating": 4.5,
+          "image_url": " https://headfonics.com/wp-content/uploads/2022/03/feliks-audio-envy-review.jpg.webp",
+          "image": "feliks-audio-envy.jpg"
+        }
+      },
+      {
+        "pk": 34,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003831225",
+          "name": " Violectric DHA V590",
+          "description": " The Violectric DHA V590 has a flagship-level amplifier performance with a smooth sounding integrated DAC and a quality volume control upgrade path. The resampleing feature is the icing on the cake.",
+          "price": 3499,
+          "category": 1,
+          "rating": 4.4,
+          "image_url": " https://headfonics.com/wp-content/uploads/2020/10/DSCF4230b.jpg",
+          "image": "Violectric-DHA-V590.jpg"
+        }
+      },
+      {
+        "pk": 35,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003861402",
+          "name": "Auris Audio HA-2SE",
+          "description": " The Auris Audio HA-2SE is a really excellent sounding headphone tube amp. More than that it is an amp that I find myself wanting to use both on a recreational casual listening level as well as the times when I want to take a more studied approach. It has an enticingly quiet, balanced, and analog-type sound with just a hint of wetness but nothing painfully slow. It is just so easy to listen to.",
+          "price": 2070,
+          "category": 1,
+          "rating": 4.5,
+          "image_url": " https://headfonics.com/wp-content/uploads/2018/09/auris-ha-2se-title.jpg",
+          "image": " auris-ha-2se.jpg"
+        }
+      },
+      {
+        "pk": 36,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003910638",
+          "name": " Xi Audio Formula S",
+          "description": "The Formula S is a true top of the line solid-state amplifier. However, it does not shout out flagship through crude power numbers. Instead, it is much more nuanced in how it delivers its quality though it still has plenty of headroom for demanding cans. This is a linear but slightly sweet-sounding amplifier with a huge emphasis on resolution or detail, pace, and dynamic range.",
+          "price": 3499,
+          "category": 1,
+          "rating": 4.3,
+          "image_url": "https://headfonics.com/wp-content/uploads/2018/06/formula-s-title.jpg.webp",
+          "image": " xi-audio-broadway.jpg"
+        }
+      },
+      {
+        "pk": 37,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003950574",
+          "name": "Ferrum ERCO",
+          "description": "The Ferrum ERCO DAC is neutral to natural, accurate, and articulate. Its amplifier has bags of power to drive just about any headphone you want to throw at it. It is also incredibly simple to operate right out of the box. Balanced clear sound. Excellent output power. Beautiful compact stackable design.",
+          "price": 2395,
+          "category": 1,
+          "rating": 4,
+          "image_url": " https://headfonics.com/wp-content/uploads/2022/04/ferrum-erco-review.jpg.webp",
+          "image": "ferrum-erco.jpg"
+        }
+      },
+      {
+        "pk": 38,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003950576",
+          "name": "Auris Audio HA-2SF",
+          "description": "The Auris Audio HA-2SF is an upgrade in every sense of the word over the older HA-2SE. You get better output power, a palpable upgrade in dynamic range, enhanced resolution, and a sound signature that veers more to the natural and clean side than before. ",
+          "price": 2499,
+          "category": 1,
+          "rating": 4.5,
+          "image_url": "https://headfonics.com/wp-content/uploads/2021/05/auris-audio-ha-2sf-b.jpg.webp",
+          "image": "auris-audio-ha-2sf.jpg"
+        }
+      },
+      {
+        "pk": 39,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003960062",
+          "name": " XI Audio Broadway",
+          "description": " This is an excellent, compact, and very unique little high-end amplifier. It does not look like much, perhaps a little utilitarian but stacks beautifully with compact balanced DAC's such as the Topping D90 and the older Oppo Sonica DAC. The balanced design has some excellent grunt with minimal distortion levels and a low sound floor.",
+          "price": 2299,
+          "category": 1,
+          "rating": 4.5,
+          "image_url": "https://headfonics.com/wp-content/uploads/2019/10/DSCF1222.jpg.webp",
+          "image": " xi-audio-broadway.jpg"
+        }
+      },
+      {
+        "pk": 40,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp5003960682",
+          "name": " EarMen CH-Amp Amplifier",
+          "description": "Depending on what you are looking for in an amplifier, the positives of the EarMen CH-Amp are excellent detail retrieval and an impressive dark background. It has tons of power for most headphones out there. Solid image separation and clarity. Good IO for a compact setup. Multipurpose linear power supply out of the box",
+          "price": 1480,
+          "category": 1,
+          "rating": 4.5,
+          "image_url": "https://headfonics.com/wp-content/uploads/2022/11/earmen-ch-amp-review-featured-image.jpg.webp",
+          "image": "DP0430201405213832M.jpg"
+        }
+      }    
 ]
