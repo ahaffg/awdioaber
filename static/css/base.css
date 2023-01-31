@@ -131,4 +131,15 @@ body {
         height: calc(100vh - 116px);
     }
 }
-  
+
+#main-nav-header {
+    background-color: white;
+}
+
+#searchbar {
+    background-color: white;
+}
+
+#icons-nav {
+    background-color: white;
+}
