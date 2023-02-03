@@ -28,10 +28,9 @@ html {
 }
 
 body {
-	background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
 	background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
     font-family: 'Dosis';
 }
 
@@ -148,4 +147,20 @@ body {
     padding: 1vh;
     list-style:none;
     color: #000;
+}
+
+#hero-image{
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
 }
