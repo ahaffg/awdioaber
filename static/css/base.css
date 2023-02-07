@@ -28,7 +28,6 @@ html {
 }
 
 body {
-    background: /*url('/media/campfire-audio-solaris-SE.jpg')*/ no-repeat center center fixed;
 	background-size: cover;
     height: calc(100vh - 164px);
     font-family: 'Dosis';
@@ -149,13 +148,14 @@ a.category-badge > span.badge:hover {
 }
 
 #footer-div li {
-    padding: 1vh;
+    padding: 2vh;
     list-style:none;
     color: #000;
 }
 
-#hero-image{
-    background: /*url('/media/campfire-audio-solaris-SE.jpg')*/ no-repeat center center fixed;
+#hero-image {
+    background: no-repeat center center fixed;
+    max-height: fit-content;
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
