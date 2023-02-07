@@ -155,7 +155,7 @@ a.category-badge > span.badge:hover {
 }
 
 #hero-image{
-    background: url('/media/campfire-audio-solaris-SE.jpg') no-repeat center center fixed;
+    background: /*url('/media/campfire-audio-solaris-SE.jpg')*/ no-repeat center center fixed;
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
