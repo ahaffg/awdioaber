@@ -183,3 +183,7 @@ a.category-badge > span.badge:hover {
         transform: scale(1.1);
     }
 }
+
+#hero-image > div {
+    max-height: fit-content;
+}
