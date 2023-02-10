@@ -30,7 +30,8 @@
 
   {% block corejs %}
   <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
@@ -92,7 +93,8 @@
             </div>
           </li>
           <li class="list-inline-item">
-            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+              href="{% url 'view_bag' %}">
               <div class="text-center">
                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                 <p class="my-0">
@@ -127,19 +129,6 @@
     </div>
 
   </header>
-
-  {% if messages %}
-  <div class="message-container"></div>
-  {% endif %}
-
-  {% block page_header %}
-  {% endblock %}
-
-  {% block content %}
-  {% endblock %}
-
-  {% block postloadjs %}
-  {% endblock %}
 
   <footer class="container-fluid bottom">
     <div id="footer-div" class="container">
@@ -185,7 +174,7 @@
       <div class="container">
         <p class="copyright text-muted white-text text-center">Copyright <script>
             $("#copyright").text(new Date().getFullYear());
-          </script> Awdio Aber
+          </script> Awdio Aber</p>
           <span id="copyright">
           </span>
         </p>
@@ -194,5 +183,34 @@
   </footer>
   <script src="/static/js/script.js" crossorigin="anonymous"></script>
 </body>
+
+{% if messages %}
+<div class="message-container">
+  {% for message in messages %}
+  {% with message.level as level %}
+  {% if level == 40 %}
+  {% include 'includes/toasts/toast_error.html' %}
+  {% elif level == 30 %}
+  {% include 'includes/toasts/toast_warning.html' %}
+  {% elif level == 25 %}
+  {% include 'includes/toasts/toast_success.html' %}
+  {% else %}
+  {% include 'includes/toasts/toast_info.html' %}
+  {% endif %}
+  {% endwith %}
+  {% endfor %}
+  {% endif %}
+</div>
+{% block page_header %}
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block postloadjs %}
+<script type="text/javascript">
+  $('.toast').toast('show');
+</script>
+{% endblock %}
 
 </html>
