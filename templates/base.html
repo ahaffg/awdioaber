@@ -131,60 +131,6 @@
 
   </header>
 
-  <footer class="container-fluid bottom">
-    <div id="footer-div" class="container">
-      <div class="row">
-        <div class="col l6 s12 text-center">
-          <h5 class="white-text text-shadow">Awdio Aber
-          </h5>
-          <ul>
-            <li><a href="" class="nav-link main-logo-link logo-font text-black my-0"><i class="far fa-paper-plane"></i>
-                Contact
-              </a></li>
-            <li><a href="" class="nav-link main-logo-link logo-font text-black my-0"><i class="far fa-file-alt"></i>
-                Terms and Conditions
-              </a></li>
-            <li><a href="" class="nav-link main-logo-link logo-font text-black my-0"><i class="fas fa-user-lock"></i>
-                Privacy Policy
-              </a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-        </div>
-        <div class="col l3 s12">
-          <h5 class="text-center">Connect
-          </h5>
-          <ul class="text-center">
-            <li><a href="https://en-gb.facebook.com/" target="_blank"
-                class="nav-link main-logo-link logo-font text-black my-0 text-center"><i class="fab fa-facebook-f"></i>
-                Facebook
-              </a></li>
-            <li><a href="https://www.instagram.com/" target="_blank"
-                class="nav-link main-logo-link logo-font text-black my-0"><i class="fab fa-instagram"></i>
-                Instagram
-              </a></li>
-            <li><a href="https://www.tiktok.com/" target="_blank"
-                class="nav-link main-logo-link logo-font text-black my-0"><i class="fab fa-tiktok"></i>
-                Tik Tok
-              </a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        <p class="copyright text-muted white-text text-center">Copyright <script>
-            $("#copyright").text(new Date().getFullYear());
-          </script> Awdio Aber</p>
-          <span id="copyright">
-          </span>
-        </p>
-      </div>
-    </div>
-  </footer>
-  <script src="/static/js/script.js" crossorigin="anonymous"></script>
-
-
 {% if messages %}
 <div class="message-container">
   {% for message in messages %}
@@ -207,6 +153,63 @@
 
 {% block content %}
 {% endblock %}
+<br>
+<br>
+<hr>
+<br>
+<br>
+<footer class="container-fluid bottom">
+  <div id="footer-div" class="container">
+    <div class="row">
+      <div class="col l6 s12 text-center">
+        <h5 class="white-text text-shadow">Awdio Aber
+        </h5>
+        <ul>
+          <li><a href="" class="nav-link main-logo-link logo-font text-black my-0"><i class="far fa-paper-plane"></i>
+              Contact
+            </a></li>
+          <li><a href="" class="nav-link main-logo-link logo-font text-black my-0"><i class="far fa-file-alt"></i>
+              Terms and Conditions
+            </a></li>
+          <li><a href="" class="nav-link main-logo-link logo-font text-black my-0"><i class="fas fa-user-lock"></i>
+              Privacy Policy
+            </a></li>
+        </ul>
+      </div>
+      <div class="col l3 s12">
+      </div>
+      <div class="col l3 s12">
+        <h5 class="text-center">Connect
+        </h5>
+        <ul class="text-center">
+          <li><a href="https://en-gb.facebook.com/" target="_blank"
+              class="nav-link main-logo-link logo-font text-black my-0 text-center"><i class="fab fa-facebook-f"></i>
+              Facebook
+            </a></li>
+          <li><a href="https://www.instagram.com/" target="_blank"
+              class="nav-link main-logo-link logo-font text-black my-0"><i class="fab fa-instagram"></i>
+              Instagram
+            </a></li>
+          <li><a href="https://www.tiktok.com/" target="_blank"
+              class="nav-link main-logo-link logo-font text-black my-0"><i class="fab fa-tiktok"></i>
+              Tik Tok
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      <p class="copyright text-muted white-text text-center">Copyright <script>
+          $("#copyright").text(new Date().getFullYear());
+        </script> Awdio Aber</p>
+        <span id="copyright">
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+<script src="/static/js/script.js" crossorigin="anonymous"></script>
 
 {% block postloadjs %}
 <script type="text/javascript">
