@@ -1,10 +1,10 @@
 from django.db import models
 
 
-class Category(models.Model):
+class Blog_category(models.Model):
 
     class Meta:
-        verbose_name_plural = 'Categories'
+        verbose_name_plural = 'Blog_categories'
         
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
@@ -17,7 +17,7 @@ class Category(models.Model):
 
 
 class Blog(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    blog_category = models.ForeignKey('Blog_category', null=True, blank=True, on_delete=models.SET_NULL)
     title = models.CharField(max_length=254)
     description = models.TextField()
     blog_text = models.TextField()

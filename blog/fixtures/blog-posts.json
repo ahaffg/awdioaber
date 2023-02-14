@@ -1,0 +1,50 @@
+[{
+    "pk": 1,
+    "model": "posts.post",
+    "fields": {
+        "name": "Can Power Cords Have an Effect on an Audio System’s Sound?",
+        "description": "Steven Stone looks at two divergent views on power cords…",
+        "text": "Cable discussions can turn normally rational audiophiles into nut-cases. I know. 
+        I’ve been reading and watching the discussions since I wired up my first stereo system. 
+        Recently I decided to ask two industry participants their take on power cords. 
+        My question was, “How can a basic stock AC power cable negatively affect audio gear?” 
+        Here are two divergent viewpoints…
+        From Tommy O’Brien, (Digital Amplifier Company).
+        The most important feature of a power cord for amplifiers is simple resistance. Other factors such as capacitance, 
+        inductance, and shielding, are “in the noise” and not significant enough to affect 
+        the sound of even the most revealing audio systems.",
+        "category": 3,
+        "rating": 4.6,
+        "image_url": "https://headfonics.com/wp-content/uploads/2023/01/dekoni-audio-blue-review-feature-image.jpg.webp",
+        "image": "dekoni-audio-blue.jpg"
+    }
+},
+{
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001600425",
+        "name": " HIFIMAN Sundara Closed Back Review",
+        "description": " Is the HIFIMAN Sundara Closed Back better than the original Sundara? Each model has its selling points. The Closed Back seems to be unveiled, but it lacks some low-end grunt which can be easily remedied up to a point. So there is the tradeoff. Very good midrange definition. Excellent isolation levels and very little bleed. Beautiful Beechwood cups",
+        "price": 399,
+        "category": 3,
+        "rating": 4.7,
+        "image_url": "https://headfonics.com/wp-content/uploads/2022/12/HIFIMAN-Sundara-Closed-Back-Featured-Image.jpg.webp",
+        "image": "HIFIMAN-Sundara-Closed-Back.jpg"
+    }
+},
+{
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "ZMF Headphones Caldera",
+        "description": "The ZMF Headphones Caldera is an incredible high-end debut planar headphone. I was simply not expecting this huge emotionally enjoyable sound complete with that trademark easy-to-listen-to tuning. It also looks the 'biz' with those White Oak wood cup designs. Emotional sound signature. Beautiful Wood grain. Comfortable to wear",
+        "price": 3499,
+        "category": 3,
+        "rating": 4.7,
+        "image_url": "https://headfonics.com/wp-content/uploads/2022/11/zmf-headphones-caldera-review-feature-2.jpg.webp",
+        "image": "zmf-headphones-caldera.jpg"
+    }
+}
+]

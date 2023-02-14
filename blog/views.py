@@ -4,18 +4,18 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
+from .models import Blog_category
 from .forms import ProductForm
 
 # Create your views here.
 
 
-def all_products(request):
-    """ A view to show all products, including sorting and search queries """
+def all_posts(request):
+    """ A view to show all posts, including sorting and search queries """
 
-    products = Product.objects.all()
+    posts = Post.objects.all()
     query = None
-    categories = None
+    blog_categories = None
     sort = None
     direction = None
 
@@ -25,56 +25,56 @@ def all_products(request):
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
-                products = products.annotate(lower_name=Lower('name'))
-            if sortkey == 'category':
-                sortkey = 'category__name'
+                posts = posts.annotate(lower_name=Lower('name'))
+            if sortkey == 'blog_category':
+                sortkey = 'blog_category__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
-            products = products.order_by(sortkey)
+            posts = posts.order_by(sortkey)
 
-        if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
-            products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
+        if 'blog_category' in request.GET:
+            blog_categories = request.GET['category'].split(',')
+            posts = posts.filter(blog_category__name__in=blog_categories)
+            blog_categories = Blog_category.objects.filter(name__in=blog_category)
 
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
                 messages.error(request,
                                ("You didn't enter any search criteria!"))
-                return redirect(reverse('products'))
+                return redirect(reverse('posts'))
 
             queries = Q(name__icontains=query) | Q(description__icontains=query)
-            products = products.filter(queries)
+            products = posts.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
 
     context = {
-        'products': products,
+        'posts': posts,
         'search_term': query,
-        'current_categories': categories,
+        'current_categories': blog_categories,
         'current_sorting': current_sorting,
     }
 
     return render(request, 'products/products.html', context)
 
 
-def product_detail(request, product_id):
-    """ A view to show individual product details """
+def post_view(request, post_id):
+    """ A view to show individual posts """
 
-    product = get_object_or_404(Product, pk=product_id)
+    post = get_object_or_404(Post, pk=Post_id)
 
     context = {
-        'product': product,
+        'post': post,
     }
 
-    return render(request, 'products/product_detail.html', context)
+    return render(request, 'posts/post_view.html', context)
 
 
 @login_required
-def add_product(request):
+def add_post(request):
     """ Add a product to the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
@@ -93,7 +93,7 @@ def add_product(request):
     else:
         form = ProductForm()
 
-    template = 'products/add_product.html'
+    template = 'posts/add_post.html'
     context = {
         'form': form,
     }
