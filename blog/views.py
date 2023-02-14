@@ -4,16 +4,16 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Blog_category
-from .forms import ProductForm
+from .models import Article, Blog_category
+from .forms import ArticleForm
 
 # Create your views here.
 
 
-def all_posts(request):
+def all_articles(request):
     """ A view to show all posts, including sorting and search queries """
 
-    posts = Post.objects.all()
+    articles = Article.objects.all()
     query = None
     blog_categories = None
     sort = None
@@ -23,9 +23,9 @@ def all_posts(request):
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
-            if sortkey == 'name':
-                sortkey = 'lower_name'
-                posts = posts.annotate(lower_name=Lower('name'))
+            if sortkey == 'title':
+                sortkey = 'lower_title'
+                posts = articles.annotate(lower_name=Lower('title'))
             if sortkey == 'blog_category':
                 sortkey = 'blog_category__name'
             if 'direction' in request.GET:
@@ -35,65 +35,65 @@ def all_posts(request):
             posts = posts.order_by(sortkey)
 
         if 'blog_category' in request.GET:
-            blog_categories = request.GET['category'].split(',')
+            blog_categories = request.GET['blog_category'].split(',')
             posts = posts.filter(blog_category__name__in=blog_categories)
-            blog_categories = Blog_category.objects.filter(name__in=blog_category)
+            blog_categories = Blog_category.objects.filter(name__in=blog_categories)
 
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
                 messages.error(request,
                                ("You didn't enter any search criteria!"))
-                return redirect(reverse('posts'))
+                return redirect(reverse('articles'))
 
             queries = Q(name__icontains=query) | Q(description__icontains=query)
-            products = posts.filter(queries)
+            posts = articles.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
 
     context = {
         'posts': posts,
         'search_term': query,
-        'current_categories': blog_categories,
+        'current_blog_categories': blog_categories,
         'current_sorting': current_sorting,
     }
 
-    return render(request, 'products/products.html', context)
+    return render(request, 'posts/blog.html', context)
 
 
-def post_view(request, post_id):
-    """ A view to show individual posts """
+def article_view(request, article_id):
+    """ A view to show an individual post """
 
-    post = get_object_or_404(Post, pk=Post_id)
+    article = get_object_or_404(Article, pk=article_id)
 
     context = {
-        'post': post,
+        'articles': articles,
     }
 
-    return render(request, 'posts/post_view.html', context)
+    return render(request, 'articles/article_view.html', context)
 
 
 @login_required
-def add_post(request):
-    """ Add a product to the store """
+def add_article(request):
+    """ Add a post to the blog """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES)
+        form = ArticleForm(request.POST, request.FILES)
         if form.is_valid():
-            product = form.save()
-            messages.success(request, 'Successfully added product!')
-            return redirect(reverse('product_detail', args=[product.id]))
+            article = form.save()
+            messages.success(request, 'Successfully added post!')
+            return redirect(reverse('article_view', args=[article.id]))
         else:
             messages.error(request,
-                           ('Failed to add product. '
+                           ('Failed to add post. '
                             'Please ensure the form is valid.'))
     else:
-        form = ProductForm()
+        form = ArticleForm()
 
-    template = 'posts/add_post.html'
+    template = 'articles/add_article.html'
     context = {
         'form': form,
     }
@@ -102,44 +102,44 @@ def add_post(request):
 
 
 @login_required
-def edit_blog(request, blog_id):
+def edit_article(request, blog_id):
     """ Edit a post in the blog """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-    product = get_object_or_404(Product, pk=product_id)
+    article = get_object_or_404(Article, pk=article_id)
     if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES, instance=product)
+        form = ArticleForm(request.POST, request.FILES, instance=article)
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated post!')
-            return redirect(reverse('post_view ', args=[blog.id]))
+            return redirect(reverse('post_view ', args=[article.id]))
         else:
             messages.error(request,
                            ('Failed to update post. '
                             'Please ensure the form is valid.'))
-    else:
-        form = ProductForm(instance=product)
-        messages.info(request, f'You are editing {product.name}')
+        else:
+        form = ArticleForm(instance=article)
+        messages.info(request, f'You are editing {article.name}')
 
-    template = 'products/edit_product.html'
+    template = 'articles/edit_article.html'
     context = {
         'form': form,
-        'product': product,
+        'article': article,
     }
 
     return render(request, template, context)
 
 
 @login_required
-def delete_post(request, blog_id):
+def delete_article(request, article_id):
     """ Delete a post from the blog """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-    product = get_object_or_404(Blog, pk=blog_id)
-    product.delete()
+    article = get_object_or_404(Blog, pk=article_id)
+    article.delete()
     messages.success(request, 'Post deleted!')
     return redirect(reverse('blog'))
