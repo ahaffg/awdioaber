@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Article, Blog_category
+from .models import category
 
 # Register your models here.
 

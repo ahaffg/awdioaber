@@ -1,9 +1,8 @@
 from django.db import models
 
+class Category(models.Model):
 
-class Blog_category(models.Model):
-
-    class Meta:
+class Meta:
         verbose_name_plural = 'Blog_categories'
         
     name = models.CharField(max_length=254)

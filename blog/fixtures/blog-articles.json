@@ -13,8 +13,7 @@
         The most important feature of a power cord for amplifiers is simple resistance. Other factors such as capacitance, 
         inductance, and shielding, are “in the noise” and not significant enough to affect 
         the sound of even the most revealing audio systems.",
-        "category": 3,
-        "rating": 4.6,
+        "category": 8,
         "image_url": "https://headfonics.com/wp-content/uploads/2023/01/dekoni-audio-blue-review-feature-image.jpg.webp",
         "image": "dekoni-audio-blue.jpg"
     }
@@ -43,24 +42,56 @@
         Are we going to put a speaker with a 12-inch low-frequency driver in a room of 1,500 cubic feet? We do if we want 
         to have so much low frequency energy that it will drive us out of the room. If we figure out what those ratios 
         are, what the speaker size and the room volume and size need to be, then we can figure out the actual room height, 
-        width and length we need.",
-        "category": 3,
+        width and length we need. Let’s take a standard size speaker that’s 4 feet tall. It’s a good size speaker to 
+        work with — and quite honestly, you really don’t need anything larger in any size room but that’s a discussion 
+        for another time. The bottom line here is once we have matched the speaker to the room size and volume, 
+        then we can ask how much distance we need for the energy the speaker produces inside the room so we have 
+        fewer acoustical issues. The way we reduce the number of acoustical issues is by managing sound pressure and 
+        reflections. We need space to do that. To summarize: You must match the size and energy-producing capability 
+        of your speakers to the room size and volume, then you must minimize the low-frequency pressure issues in the 
+        room, and then you must manage the sound reflections. All of this depends on gear, room size and room volume. 
+        There are no easy answers, but there are many options and possibilities.",
+        "category": 10,
         "image_url": "https://headfonics.com/wp-content/uploads/2023/01/dekoni-audio-blue-review-feature-image.jpg.webp",
         "image": "dekoni-audio-blue.jpg"
     }
 },
-{
-    "pk": 3,
-    "model": "products.product",
-    "fields": {
-        "sku": "pp5001730010",
-        "name": "ZMF Headphones Caldera",
-        "description": "The ZMF Headphones Caldera is an incredible high-end debut planar headphone. I was simply not expecting this huge emotionally enjoyable sound complete with that trademark easy-to-listen-to tuning. It also looks the 'biz' with those White Oak wood cup designs. Emotional sound signature. Beautiful Wood grain. Comfortable to wear",
-        "price": 3499,
-        "category": 3,
-        "rating": 4.7,
-        "image_url": "https://headfonics.com/wp-content/uploads/2022/11/zmf-headphones-caldera-review-feature-2.jpg.webp",
-        "image": "zmf-headphones-caldera.jpg"
+{"pk": 2,
+"model": "articles.article",
+"fields": {
+    "title": "With Headphones and Shoes the Fit is More Important Than Anything Else",
+    "description": "Steven Stone looks at why an under £300 headphone can be better than a £1000 one…",
+    "text": "Last week, on a Facebook group page dedicated to headphones someone posted a query about which 
+    pair of premium headphones the group would recommend they purchase. The responses were as expected, with 
+    partisans of one or another of the models listed singing their praises and indicating that they would be 
+    the best choice. I, of course, disagreed with all these recommendations. My suggestion was, “Try each one 
+    on for fifteen minutes. You will then know which one to buy.” Notice that I did not say, “Listen to each 
+    one for fifteen minutes…” Most likely the prospective owner will be listening during their “try-on time” 
+    so in some way considering the sound is a given. But if two headphones have the same approximate level of 
+    sound quality, any sane audiophile is going to choose the one that is more comfortable at the end of the 
+    listening session. It’s important to wait at least a full fifteen minutes of on-head time. Why? Because 
+    some headphones that feel OK when you first put them on your head (or into your ear canals if they are 
+    in-ears) can become oppressive by the end of fifteen minutes. You need to know this before you make the 
+    mistake of buying them. Over the course of the last five years I’ve reviewed a wide variety of earphones, 
+    some priced under $20 and some approaching five figures when you add in the headphone amplifier. While 
+    I’m sure I would be thoroughly chastised by commenters if I claimed there are under $100 headphones that 
+    are “better” than $1000 ones, but I have experienced $300 headphones that I preferred using to several 
+    multi-thousand dollar ones I’ve reviewed. And yes, in every case it was the fit that made the less 
+    expensive headphones a better option for me. Head sizes and shapes are as variable and idiosyncratic as 
+    feet, and as someone who appreciates finely-made footwear, I am quite familiar with what a good fit feels 
+    like as well as what one that is not quite right can do to you during the course of a day. Just as one 
+    company’s 9 1/2 B sized shoe is not necessarily the same size as another company’s 9 ½ B, a headphone 
+    that “fits most heads perfectly” could very well not fit your head optimally. With shoes whether the fit is 
+    right can be pretty obvious, sometimes with headphones it takes a bit longer. All the on-line and mail-order 
+    shoe outlets have liberal “return if not satisfied” policies, headphone sales sites need to be equally
+    liberal. Let me clarify one last thing before we part company – I am not saying that sound quality does not
+    matter, it certainly does; but that in the long run how a pair of headphones or earphones fit is going to
+    have a greater bearing on how much you use and enjoy them than their sound quality alone, no matter how
+    stellar that sound quality may be.",
+    "category": 3,
+    "image_url": "https://headfonics.com/wp-content/uploads/2023/01/dekoni-audio-blue-review-feature-image.jpg.webp",
+    "image": "dekoni-audio-blue.jpg"
     }
-}
+},
+
 ]

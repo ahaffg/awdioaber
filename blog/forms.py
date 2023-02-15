@@ -1,6 +1,6 @@
 from django import forms
 from .widgets import CustomClearableFileInput
-from .models import Article, Blog_category
+from .models import category
 
 
 class ArticleForm(forms.ModelForm):
