@@ -1,0 +1,66 @@
+[{
+    "pk": 1,
+    "model": "articles.article",
+    "fields": {
+        "title": "Can Power Cords Have an Effect on an Audio System’s Sound?",
+        "description": "Steven Stone looks at two divergent views on power cords…",
+        "text": "Cable discussions can turn normally rational audiophiles into nut-cases. I know. 
+        I’ve been reading and watching the discussions since I wired up my first stereo system. 
+        Recently I decided to ask two industry participants their take on power cords. 
+        My question was, “How can a basic stock AC power cable negatively affect audio gear?” 
+        Here are two divergent viewpoints…
+        From Tommy O’Brien, (Digital Amplifier Company).
+        The most important feature of a power cord for amplifiers is simple resistance. Other factors such as capacitance, 
+        inductance, and shielding, are “in the noise” and not significant enough to affect 
+        the sound of even the most revealing audio systems.",
+        "category": 3,
+        "rating": 4.6,
+        "image_url": "https://headfonics.com/wp-content/uploads/2023/01/dekoni-audio-blue-review-feature-image.jpg.webp",
+        "image": "dekoni-audio-blue.jpg"
+    }
+},
+{
+    "pk": 2,
+    "model": "articles.article",
+    "fields": {
+        "title": "Ideal Room Size Dimensions and Ratios for Audiophile Listening",
+        "description": "Dennis Foley discusses the idea of ideal room dimensions — and how important speakers are in the equation.",
+        "text": "In this article, we’re going to talk about the ideal room sizes and dimensions. This is such 
+        an important issue because nearly everybody gets it wrong, and if you get it wrong in the beginning, 
+        getting good sound in that room is always going to be a struggle. How do we determine what size room 
+        to build? Using a room that’s available is not necessarily the right answer. First, we have to determine 
+        usage. We have to decide what we are going to do musically in this room. Is it two-channel playback? Is 
+        it home theater? Is it a control room? Is it a listening room? Because each usage dictates energy requirements 
+        and how large a room it should be. Each usage dictates the treatment that we’re going to put inside the room. 
+        So the first thing we have to define is the usage. Speaker size to room size. Let’s take the example of room 
+        usage. Let’s do two-channel playback because that’s a popular one. Okay, so what are we going to do for room 
+        size and volume with two-channel playback? First question we need to answer is how much energy are we going 
+        to put in the room? How do we determine that? How big are our speakers? We need to match the room size that 
+        we have available, that we’re considering, to the speaker size. Are we going to put a 7-foot-tall speaker in 
+        an 8-foot tall room? No, we want to put a smaller speaker in an 8-foot-tall room because 8 feet is a really 
+        bad room dimension for acoustics but it’s the standard distance that we have here in North America. We have 
+        to be very, very careful about matching the amount of energy placed in the room to the room size and volume. 
+        Are we going to put a speaker with a 12-inch low-frequency driver in a room of 1,500 cubic feet? We do if we want 
+        to have so much low frequency energy that it will drive us out of the room. If we figure out what those ratios 
+        are, what the speaker size and the room volume and size need to be, then we can figure out the actual room height, 
+        width and length we need.",
+        "category": 3,
+        "image_url": "https://headfonics.com/wp-content/uploads/2023/01/dekoni-audio-blue-review-feature-image.jpg.webp",
+        "image": "dekoni-audio-blue.jpg"
+    }
+},
+{
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "ZMF Headphones Caldera",
+        "description": "The ZMF Headphones Caldera is an incredible high-end debut planar headphone. I was simply not expecting this huge emotionally enjoyable sound complete with that trademark easy-to-listen-to tuning. It also looks the 'biz' with those White Oak wood cup designs. Emotional sound signature. Beautiful Wood grain. Comfortable to wear",
+        "price": 3499,
+        "category": 3,
+        "rating": 4.7,
+        "image_url": "https://headfonics.com/wp-content/uploads/2022/11/zmf-headphones-caldera-review-feature-2.jpg.webp",
+        "image": "zmf-headphones-caldera.jpg"
+    }
+}
+]

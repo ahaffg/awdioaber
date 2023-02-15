@@ -52,7 +52,7 @@ def all_articles(request):
     current_sorting = f'{sort}_{direction}'
 
     context = {
-        'posts': posts,
+        'articles': articles,
         'search_term': query,
         'current_blog_categories': blog_categories,
         'current_sorting': current_sorting,
