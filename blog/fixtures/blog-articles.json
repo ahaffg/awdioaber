@@ -363,9 +363,121 @@
         next time.
         
         See you then!",
-        "category": 3,
+        "category": 9,
         "image_url": "https://cdn-5f7e6584c1ac190fbc5797e3.closte.com/wp-content/uploads/2018/12/headwild9a-1024x609.png",
         "image": "headwild9a-1024x609.png"
+    }
+},
+{"pk": 9,
+    "model": "articles.article",
+    "fields": {
+        "title": "aptX, Bluetooth, and Your Music",
+        "description": "Steven Stone looks at what you need to get decent sound quality from a wireless headphone 
+        connection…",
+        "text": "Back in 2010 I received an email from a firm I had never heard of before, who had the name aptX. 
+        After a dinner at one of the tallest restaurants in Las Vegas I had a handle on what AptX was, but certainly 
+        not what it would become… 
+
+        AR-aptx2asmall.jpgThe aptX audio coding algorithm was created back in 1980 at the Queen’s University in 
+        Belfast, Ireland. The original work was focused on bit-rate deduction for data streams over ISDN telephone 
+        lines, and later in the radio broadcasts. The first practical application of aptX for Bluetooth devices came 
+        in 2011 with the Galaxy Tab 7.0 Plus. Since then, AptX has been employed by more than 430 consumer electronic 
+        brands in their portable and Bluetooth-enabled devices. 
+        
+        Bluetooth, in its native form, is not really capable of supporting high sample/bit-rate audio streams. 
+        The first generation, 1.0, had a theoretical maximum throughput rate of 1Mbps, Bluetooth 2.x basic rate 
+        has a theoretical maximum rate of 3 Mbps. By the time Bluetooth reached 4.x the theoretical maximum allowed 
+        using Subband coding (SBC) was 328 Kbps, but the audio quality using this codec was still less than the 
+        best MP3. 
+        
+        AR-aptx3a.pngBut there are ways to improve Bluetooth audio. First is Advanced Audio Distribution Profile 
+        (A2DP). This profile relies on AVDTP and GAVDP. It includes mandatory support for the low-complexity SBC 
+        codec, and supports optionally MPEG-1 Part 3/MPEG-2 Part 3 (MP2 and MP3), MPEG-2 Part 7/MPEG-4 Part 3 
+        (AAC and HE-AAC), and ATRAC, and manufacturer-defined codecs, such as aptX. Using A2DP portable device 
+        makers can add better quality audio codecs, which is exactly what they have done. 
+        
+        aptX comes in two varieties, aptX and aptX HD. aptX can transmit 16-bit/44.1kHz audio with a compression 
+        ratio of 4:1 at 352kpbs, while aptX HD can transmit 24-bit/48kHz audio with a “gentle” compression ratio 
+        of 4:1 at 576kpbs. While still not technically not “high resolution,” this rate does allow for Redbook CD 
+        sound quality to fit through the Bluetooth “pipe.” 
+        
+        AR-aptx4a.jpgGiven aptX’s superiority at fitting uncompressed music through a Bluetooth connection, you 
+        would think that every Bluetooth audio device would employ aptX or aptX HD, but they don’t. Some 
+        manufacturers have their own proprietary data compression systems, such as Sony’s LDAC, which has 
+        three different connection modes for transferring data. LDAC’s “Connection” mode connects at 330 kbps, 
+        which is slightly slower than the SBC codec. Its “Normal” mode ups the rate to 660 kbps, the best mode, 
+        “Priority,” is capable of sending data at a blazing 990 kbps, which is significantly higher than the aptX 
+        or aptX HD and will support 96/24 files.
+        
+        Like all connection schemes that have a sender and a reciever, aptX requires the codec to be supported 
+        by both the sending device and the receiving device to work. If one of the components in your reproduction 
+        chain, be it your source device, headphones, or speakers, don’t support aptX, they’ll most likely default 
+        back to A2DP with its lower level of sound quality. 
+        
+        The takeaway from all this is simple. If you are looking into wireless headphones, and you want the best 
+        sound quality currently possible, look for ones that use aptX, aptX HD, or if Sony is your brand, the LDAC 
+        codecs. Do not, under any circumstances, (well maybe if they are being given away) accept a headphone or 
+        Bluetooth music playback device that doesn’t have something better than plain-vanilla A2DP or earlier 
+        versions of Bluetooth. You have plenty of options. The aptX site has a list, seventeen pages long, of 
+        headphone options as well as three pages of portable players and twelve pages of phones. If you can’t 
+        find a source device and headphones from those lists, you just haven’t looked very hard…",
+        "category": 9,
+        "image_url": "https://cdn-5f7e6584c1ac190fbc5797e3.closte.com/wp-content/uploads/2018/04/aptx1a-1024x683.jpg",
+        "image": "aptx1a-1024x683.jpg"
+    }
+},
+{"pk": 10,
+    "model": "articles.article",
+    "fields": {
+        "title": "How Many Pairs of Headphones Do You Really Need?",
+        "description": "Steven Stone looks at three different, but equally essential, types of headphones…",
+        "text": "Obviously the answer to the question in my headline is “As many as you can afford.” But for most 
+        of us there’s an upper limit to how many pairs of headphones we want to keep around. One way to limit and 
+        hone down your headphone collection is to look at headphones from a usability perspective and view them as 
+        sonic tools designed to serve different purposes and environments. That pair of earphones that sounds great 
+        when listening at home in a quiet room can sound awful on the crosstown bus. What’s the difference – 
+        isolation, or the lack of isolation.
+
+        AR-hapa56.pngAnd what is isolation as it applies to headphones? For those who are partial to numbers a 
+        headphone’s ability to isolate or reduce the noise levels from the outside environment can be measured 
+        in dBs. No isolation (such as you would get from an open-enclosure headphone) would deliver 0 dBs, while 
+        the very best in-ear monitors can deliver between 25 and 30 dB of isolation.
+        
+        So why not just use headphones with closed enclosures (or in-ears) with maximum isolation and be done with 
+        it – the best isolation solution wins? Because, when you enclose or seal an earphone you now have problems 
+        with enclosure resonances and bass loss if your earphones not properly sealed (and sometimes too much bass 
+        energy inside your ear canals when they are). Also sealed or enclosed earphones tend to have smaller 
+        perceived soundstages. So, although a sealed headphone will solve your isolation problems it comes with 
+        its own set of sonic issues.
+        
+        AR-hpa5a.jpgWhat to do? The solution is to have at least two pairs of earphones – a sealed or well-isolated 
+        pair for public and noisy environments, and an open pair for quiet private spaces. And what about “noise-
+        cancelling” headphones in lieu of highly isolating ones? My personal preference is for isolation instead of 
+        cancellation – isolation doesn’t depend on batteries, and I feel that blocking the outside sounds from reaching 
+        your ears is a better and more complete solution than merely inverting the outside noise’s phase so it 
+        cancels itself out (which is how noise cancellation works).
+        
+        If I could only have three pairs of headphones my third pair, after one highly-isolating and one open-enclosure 
+        pair, would be an “in-between” pair that provided some isolation but not complete isolation. I use these types 
+        of earphones in public spaces where I need to have some degree of situational awareness, such as while waiting 
+        in an airline terminal. It’s a drag to wait for a plane only to discover at the last minute it’s moved to a 
+        new gate, but you didn’t hear the announcement…
+        
+        AR-hp1a.jpgYou’ve probably noticed that I haven’t named any names as far as which earphones in each category 
+        I would recommend. That is intentional. The final (and perhaps most important) deciding factor in any earphone 
+        choice is how well it fits. Without an optimal fit not only won’t a headphone perform at its best, but you 
+        won’t be able to wear your earphones for long periods comfortably. I’ve owned and used the Etymotic ER-4 in 
+        ears as my go-to high-isolation in-ears for many years, but I know that some people can’t stand the way they 
+        fit, deep inside your ear canals. But for me the Etymotics deliver greater isolation than some of my custom-
+        molded in-ears. This is only one example of how individualized the fit and feel of an earphone can be.
+        
+        So, there you have it – own three pairs of earphones and your personal transducer world will be completely 
+        covered for all situations. You folks who own thirty different pairs of in-ears or open enclosure headphones, 
+        get with the program! The secret is that you only need three pairs, honest…but they need to be three different 
+        types of earphones…",
+        "category": 3,
+        "image_url": "https://images.pexels.com/photos/3812712/pexels-photo-3812712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "image": "aptx1a-1024x683.jpg"
     }
 },
 ]
