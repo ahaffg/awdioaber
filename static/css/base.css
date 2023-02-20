@@ -311,10 +311,11 @@ input[name='q']::placeholder {
 
 #hero-image {
     background: no-repeat center center fixed;
-    max-height: fit-content;
+    max-height: max-content;
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
+    background-repeat: no-repeat;
 }
 
 @keyframes hero-zoom {
@@ -327,9 +328,6 @@ input[name='q']::placeholder {
     }
 }
 
-#hero-image > div {
-    max-height: fit-content;
-}
 
 /* (A) STANDARD ROW HEIGHT */
 .vwrap, .vitem {
