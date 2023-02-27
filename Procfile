@@ -1,0 +1,1 @@
+web: gunicorn awdio_aber.wsgi:application
