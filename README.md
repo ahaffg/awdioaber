@@ -326,7 +326,7 @@ If at all possible I would really like to find a way for the hero images to chan
 
 ### Languages Used
 
-HTML, CSS, JavaScript, Python
+HTML, CSS, JavaScript, Python.
 
 ### Database Used
 
@@ -365,10 +365,6 @@ sqlite3 for development.
 [magnify.js](https://thdoan.github.io/magnify/) - Used to add the magnify lens to the product details product image
 
 ### Programs Used
-
-[Am I Responsive](https://ui.dev/amiresponsive) - To create the responsive images of the site on a variety of device sizes.
-
-[Balsamiq](https://balsamiq.com/) - Used to create wireframes.
 
 [DrawSQL.app](https://drawsql.app/) - Used to create the database schema.
 
