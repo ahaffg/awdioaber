@@ -1,3 +1,5 @@
+![Awdio Aber Mockup](/media/all-devices-black%20(1).png)
+
 # Awdio Aber
 ## Backstory
 For my fourth Milestone project with Code Institute I want to create a n app that will really push me outside of my comfort zone and show my ability to create solutions to problems outside my immediate field of knowledge.
@@ -686,6 +688,7 @@ Product descriptions for this site were adapted from reviews from [Headfonics](h
 ### Media
 
 * [Headfonics](https://headfonics.com) - whose images were used throughout this website.
+* [Website Mockup Generator](https://websitemockupgenerator.com/) - used for the website mockup image at the head of this readme document.
 
 ### Acknowledgments
 
