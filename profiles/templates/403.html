@@ -1,0 +1,18 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block extra_title %} - 403 Error{% endblock %}
+
+{% block content %}
+    <div class="row page-title">
+        <h3>403 Error</h3>
+    </div>
+
+    <div class="row">
+        <div class="col-10 offset-1 text-center">
+            <h4>Uh oh!</h4>
+            <p>Looks like you don't have the right gear for this request!</p>
+            <p>Please use the navigation menu above to try again.</p>
+        </div>
+    </div>
+{% endblock %}
