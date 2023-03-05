@@ -331,6 +331,14 @@ Each page of the site shares the following:
 
 ![Favicon](/static/images/readme/favicon_io.png)
 
+* Navbar - The navbar on the site is split into two sections, the first section contains the search bar, an account icon and the bag icon. The second section contains the sites products categories. The navbar is fully responsive, and utilises a hamburger menu toggle on smaller screens.
+
+![Navbar](/static/images/readme/navbar-toggle.png)
+
+* Banner Ticker - The code for the banner ticker has been adapted from [Code-Boxx](https://code-boxx.com/html-css-news-ticker-horizontal-vertical/) and I feel helps the site feel more dynamic. The code allows for messages to be rotated through the banner continuously. I like that the imformation can be changed regularly, even providing links, giving users an opertunity to see wider aspects of the store.
+
+![Banner Ticker](/static/images/readme/ticker-banner.png)
+
 ---
 
 ## Technologies Used
