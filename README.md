@@ -318,9 +318,16 @@ If at all possible I would really like to find a way for the hero images to chan
 
 **Base Mockup**
 
-
-
 ![Base Mockup](/static/images/readme/base-mockup.png)
+
+---
+## Features
+
+### General Features of of the site
+
+Each page of the site shares the following:
+
+* Favicon - I used [Favicon.io](https://favicon.io/) to create the favicon for the site.
 
 ---
 
