@@ -329,6 +329,8 @@ Each page of the site shares the following:
 
 * Favicon - I used [Favicon.io](https://favicon.io/) to create the favicon for the site.
 
+![Favicon](/static/images/readme/favicon_io.png)
+
 ---
 
 ## Technologies Used
