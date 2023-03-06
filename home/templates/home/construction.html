@@ -1,0 +1,25 @@
+{% extends "base.html" %} 
+{% load static %}
+{% block extra_title %} - 400 Error{% endblock %}
+
+
+{% block content %}
+<div class="row"></div>
+<div class="col-10 offset-1 text-center">
+    <hr>
+    <h2 class="blunder font-weight-bold">UNDER CONSTRUCTION!</h2>
+    <hr>
+    <div class="row">
+        <img src="{{ MEDIA_URL }}under-construction.jpg" alt="Clwb Awdio logo on a splat background">
+    </div>
+    <br>
+<div class="row">
+    <h3>We are working on this as fast as we can, so why not get in touch so we can let you know when this page is ready?</h3>
+</div>
+<br>
+<div class="col-md-12">
+    <a href="{% url 'contact' %}" class="btn btn-outline-black my-2">
+        <span class="mr-2"><i class="far fa-paper-plane"></i>Contact</span>
+    </a>
+</div>
+{% endblock %}
