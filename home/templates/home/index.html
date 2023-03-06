@@ -5,17 +5,6 @@
 <link rel="stylesheet" href="{% static 'css/base.css' %}">
 {% endblock %}
 
-{% block extra_js %}
-<script>
-    window.onload=function(){  
-        var thediv=document.getElementById("hero-image");  
-        var imgarray = new Array ("{{ MEDIA_URL }}abyss-headphones-diana.jpg", );  
-        var spot =Math.floor(Math.random()* imgarray.length);  
-        console.log(spot); thediv.style.background="url("+imgarray[spot]+")";
-    }
-</script>
-{% endblock %}
-
 {% block page_header %}
 <div class="row"></div>
 {% endblock %}
@@ -38,5 +27,16 @@
             </div>
         </div>
     </div>
-   
+
+{% block postloadjs %}
+{{ block.super }}
+<script>
+    window.onload=function(){  
+        var thediv=document.getElementById("hero-image");  
+        var imgarray = new Array ("{{ MEDIA_URL }}abyss-headphones-diana.jpg",);  
+        var spot =Math.floor(Math.random()* imgarray.length); 
+        thediv.style.background="url("+imgarray[spot]+")";
+    }
+</script>
+
 {% endblock %}
