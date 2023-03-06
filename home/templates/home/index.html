@@ -6,12 +6,12 @@
 {% endblock %}
 
 {% block page_header %}
-<div class="row"></div>
+<div class="row h-25"></div>
 {% endblock %}
 
 {% block content %}
     <div id= "hero-image" class="container h-100">
-        <div class="row h-100">
+        <div class="row">
             <div class="col-7 col-md-6 my-auto">
                 <h2 class="display-4 logo-font text-black">
                     Welcome//
@@ -34,7 +34,7 @@
 <script>
     window.onload=function(){  
         var thediv=document.getElementById("hero-image");  
-        var imgarray = new Array ("{{ MEDIA_URL }}abyss-headphones-diana.jpg",);  
+        var imgarray = new Array ("{{ MEDIA_URL }}abyss-headphones-diana.jpg", "{{ MEDIA_URL }}AP80-PRO-X-Red-Copper-Edition.jpg", "{{ MEDIA_URL }}AP80-PRO-X-Red-Copper-Edition.jpg", "{{ MEDIA_URL }}audeze-mm500.jpg", "{{ MEDIA_URL }}auris-audio-ha-2sf.jpg", "{{ MEDIA_URL }}auris-ha-2se.jpg", "{{ MEDIA_URL }}campfire-audio-solaris-SE.jpg", "{{ MEDIA_URL }}cayin-c9-2.jpg", "{{ MEDIA_URL }}cayin-ha-300mk2.jpg", "{{ MEDIA_URL }}cayin-n8.jpg", "{{ MEDIA_URL }}chord-electronics-mojo-2.jpg", "{{ MEDIA_URL }}dan-clark-audio-expanse.jpg", "{{ MEDIA_URL }}dCS-Bartok.jpg", "{{ MEDIA_URL }}dekoni-audio-blue.jpg", "{{ MEDIA_URL }}Denafrips-Ares-II.jpg", "earmen-angel.jpg", "{{ MEDIA_URL }}earmen-ch-amp.jpg", "{{ MEDIA_URL }}earmen-ch-amp.jpg", "{{ MEDIA_URL }}empire-ears-odin.jpg", "{{ MEDIA_URL }}feliks-audio-envy.jpg", "{{ MEDIA_URL }}ferrum-erco.jpg", "{{ MEDIA_URL }}fiio-m17.jpg", "{{ MEDIA_URL }}final-d8000.jpg", "{{ MEDIA_URL }}fir-audio-krypton.jpg", "{{ MEDIA_URL }}formula-s-title.jpg", "{{ MEDIA_URL }}gustard-x18.jpg", "{{ MEDIA_URL }}hiby-r6-pro.jpg", "{{ MEDIA_URL }}HiBy-R8.jpg", "{{ MEDIA_URL }}hiby-rs8.jpg", "{{ MEDIA_URL }}HIFIMAN-Sundara-Closed-Back.jpg", "{{ MEDIA_URL }}hugo-title.jpg", "{{ MEDIA_URL }}ibasso-dx240.jpg", "{{ MEDIA_URL }}ibasso-dx300-max.jpg", "{{ MEDIA_URL }}ifi-audio-GO-Bar.jpg", "{{ MEDIA_URL }}media/ifi-audio-xdsd-gryphon.jpg", "{{ MEDIA_URL }}ifi-audio-ZEN-Air.jpg", "{{ MEDIA_URL }}IFI-AUDIO-ZEN-ONE.jpg", "{{ MEDIA_URL }}iFi-Micro-iDSD-signature-series-2.jpg", "{{ MEDIA_URL }}lime-ears-anima.jpg", "{{ MEDIA_URL }}little-dot-VII.jpg", "{{ MEDIA_URL }}lotoo-PAW-gold.jpg", "{{ MEDIA_URL }}luxury-and-precision-p6-pro.jpg", "{{ MEDIA_URL }}moondrop-void.jpg", "{{ MEDIA_URL }}musician-audio-pegasus-r2r.jpg", "{{ MEDIA_URL }}noble-audio-viking-ragnar.jpg", "{{ MEDIA_URL }}noble-ausio-sultan.jpg", "{{ MEDIA_URL }}sennheiser-ie600.jpg", "{{ MEDIA_URL }}smsl-d-6.jpg", "{{ MEDIA_URL }}topping-d10-balanced.jpg", "{{ MEDIA_URL }}Violectric-DHA-V590.jpg", "{{ MEDIA_URL }}vision-ears-ext.jpg", "{{ MEDIA_URL }}Vision-Ears-Phonix.jpg", "{{ MEDIA_URL }}xDuoo-MU-601.jpg", "{{ MEDIA_URL }}zmf-headphones-atirum.jpg", "{{ MEDIA_URL }}zmf-headphones-caldera.jpg");  
         var spot =Math.floor(Math.random()* imgarray.length); 
         thediv.style.background="url("+imgarray[spot]+")";
     }
