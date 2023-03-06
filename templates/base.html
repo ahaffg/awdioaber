@@ -22,40 +22,40 @@
 <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
 {% endblock %}
 
-  {% block corecss %}
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+{% block corecss %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Megrim&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap">
-  <link rel="stylesheet" href="{% static 'css/base.css' %}">
-  {% endblock %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Megrim&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap">
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+{% endblock %}
 
 
 
-  {% block extra_css %}
-  {% endblock %}
+{% block extra_css %}
+{% endblock %}
 
-  {% block corejs %}
-  <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
-  <script src="https://js.stripe.com/v3/"></script>
-  {% endblock %}
+{% block corejs %}
+<script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+</script>
+<script src="https://js.stripe.com/v3/"></script>
+{% endblock %}
 
-  {% block extra_js %}
-  {% endblock %}
+{% block extra_js %}
+{% endblock %}
 
-  <title>Awdio Aber {% block extra_title %}{% endblock %}</title>
+<title>Awdio Aber {% block extra_title %}{% endblock %}</title>
 </head>
-
+<!--Logo-->
 <body class="random_bg">
   <header class="container-fluid top">
     <div id="main-nav-header" class="row">
@@ -132,8 +132,7 @@
         <!--{% include 'includes/mobile-top-header.html' %}-->
         {% include 'includes/main-nav.html' %}
       </nav>
-    </div>
-  
+    </div> 
 <!-- Ticker code adapted from https://code-boxx.com/html-css-news-ticker-horizontal-vertical/-->
     <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
     </div>
@@ -146,9 +145,7 @@
         </div></div>
       </div>
     </div>
-    
-
-  </header>
+</header>
 
 {% if messages %}
 <div class="message-container">
@@ -196,8 +193,7 @@
             </a></li>
         </ul>
       </div>
-
-  <!-- Payment Section -->
+<!-- Payment Section -->
   <div class="col l6 s12 text-center">
     <h5 class="text-center">Payments</h5>
     <br>
@@ -209,7 +205,6 @@
 <i class="fab fa-cc-discover"><span class="fa-sr-only"></span></i>
 <i class="fab fa-cc-diners-club"><span class="fa-sr-only"></span></i>
 </div>
-
 <!-- Social Media Links-->
       <div class="col l6 s12">
         <h5 class="text-center">Connect
@@ -229,30 +224,33 @@
             </a></li>
         </ul>
     </div> 
-
+<br>
 <!-- Educational project disclaimer-->
     <div class="row educational-purposes text-center pb-5">
-      <div class="col">
-          <p>Awdio Aber has been created by <a href="https://github.com/ahaffg" target="_blank">Angharad Griffiths</a> as a portfolio project for the Code Institutes Level 5 Diploma in Web Application Development.</p>
+      <div class="col text-center">
+        <br>
+        <p>Awdio Aber has been created by <a href="https://github.com/ahaffg" target="_blank">Angharad Griffiths</a> as
+          a portfolio project for the Code Institutes Level 5 Diploma in Web Application Development.</p>
+          <br>
           <p>As this site has been created for educational purposes, no orders received will be fulfilled.</p>
       </div>
-  </div>
-</div>
-      </div>
     </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container">
-      <p class="copyright text-muted white-text text-center">Copyright <script>
-          $("#copyright").text(new Date().getFullYear());
-        </script> Awdio Aber</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <p class="copyright text-muted white-text text-center">Copyright <script>
+            $("#copyright").text(new Date().getFullYear());
+          </script> Awdio Aber</p>
         <span id="copyright">
         </span>
-      </p>
+        </p>
+      </div>
     </div>
-  </div>
-</footer>
-<script src="/static/js/script.js" crossorigin="anonymous"></script>
+    </footer>
+    <script src="/static/js/script.js" crossorigin="anonymous"></script>
 
 {% block postloadjs %}
 <script type="text/javascript">
@@ -260,4 +258,5 @@
 </script>
 {% endblock %}
 </body>
+
 </html>
