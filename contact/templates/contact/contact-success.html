@@ -18,19 +18,21 @@
     {% endblock %}
 
     {% block content %}
-    <div class="row page-title">
-        <h3>Contact Us</h3>
-    </div>
-
+    <div class="row">
+        <div class="col  mt-3">
+            <hr>
+            <h2 class="display-4 logo-font text-black text-center">Contact Us</h2>
+            <hr>
+            <br>
+            <div>
+        <div class="row">
     <div class="row">
         <div class="col-10 offset-1 text-center">
             <h4>Thank you for sending us your enquiry!</h4>
             <p>We aim to reply to messages within 2 business days.</p>
 
-            <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="btn btn-outline-blue my-2">
-                <span class="icon mr-2">
-                    <i class="fa-solid fa-shop"></i>
-                </span>
+            <a href="{% url 'products' %}" class="btn btn-outline-black my-2">
+                <span class="mr-2"><i class="fas fa-shopping-bag"></i></span>
                 <span>Lets Shop!</span>
             </a>
 

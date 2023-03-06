@@ -237,8 +237,6 @@
     </div>
     </div>
     </div>
-    </div>
-    </div>
     <div class="footer-copyright">
       <div class="container">
         <p class="copyright text-muted white-text text-center">Copyright <script>
@@ -250,9 +248,11 @@
       </div>
     </div>
     </footer>
-    <script src="{% static 'js/script.js' %}"></script>
+    
 
 {% block postloadjs %}
+<script src="{% static 'js/script.js' %}"></script>
+
 <script type="text/javascript">
   $('.toast').toast('show');
 </script>
