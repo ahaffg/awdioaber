@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="row"></div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container my-auto">
+    <div class="row">
+        <div class="col  mt-3">
+            <hr>
+            <h2 class="display-4 logo-font text-black text-center">About Us</h2>
+            <hr>
+            <br>
+            <div></div>
+            <div>
+             <div class="my-5">
+            <h4>
+                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0">Let's
+                    Shop!</a>
+            </h4>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+{% endblock %}
+

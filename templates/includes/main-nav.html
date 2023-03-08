@@ -31,12 +31,13 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="discover-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Discover
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'construction' %}?category=forum" class="dropdown-item">Forum</a>
+            <div class="dropdown-menu border-0" aria-labelledby="discover-link">
+                <a href="{% url 'about' %}?category=about" class="dropdown-item">About</a>
                 <a href="{% url 'construction' %}?category=blog" class="dropdown-item">Blog</a>
+                <a href="{% url 'construction' %}?category=forum" class="dropdown-item">Forum</a>
             </div>
         </li>
 
