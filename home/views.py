@@ -23,8 +23,8 @@ def terms(request):
 
     return render(request, 'home/terms.html')
 
-def terms(request):
-    """ A view to return the terms and conditions page """
+def construction(request):
+    """ A view to return the construction page """
 
     return render(request, 'home/construction.html')
 
