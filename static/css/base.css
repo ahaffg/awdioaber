@@ -436,3 +436,7 @@ input[name='q']::placeholder {
 .blunder {
     font-family: 'Megrim', cursive;
 }
+
+#about-logo {
+    max-height: 30vh;
+}
