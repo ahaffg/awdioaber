@@ -7,18 +7,17 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container">
+    <div class="container mb-2">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col">
                 <hr>
-                <h2 class="display-4 logo-font text-black text-center">Product Management</h2>
-                <h5 class="display-4 logo-font text-black text-center text-muted">Edit a Product</h5>
+                <h2 class="logo-font mb-4 text-center">Edit Product</h2>
                 <hr>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12 col-md-6">
+        <div class="container mb-2">
+            <div class="container mb-2">
                 <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
