@@ -56,7 +56,7 @@ def all_articles(request):
         'current_sorting': current_sorting,
     }
 
-    return render(request, 'blog/home.html', context)
+    return render(request, 'blog/all_articles.html', context)
 
 
 def article(request, article_id):
