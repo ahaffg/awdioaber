@@ -706,6 +706,7 @@ Product descriptions for this site were adapted from reviews from [Headfonics](h
 
 * [Headfonics](https://headfonics.com) - whose images were used throughout this website.
 * [Website Mockup Generator](https://websitemockupgenerator.com/) - used for the website mockup image at the head of this readme document.
+* [Merch Mockup Generator](https://mock-it.co/) - used to mock up store merch.
 
 ### Acknowledgments
 
