@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+{% include "static" %}
+{% block head_title %} - Blog | {{ view_type|title }} {% endblock head_title %}
+{% block content %}
+<div class="blog-pic">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-12 mb-0">
+                <a class="text-wht aw pl-2" href="{% url 'home' %}" title="Back to Home Page">Home</a>
+                <span class="mx-2 mb-0 text-wht">/</span>
+                <small class="text-wht aw">Blogs</small>
+            </div>
+        </div>
+    </div>
+    {% if user.is_authenticated %}
+    <div class="container center-block-col">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="aw text-warning">{{ view_type|title }} Blog
+                    <button type="button" title="How to Create a blog"
+                        class="ripple-surface border border-dark bg-black-a float-right rounded-circle"
+                        data-toggle="modal" data-target="#create_Modal">
+                        <i class=" text-warning fad fa-info-circle"></i>
+                    </button>
+                </h1>
+
+                <form action="" method="POST" class="aw text-wht" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.media }}
+                    {{ form|crispy}}
+                    <button type="submit"
+                        class="ripple-surface w-50 mb-4 btn btn-success hover-shadow border border-light"><img
+                            class="mr-3" src="https://img.icons8.com/fluent/32/000000/blog.png" />{{ view_type|title }}
+                        Blog</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="create_Modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header bg-black-a ">
+                <h3 class="modal-title text-warning aw">How to {{ view_type|title }} a Blog</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body bg-black-a">
+                <div class=" card my-4">
+                    <h5 class="text-center">{{ view_type|title }} a Blog post</h5>
+                    <ol>
+                        <li>
+                            <p>{{ view_type|title }} a Title</p>
+                            <small>Should not be more than 50 Characters, that's about 8-9 words.</small>
+                        </li>
+                        <li>
+                            <p>Pick a Category</p>
+                            <small>Pick a category that best suits the subject of the blog. See the list below</small>
+                        </li>
+                        <li>
+                            <p>{{ view_type|title }} your Blog</p>
+                            <small>{{ view_type|title }} your blog post using the text editor. Please keep with in the
+                                Code of
+                                Conduct.</small>
+                        </li>
+                        <li>
+                            <p>Choose you Picture</p>
+                            <small>Choose a picture that represents your blog post. Please keep the picture size to
+                                600x600px
+                                and under 1MB</small>
+                        </li>
+                        <li>
+                            <p>Click '{{ view_type|title }} Blog'</p>
+                            <small>Click the '{{ view_type|title }} Blog' button and share your blog with the
+                                world.</small>
+                        </li>
+                    </ol>
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="aw text-center text-wht bg-black-a">Catogery</th>
+                                <th scope="col" class="aw text-center text-wht bg-black-a">Info</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="aw text-center">Members</th>
+                                <td>This is for the members how would like to post there first blog, or
+                                    ask a question or just tell us how you getting on with your training.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="aw bg-danger text-center">Covid-19</th>
+                                <td>This is for all Covid-19 gym related topics</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="aw bg-primary text-center">Dieting</th>
+                                <td colspan="2">This is for everything to with diet. Nutrision, tip and
+                                    infomation</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="aw bg-success text-center">Strength Training</th>
+                                <td colspan="2">All Blogs to do with Strength, builbing mussel, lifting
+                                    techniques, Tip and exercises</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="aw bg-warning">Recovery</th>
+                                <td colspan="2">All blogs to do with recovery</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="aw bg-info">Endurance</th>
+                                <td colspan="2">All blogs that focus on the endurance training side of
+                                    thing, Running, Swimming</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--If a user trys to edit or created a post with out being authenticated-->
+{% else %}
+<div id="about-pic">
+    <div class="container center-block">
+        <div class="overlay">
+            <div class="col p-4">
+                <h1 class="text-wht aw text-center">Please Login</h1>
+                <a class="aw btn btn-success w-100" href="{% url 'account_login' %}">Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% endblock content %}

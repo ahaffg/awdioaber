@@ -1,139 +1,173 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.contrib import messages
+from django.shortcuts import render, get_object_or_404, redirect, reverse
+from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib import messages
 from django.db.models import Q
-from django.db.models.functions import Lower
+from django.views import View
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from .models import Blog, BlogView, Like,  Category
+from .forms import BlogCommentForm, BlogForm
 
-from .models import Product, Category
-from .forms import ProductForm
 
-# Create your views here.
+class BlogListView(ListView):
+    model = Blog
+    template_name = 'blog/blog_list.html'
+    ordering = ['-publish_date']
+    context_object_name = 'all_blogs'
 
-def all_articles(request):
-    """ A view to show all articles, including sorting and search queries """
+    def get_context_data(self, **kwargs):
+        feature_blog = Blog.objects.filter(featured=True)
+        category_menu = Category.objects.all()
+        context = super().get_context_data(**kwargs)
+        context['feature_blog'] = feature_blog
+        context['category_menu'] = category_menu
+        return context
 
-    articles = Article.objects.all()
-    query = None
-    categories = None
-    sort = None
-    direction = None
 
-    if request.GET:
-        if 'sort' in request.GET:
-            sortkey = request.GET['sort']
-            sort = sortkey
-            if sortkey == 'name':
-                sortkey = 'lower_name'
-                articles = articles.annotate(lower_name=Lower('name'))
-            if sortkey == 'category':
-                sortkey = 'category__name'
-            if 'direction' in request.GET:
-                direction = request.GET['direction']
-                if direction == 'desc':
-                    sortkey = f'-{sortkey}'
-            articles = articles.order_by(sortkey)
-            
-        if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
-            articles = articles.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
+class SearchView(View):
+    template_name = 'blog/blog_search.html'
 
-        if 'q' in request.GET:
-            query = request.GET['q']
+    def get(self, request, *args, **kwargs):
+        all_blogs = Blog.objects.all()
+        category_menu = Category.objects.all()
+        query = None
+
+        if 's' in request.GET:
+            query = request.GET['s']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
-                return redirect(reverse('articles'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
-            articles = articles.filter(queries)
+                messages.error(request, "Sorry! No Input? Try again Please")
+                return redirect(reverse('blog:list'))
+            search = Q(title__icontains=query) | Q(content__icontains=query)
+            all_blogs = all_blogs.filter(search)
 
-    current_sorting = f'{sort}_{direction}'
+        context = {
+            'search_words': query,
+            'all_blogs': all_blogs,
+            'category_menu': category_menu,
+        }
+        return render(request, 'blog/blog_search.html', context)
 
+
+def CategoryView(request, category):
+    category_blogs = Blog.objects.filter(category=category)
+    category_menu = Category.objects.all()
+    all_blogs = Blog.objects.all()
     context = {
-        'articles': articles,
-        'search_term': query,
-        'current_categories': categories,
-        'current_sorting': current_sorting,
+        'category': category,
+        'category_blogs': category_blogs,
+        'category_menu': category_menu,
+        'all_blogs': all_blogs
     }
-
-    return render(request, 'blog/all_articles.html', context)
-
-
-def article(request, article_id):
-    """ A view to show individual blog posts """
-
-    article = get_object_or_404(Article, pk=article_id)
-
-    context = {
-        'article': article,
-    }
-
-    return render(request, 'blog/article.html', context)
+    return render(request, 'blog/blog_categories.html', context)
 
 
-@login_required
-def add_article(request):
-    """ Add an article to the blog """
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
+class BlogDetailView(DetailView):
+    """(Logic by Mat @ JustDjango) Understood and implemented."""
 
-    if request.method == 'POST':
-        form = ArticleForm(request.POST, request.FILES)
+    model = Blog
+
+    def post(self, *args, **kwargs):
+        """Adding comments to blogs."""
+        form = BlogCommentForm(self.request.POST)
         if form.is_valid():
-            article = form.save()
-            messages.success(request, 'Successfully added article!')
-            return redirect(reverse('article', args=[article.id]))
-        else:
-            messages.error(request, 'Failed to add article. Please ensure the form is valid.')
-    else:
-        form = ArticleForm()
-        
-    template = 'blog/add_article.html'
-    context = {
-        'form': form,
-    }
+            blog = self.get_object()
+            blogcomment = form.instance
+            blogcomment.user = self.request.user
+            blogcomment.blog = blog
+            blogcomment.save()
+            return redirect("blog:details", slug=blog.slug)
+        return redirect("blog:details", slug=self.get_object().slug)
 
-    return render(request, template, context)
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context.update({
+            'form': BlogCommentForm()
 
+        })
+        return context
 
-@login_required
-def edit_article(request, article_id):
-    """ Edit an article in the store """
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
-
-    article = get_object_or_404(Article, pk=article_id)
-    if request.method == 'POST':
-        form = ArticleForm(request.POST, request.FILES, instance=article)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Successfully updated article!')
-            return redirect(reverse('article_detail', args=[article.id]))
-        else:
-            messages.error(request, 'Failed to update article. Please ensure the form is valid.')
-    else:
-        form = ArticleForm(instance=article)
-        messages.info(request, f'You are editing {article.name}')
-
-    template = 'blog/edit_article.html'
-    context = {
-        'form': form,
-        'article': article,
-    }
-
-    return render(request, template, context)
+    def get_object(self, **kwargs):
+        """Counts the number of authenticated users view the blog."""
+        object = super().get_object(**kwargs)
+        if self.request.user.is_authenticated:
+            BlogView.objects.get_or_create(user=self.request.user, blog=object)
+        return object
 
 
-@login_required
-def delete_article(request, article_id):
-    """ Delete an article from the blog """
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
+class BlogCreateView(LoginRequiredMixin, CreateView):
+    """
+    Uses the 'blog_form.html' as it needs the inputs,
+    The context is changed to 'create', 
+    (Logic by Mat @ JustDjango) Understood and implemented.
+    """
+    form_class = BlogForm
+    model = Blog
+    success_url = '/blog/'
 
-    article = get_object_or_404(Article, pk=article_id)
-    article.delete()
-    messages.success(request, 'Article deleted!')
-    return redirect(reverse('articles'))
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context.update({
+            'view_type': 'create'
+        })
+        return context
+
+
+class BlogUpdateView(LoginRequiredMixin, UpdateView):
+    """
+    Uses the 'blog_form.html' as it needs the inputs,
+    The context is changed to 'Update', 
+    (Logic by Mat @ JustDjango) Understood and implemented.
+    """
+    form_class = BlogForm
+    model = Blog
+    success_url = '/blog/'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context.update({
+            'view_type': 'update'
+        })
+        return context
+
+
+class BlogDeleteView(LoginRequiredMixin, DeleteView):
+    model = Blog
+    success_url = '/blog/'
+
+
+class BlogAuthorPageView(LoginRequiredMixin, View):
+    template_name = 'blog/blog_authors.html'
+    context_object_name = 'user'
+
+    def get(self, request, *args, **kwargs):
+        user_profile = get_object_or_404(User, id=self.kwargs['pk'])
+        user_blog = Blog.objects.filter(
+            author=user_profile.id).order_by('-publish_date')
+        context = {
+            'page_user': user_profile,
+            'user_blog': user_blog,
+        }
+        return render(request, 'blog/blog_authors.html', context)
+
+
+@ login_required()
+def like(request, slug):
+    """Checks to see if the use has liked the blog
+    If True, then delete the like if False then create the like
+    (Logic by Mat @ JustDjango) Understood and implemented."""
+
+    blog = get_object_or_404(Blog, slug=slug)
+    like_qs = Like.objects.filter(user=request.user, blog=blog)
+
+    if like_qs.exists():
+        # unlike the post
+        like_qs[0].delete()
+        return redirect('blog:details', slug=slug)
+
+    Like.objects.create(user=request.user, blog=blog)
+    return redirect('blog:details', slug=slug)

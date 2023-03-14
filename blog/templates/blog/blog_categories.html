@@ -1,0 +1,246 @@
+{% extends "base.html" %}
+{% load static %}
+{% load user_agents %}
+
+{% block head_title %} - Blog | Categories {% endblock head_title %}
+{% block content %}
+
+
+<!-- Page Content -->
+<div class="blog-pic pb-4">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-12 mb-0">
+                <a class="text-wht aw pl-2" href="{% url 'blog:list' %}" title="Back to Blogs">Blogs</a>
+                <span class="mx-2 mb-0 text-wht">/</span>
+                {% if user.is_authenticated %}
+                <a class="text-wht aw pl-2" href="{% url 'blog:create' %}">Create</a>
+                <span class="mx-2 mb-0 text-wht">/</span>
+                {% endif %}
+                <small class="text-wht aw {% if category  == 'Dieting' %} text-primary 
+                {% elif category  == 'Recovery' %} text-warning 
+                {% elif category  == 'Covid-19' %} text-danger 
+                {% elif category  == 'Members' %} text-light 
+                {% elif category  == 'Endurance' %} text-info
+                {% else %} text-success {% endif %}">{{ category }}</small>
+            </div>
+        </div>
+    </div>
+    <div class="row mx-4">
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+            {% if category_blogs %}
+            <div class="alpha-overlay mx-auto w-75 bg-black-a rounded-10">
+                <h1 class="my-4 aw text-primary text-center 
+                {% if category  == 'Dieting' %} text-primary 
+                {% elif category  == 'Recovery' %} text-warning 
+                {% elif category  == 'Covid-19' %} text-danger 
+                {% elif category  == 'Members' %} text-light 
+                {% elif category  == 'Endurance' %} text-info
+                {% else %} text-success {% endif %}">{{ category }} Blogs</h1>
+            </div>
+            {% for blog in category_blogs %}
+            {% if blog.category == 'Members' %}
+            {% if user.is_authenticated %}
+            {% if screen_size == True %}
+            {% include "blog/includes/blog_right.html" %}
+
+            <!-- else screen true  -->
+            {% else %}
+            {% if not forloop.counter|divisibleby:2  %}
+            {% include "blog/includes/blog_right.html" %}
+            <!-- else counter loop  -->
+            {% else %}
+            {% include "blog/includes/blog_left.html" %}
+            <!-- endif counter loop  -->
+            {% endif %}
+            <!-- endif screen true -->
+            {% endif %}
+            <!-- else != auth -->
+            {% else %}
+            <!-- members only -->
+            <div class="container center-block pt-4">
+                <div class="overlay">
+                    <div class="col-12 p-4">
+                        <p class="text-wht aw display-3 text-center">{{ category }} only</p>
+                        <h5 class="text-wht text-center">If you would like to
+                            join you can <a class="text-red" href="{% url 'account_signup' %}">Sign up</a> or <a
+                                class="text-grn" href="{% url 'account_login' %}">Login</a> </h5>
+                        <div class="row d-flex flex-row">
+                            <div class="col-12">
+                                <span>
+                                    <a class="ripple-surface my-2 w-100 text-wht aw px-4 btn btn-warning"
+                                        href="{% url 'blog:list' %}">Back to
+                                        Blogs<i class="pl-3 fa fa-undo"></i></a>
+                                </span>
+                                <span>
+                                    <a class="ripple-surface my-2 w-100 text-wht aw px-4 btn btn-success"
+                                        href="{% url 'home' %}"><i class="pr-3 fa fa-home"></i>Home</a>
+                                </span>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- endif auth -->
+            {% endif %}
+            <!-- else != members -->
+            {% else %}
+            {% if screen_size == True %}
+            {% include "blog/includes/blog_right.html" %}
+            <!-- else screen true  -->
+            {% else %}
+            {% if not forloop.counter|divisibleby:2  %}
+            {% include "blog/includes/blog_right.html" %}
+            <!-- else counter loop  -->
+            {% else %}
+            {% include "blog/includes/blog_left.html" %}
+            <!-- end loop counter -->
+            {% endif %}
+            <!-- endif screen true -->
+            {% endif %}
+            <!-- end if members -->
+            {% endif %}
+            <!-- end for blog loop -->
+            {% endfor %}
+
+        </div>
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+            <div id="blog-side-card" class="card my-4">
+
+                <!-- Search Widget -->
+                <div class="card-body mx-auto ">
+                    <div class="input-group">
+                        <form method="GET" action="{% url 'blog:search' %}" class="form-inline my-2 my-lg-0">
+                            <input class="aw w-75 form-control mr-sm-2" name="s" type="search"
+                                placeholder="Search Blogs" aria-label="Search">
+                            <button class="ripple-surface aw btn btn-success my-2 my-sm-0" type="submit">Go!</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Categories Widget -->
+                <div class="card my-4">
+                    <button type="button"
+                        class="aw text-center ripple-surface card-header border border-success text-wht bg-green"
+                        data-toggle="modal" data-target="#category_Modal">Categories<i
+                            class="ml-2 fad fa-info-circle fa-lg"></i>
+                    </button>
+
+                    <div class="card-body bg-black-a">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-0">
+                                    {% for item in category_menu %}
+                                    <a class=" dropdown-item aw
+                                    {% if item.name  == 'Dieting' %} text-primary 
+                                    {% elif item.name  == 'Recovery' %} text-warning 
+                                    {% elif item.name  == 'Covid-19' %} text-danger 
+                                    {% elif item.name  == 'Members' %} text-light 
+                                    {% elif item.name  == 'Endurance' %} text-info
+                                    {% else %} text-success {% endif %}" href="{% url 'blog:category' item %}"
+                                        data-item_id="{{ item.name}}" id="blog_">{{ item }}</a>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Category Model -->
+                <div class="modal" id="category_Modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header bg-success">
+                                <h3 class="modal-title text-wht aw">Blog Catogery Guid</h3>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body bg-black-a">
+                                <div class=" card my-4">
+                                    <table class="table table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="aw text-center text-wht bg-black-a">Catogery</th>
+                                                <th scope="col" class="aw text-center text-wht bg-black-a">Info</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" class="aw text-center">Members</th>
+                                                <td>This is for the members how would like to post there first blog, or
+                                                    ask a uestion or just tell us how you getting on with your training.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="aw bg-danger text-center">Covid-19</th>
+                                                <td>This is for all Covid-19 gym related topics</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="aw bg-primary text-center">Dieting</th>
+                                                <td colspan="2">This is for everything to with diet. Nutrision, tip and
+                                                    infomation</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="aw bg-success text-center">Strength Training</th>
+                                                <td colspan="2">All Blogs to do with Strength, builbing mussel, lifting
+                                                    techniques, Tip and exercises</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row" class="aw bg-warning">Recovery</th>
+                                                <td colspan="2">All blogs to do with recovery</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="aw bg-info">Endurance</th>
+                                                <td colspan="2">All blogs that focus on the endurance training side of
+                                                    thing, Running, Swimming</td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% else %}
+</div>
+
+<div class="container center-block pt-4">
+    <div class="overlay">
+        <div class="col-12 p-4">
+            <p class="text-wht aw display-3 text-center">Focus Fitness</p>
+            <h3 class="text-wht text-center">We have no Blogs in this Categorry</h3>
+            <div class="row d-flex flex-row">
+                <div class="col-12">
+                    <span>
+                        <a class="ripple-surface my-2 w-100 text-wht aw px-4 btn btn-warning"
+                            href="{% url 'blog:list' %}">Back to
+                            Blogs<i class="pl-3 fa fa-undo"></i></a>
+                    </span>
+                    <span>
+                        <a class="ripple-surface my-2 w-100 text-wht aw px-4 btn btn-success" href="{% url 'home' %}"><i
+                                class="pr-3 fa fa-home"></i>Home</a>
+                    </span>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
