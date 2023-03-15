@@ -2,7 +2,7 @@
         "pk": 1,
         "model": "blogs.blog",
         "fields": {
-            "category": ,
+            "category": "4",
             "title": "With Headphones and Shoes the Fit is More Important Than Anything Else",
             "description": "Steven Stone looks at why an under £300 headphone can be better than a £1000 one…",
             "content": "Last week, on a Facebook group page dedicated to headphones someone posted a query about which pair of premium headphones the group would recommend they purchase. The responses were as expected, with partisans of one or another of the models listed singing their praises and indicating that they would be the best choice. I, of course, disagreed with all these recommendations. My suggestion was, “Try each one on for fifteen minutes. You will then know which one to buy. 

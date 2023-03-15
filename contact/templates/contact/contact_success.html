@@ -18,24 +18,24 @@
     {% endblock %}
 
     {% block content %}
+    <div class="overlay"></div>
+    <div class="container mb-2">
     <div class="row">
         <div class="col  mt-3">
             <hr>
-            <h2 class="display-4 logo-font text-black text-center">Contact Us</h2>
+            <h2 class="display-4 logo-font text-black text-center">Thank you!</h2>
             <hr>
             <br>
-            <div>
-        <div class="row">
-    <div class="row">
-        <div class="col-10 offset-1 text-center">
-            <h4>Thank you for sending us your enquiry!</h4>
-            <p>We aim to reply to messages within 2 business days.</p>
-
-            <a href="{% url 'products' %}" class="btn btn-outline-black my-2">
-                <span class="mr-2"><i class="fas fa-shopping-bag"></i></span>
-                <span>Lets Shop!</span>
-            </a>
-
-        </div>
+            <div class="text-center">
+                <h4> We aim to reply within 2 working days. Thank you for your patience.</h4>
+            </div>
+            <br>
+            <div class="text-center">
+                <h4>
+                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0"><i class="fas fa-shopping-bag"></i>  Take me
+                        shopping!</a>
+                </h4>
+            </div>
     </div>
+</div>
 {% endblock %}
