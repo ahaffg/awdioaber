@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="product-container col-10 offset-1">
+            <div class="blog-container col-10 offset-1">
                 <div class="row mt-1 mb-2">
                     <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                         <div class="sort-select-wrapper w-50">
@@ -38,7 +38,7 @@
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
                                 <span class="small"><a href="{% url 'blogs' %}">Blogs Home</a> | </span>
                             {% endif %}
-                            {{ products|length }} Blogs{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                            {{ blogs|length }} Blogs{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
                     </div>
                 </div>
@@ -62,14 +62,14 @@
                                     <div class="row">
                                         <div class="col">
                                             <p class="small mt-1 mb-0">
-                                                <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                                                    <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                                <a class="text-muted" href="{% url 'blogs' %}?category={{ blog.category.name }}">
+                                                    <i class="fas fa-tag mr-1"></i>{{ blog.category.friendly_name }}
                                                 </a>
                                             </p>
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">
-                                                    <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                                    <a href="{% url 'edit_blog' blog.id %}">Edit</a> | 
+                                                    <a class="text-danger" href="{% url 'delete_blog' blog.id %}">Delete</a>
                                                 </small>
                                             {% endif %}
                                         </div>

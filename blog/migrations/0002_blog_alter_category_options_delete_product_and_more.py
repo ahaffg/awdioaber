@@ -28,7 +28,7 @@ class Migration(migrations.Migration):
             options={'verbose_name_plural': 'Categories'},
         ),
         migrations.DeleteModel(
-            name='Product',
+            name='Blog',
         ),
         migrations.AddField(
             model_name='blog',
