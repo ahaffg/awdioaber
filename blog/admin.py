@@ -1,17 +1,18 @@
 from django.contrib import admin
-from .models import Product, Category
+from .models import Blog, Category
 
 # Register your models here.
 
 
-class ProductAdmin(admin.ModelAdmin):
+class BlogAdmin(admin.ModelAdmin):
     list_display = (
-        'sku',
-        'name',
         'category',
-        'price',
-        'rating',
-        'image',
+        'title',
+        'description',
+        'content',
+        'date',
+        'author',
+        'image'
     )
 
     ordering = ('sku',)
@@ -24,5 +25,5 @@ class CategoryAdmin(admin.ModelAdmin):
     )
 
 
-admin.site.register(Product)
+admin.site.register(Blog)
 admin.site.register(Category)
