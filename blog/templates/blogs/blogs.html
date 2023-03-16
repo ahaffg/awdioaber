@@ -42,14 +42,14 @@
                         </p>
                     </div>
                 </div>
-                <div class="row">
-                    {% for blog in blogs %}
-                    <div class="col-lg-2 mb-3">
-                        <div class="card mb-3 border-0">
+                {% for blog in blogs %}
+                <div class="container">
+                    <div class="row">
+                        <div class="column">
                                 {% if blog.image %}
                                 <a href="{% url 'blog_detail' blog.id %}">
                                     <img class="card-img-top img-fluid" src="{{ blog.image.url }}" alt="{{ blog.name }}">
-                                </a>
+                                
                                 {% else %}
                                 <a href="{% url 'blog_detail' blog.id %}">
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ blog.name }}">
@@ -63,9 +63,10 @@
                                         <div class="col">
                                             <p class="small mt-1 mb-0">
                                                 <a class="text-muted" href="{% url 'blogs' %}?category={{ blog.category.name }}">
-                                                    <i class="fas fa-tag mr-1"></i>{{ blog.category.friendly_name }}
+                                                    <i class="fas fa-star mr-1"></i>{{ blog.category.friendly_name }}
                                                 </a>
                                             </p>
+                                        </a>
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">
                                                     <a href="{% url 'edit_blog' blog.id %}">Edit</a> | 
