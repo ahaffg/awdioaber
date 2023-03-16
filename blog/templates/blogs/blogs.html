@@ -44,8 +44,8 @@
                 </div>
                 <div class="row">
                     {% for blog in blogs %}
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0">
+                        <div class="card mb-6">
+                            <div class="card mb-3">
                                 {% if blog.image %}
                                 <a href="{% url 'blog_detail' blog.id %}">
                                     <img class="card-img-top img-fluid" src="{{ blog.image.url }}" alt="{{ blog.name }}">
@@ -56,7 +56,7 @@
                                 </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
-                                    <p class="mb-0">{{ blog.name }}</p>
+                                    <p class="mb-0">{{ blog.title }}</p>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-right">
                                     <div class="row">
@@ -77,7 +77,7 @@
                                 </div>
                             </div>
                         </div>
-                        {% if forloop.counter|divisibleby:1 %}
+                        <!--{% if forloop.counter|divisibleby:1 %}
                             <div class="col-12 d-sm-none mb-5">
                                 <hr>
                             </div>
@@ -87,12 +87,7 @@
                                 <hr>
                             </div>
                         {% endif %}
-                        {% if forloop.counter|divisibleby:3 %}
-                            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
-                    {% endfor %}
+                    {% endfor %} -->
                 </div>
             </div>
         </div>
