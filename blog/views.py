@@ -59,7 +59,7 @@ def all_blogs(request):
     return render(request, 'blogs/blogs.html', context)
 
 
-def blog_detail(request, blogt_id):
+def blog_detail(request, blog_id):
     """ A view to show individual blogs """
 
     blog = get_object_or_404(Blog, pk=blog_id)
