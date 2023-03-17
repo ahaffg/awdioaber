@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="row"></div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container my-auto">
+    <div class="row">
+        <div class="col  mt-3">
+            <hr>
+            <h2 class="display-4 logo-font text-black text-center">Clwb Awdio</h2>
+            <hr>
+            <br>
+            <div class="text-center">
+                <img id="about-logo" src="{% static 'images/readme/aa-logo.png' %}">
+            </div>
+            <div>
+                <br>
+                <br>
+                <p>
+                    Are you new to the hobby and don't know where  to begin? Or do you want to try out all the latest gear but just don't have the budget? If so, why not give Clwb Awdio a try?
+                </p>
+                <p>
+                    For a low monthly subscription, you will recieve either headphones, a DAP or an amp to try for a month. We arrange the shipping and collection for free, using industry standard damage proof packaging, so all you have to do is sit back and enjoy playing with the gear!
+                </p>
+                <p>
+                    Also if you decide that you really like your product, you can buy it at a 10% reduction - as well as that months subscription off of course!
+                </p>
+                <p>
+                    What's even better is that if you take out a subscription, your first month is absolutely free! So what are you waiting for?
+                </p>
+                <br>
+                <br>
+            </div>
+            <div class="text-center">
+                <h4>
+                    <a href="{% url 'faq' %}" class="btn btn-outline-black rounded-0">FAQs</a>
+                </h4>
+            </div>
+            <div class="text-center">
+                <h4>
+                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0">Sign me up!</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
