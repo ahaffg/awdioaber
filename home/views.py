@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 def index(request):
     """ A view to return the index page """
 
@@ -14,6 +15,7 @@ def contact(request):
 
 def policy(request):
     """ A view to return the privacy policy page """
+    
     return render(request, 'home/policy.html')
 
 

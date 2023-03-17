@@ -6,18 +6,19 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col text-center mt-3">
-                <hr>
-                <h2 class="logo-font mb-4 text-center">Products</h2>
+<div class="overlay"></div>
+<div class="container my-auto">
+    <div class="row">
+        <div class="col  mt-3">
+            <hr>
+            <h2 class="display-4 logo-font text-black text-center">Products</h2>
+            <hr>
+            <br>
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                         <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
-                <hr>
             </div>
         </div>
         <div class="row">
@@ -107,7 +108,6 @@
                         {% endif %}
                         {% if forloop.counter|divisibleby:4 %}
                             <div class="col-12 d-none d-xl-block mb-5">
-                                <hr>
                             </div>
                         {% endif %}
                     {% endfor %}

@@ -465,3 +465,7 @@ a {
     transform-origin: left;
     transform: scaleX(1);
   }
+
+.vitem {
+    color: white;
+}
