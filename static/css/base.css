@@ -158,7 +158,7 @@ input[name='q']::placeholder {
 }	
 /* Convenience classes - colors copied from Bootstrap */	
 .arrow-primary {	
-    border-bottom-color: #007bff !important;	
+    border-bottom-color: #00b7af !important;	
 }	
 .arrow-secondary {	
     border-bottom-color: #6c757d !important;	
@@ -173,7 +173,7 @@ input[name='q']::placeholder {
     border-bottom-color: #ffc107 !important;	
 }	
 .arrow-info {	
-    border-bottom-color: #17a2b8 !important;	
+    border-bottom-color: #00b7af !important;	
 }	
 .arrow-light {	
     border-bottom-color: #f8f9fa !important;	
@@ -227,8 +227,8 @@ input[name='q']::placeholder {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input [type='submit']:hover {
     color: var(--white);
-    background-color: var(--dark-blue);
-    border-color: var(--dark-blue);
+    background-color: var(--grey);
+    border-color: var(--grey);
 }
 
 /* --------------------------------- Media queries */
@@ -439,4 +439,8 @@ input[name='q']::placeholder {
 
 #about-logo {
     max-height: 30vh;
+}
+
+h3:hover {
+    color: grey;
 }
