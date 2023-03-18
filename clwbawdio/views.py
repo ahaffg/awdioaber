@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 def clwbawdio(request):
     """ A view to return the clwbawdio page """
 

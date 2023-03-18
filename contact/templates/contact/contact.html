@@ -1,32 +1,33 @@
 {% extends "base.html" %}
-    {% load static %}
-    
-    {% block extra_title %} - Contact Us{% endblock %}
+{% load static %}
 
-    {% block extra_meta %}
-        <meta name="description" content="Awdio Aber - Contact Us.">
-        <meta name="keywords" content="Contact us, Awdio Aber, for all your audio needs.">
-    
-        <!-- Social media - Facebook, LinkedIn, Google -->
-        <meta property="og:type" content="article">
-        <meta property="og:title" content="Awdio Aber - Contact Us">
-        <meta property="og:description" content="Awdio Aber - Contact Us.">
-        <meta name="image" property="og:image" content="{% static 'images/aa-logo.png' %}">
-        <meta property="og:image:alt" content="Awdio Aber ecommerce store shown on a variety of devices, from mobile to desktop">
-        <meta property="og:url" content="https://awdio-aber.herokuapp.com/contact">
-        <meta property="og:site_name" content="Awdio Aber - Contact Us">
-    {% endblock %}
+{% block extra_title %} - Contact Us{% endblock %}
 
-    {% block content %}
-    <div class="overlay"></div>
-    <div class="container mb-2"></div>
-        <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="logo-font mb-4 text-center">Contact</h2>
-                <hr>
-            </div>
-        </div>
+{% block extra_meta %}
+<meta name="description" content="Awdio Aber - Contact Us.">
+<meta name="keywords" content="Contact us, Awdio Aber, for all your audio needs.">
+
+<!-- Social media - Facebook, LinkedIn, Google -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Awdio Aber - Contact Us">
+<meta property="og:description" content="Awdio Aber - Contact Us.">
+<meta name="image" property="og:image" content="{% static 'images/aa-logo.png' %}">
+<meta property="og:image:alt"
+    content="Awdio Aber ecommerce store shown on a variety of devices, from mobile to desktop">
+<meta property="og:url" content="https://awdio-aber.herokuapp.com/contact">
+<meta property="og:site_name" content="Awdio Aber - Contact Us">
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container my-auto">
+<div class="row">
+    <div class="col mt-3">
+        <hr>
+        <h2 class="display-4 logo-font text-black text-center">Contact</h2>
+        <hr>
+        <br>
+    </div>
         <div class="container mb-2">
             <div class="container mb-2">
                 <p class="text-muted text-center">Please fill out the contact form below to get in touch with us.</p>
@@ -49,4 +50,5 @@
             </div>
         </div>
     </div>
-    {% endblock %}
+</div>
+{% endblock %}

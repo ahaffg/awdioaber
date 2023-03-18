@@ -8,59 +8,59 @@
 <div class="overlay"></div>
 <div class="container my-auto">
     <div class="row">
-        <div class="col  mt-3">
+        <div class="col mt-3">
             <hr>
             <h2 class="display-4 logo-font text-black text-center">Blog</h2>
             <hr>
             <br>
-        {% for c in current_categories %}
-        <a class="category-badge text-decoration-none" href="{% url 'blogs' %}?category={{ c.name }}">
-            <span
-                class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
-        </a>
-        {% endfor %}
-        <hr>
+            {% for c in current_categories %}
+            <a class="category-badge text-decoration-none" href="{% url 'blogs' %}?category={{ c.name }}">
+                <span
+                    class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+            </a>
+            {% endfor %}
+        </div>
     </div>
-</div>
-<!-- Search functioning-->
-<div class="row">
-    <div class="blog-container col-10 offset-1">
-        <div class="row mt-1 mb-2">
-            <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
-                <div class="sort-select-wrapper w-50">
-                    <select id="sort-selector"
-                        class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
-                        <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
-                        </option>
-                        <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name
-                            (A-Z)</option>
-                        <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name
-                            (Z-A)</option>
-                        <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>
-                            Category (A-Z)</option>
-                        <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>
-                            Category (Z-A)</option>
-                    </select>
+    <!-- Search functioning-->
+    <div class="row">
+        <div class="blog-container col-10 offset-1">
+            <div class="row mt-1 mb-2">
+                <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                    <div class="sort-select-wrapper w-50">
+                        <select id="sort-selector"
+                            class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
+                            </option>
+                            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name
+                                (A-Z)</option>
+                            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name
+                                (Z-A)</option>
+                            <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>
+                                Category (A-Z)</option>
+                            <option value="category_desc"
+                                {% if current_sorting == 'category_desc' %}selected{% endif %}>
+                                Category (Z-A)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 order-md-first">
+                    <p class="text-muted mt-3 text-center text-md-left">
+                        {% if search_term or current_categories or current_sorting != 'None_None' %}
+                        <span class="small"><a href="{% url 'blogs' %}">Blogs Home</a> | </span>
+                        {% endif %}
+                        {{ blogs|length }} Blogs{% if search_term %} found for
+                        <strong>"{{ search_term }}"</strong>{% endif %}
+                    </p>
                 </div>
             </div>
-            <div class="col-12 col-md-6 order-md-first">
-                <p class="text-muted mt-3 text-center text-md-left">
-                    {% if search_term or current_categories or current_sorting != 'None_None' %}
-                    <span class="small"><a href="{% url 'blogs' %}">Blogs Home</a> | </span>
-                    {% endif %}
-                    {{ blogs|length }} Blogs{% if search_term %} found for
-                    <strong>"{{ search_term }}"</strong>{% endif %}
-                </p>
-            </div>
-        </div>
-        <!-- Articles -->
-        {% for blog in blogs %}
-        <div class="container">
-            <div class="row">
-                <div class="column">
+            <!-- Articles -->
+            {% for blog in blogs %}
+            <div class="container">
+
+                <div class="card mb-3">
                     {% if blog.image %}
                     <a href="{% url 'blog_detail' blog.id %}">
-                        <img class="card-img-top img-fluid" src="{{ blog.image.url }}" alt="{{ blog.name }}">
+                        <img class="card-img-top" src="{{ blog.image.url }}" alt="{{ blog.name }}">
 
                         {% else %}
                         <a href="{% url 'blog_detail' blog.id %}">
@@ -82,22 +82,24 @@
                                             <i class="fas fa-star mr-1"></i>{{ blog.category.friendly_name }}
                                         </a>
                                     </p>
-                                    <!-- Blog Management -->
+                                </div>
+                            </div>
+                        </div>
                     </a>
-                    {% if request.user.is_superuser %}
-                    <small class="ml-3">
-                        <a href="{% url 'edit_blog' blog.id %}">Edit</a> |
-                        <a class="text-danger" href="{% url 'delete_blog' blog.id %}">Delete</a>
-                    </small>
-                    {% endif %}
                 </div>
             </div>
+            <!-- Blog Management -->
+            {% if request.user.is_superuser %}
+            <small class="ml-3">
+                <a href="{% url 'edit_blog' blog.id %}">Edit</a> |
+                <a class="text-danger" href="{% url 'delete_blog' blog.id %}">Delete</a>
+            </small>
+            {% endif %}
         </div>
     </div>
 </div>
-</div>
-<br>
-<br>
+
+
 {% endfor %}
 
 {% endblock %}
