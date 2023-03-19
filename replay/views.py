@@ -57,7 +57,7 @@ def all_replays(request):
         'current_sorting': current_sorting,
     }
 
-    return render(request, 'replays/replays.html', context)
+    return render(request, 'replay/replays.html', context)
 
 
 def replay_detail(request, replay_id):

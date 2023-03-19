@@ -17,7 +17,7 @@
         </div>
         <div class="container mb-2">
             <div class="container mb-2">
-                <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'add_replay' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
                         {% if field.name != 'image' %}
@@ -27,8 +27,8 @@
                         {% endif %}
                     {% endfor %}
                     <div class="text-right">
-                        <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
-                        <button class="btn btn-black rounded-0" type="submit">Add Product</button>
+                        <a class="btn btn-outline-black rounded-0" href="{% url 'replay' %}">Cancel</a>
+                        <button class="btn btn-black rounded-0" type="submit">Add Replay</button>
                     </div>
                 </form>
             </div>            

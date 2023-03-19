@@ -11,41 +11,41 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
-                    {% if product.image %}
-                        <a href="{{ product.image.url }}" target="_blank">
-                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    {% if replay.image %}
+                        <a href="{{ replay.image.url }}" target="_blank">
+                            <img class="card-img-top img-fluid" src="{{ replay.image.url }}" alt="{{ replay.name }}">
                         </a>
                         {% else %}
                         <a href="">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ replay.name }}">
                         </a>
                     {% endif %}
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="product-details-container mb-5 mt-md-5">
-                    <h2 class="mb-0">{{ product.name }}</h2>
-                    <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
-                    {% if product.category %}
+                <div class="replay-details-container mb-5 mt-md-5">
+                    <h2 class="mb-0">{{ replay.name }}</h2>
+                    <p class="lead mb-0 text-left font-weight-bold">£{{ replay.price }}</p>
+                    {% if replay.category %}
                     <p class="small mt-1 mb-0">
-                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                        <a class="text-muted" href="{% url 'replays' %}?category={{ replay.category.name }}">
+                            <i class="fas fa-tag mr-1"></i>{{ replay.category.friendly_name }}
                         </a>
                     </p>
                     {% endif %}
-                    {% if product.rating %}
-                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                    {% if replay.rating %}
+                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ replay.rating }} / 5</small>
                     {% else %}
                         <small class="text-muted">No Rating</small>
                     {% endif %}
                     {% if request.user.is_superuser %}
                         <small class="ml-3">
-                            <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                            <a href="{% url 'edit_replay' replay.id %}">Edit</a> | 
+                            <a class="text-danger" href="{% url 'delete_replay' replay.id %}">Delete</a>
                         </small>
                     {% endif %}
-                    <p class="mt-3">{{ product.description }}</p>
-                    <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
+                    <p class="mt-3">{{ replay.description }}</p>
+                    <form class="form" action="{% url 'add_to_bag' replay.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
                             <div class="col-12">
@@ -54,7 +54,7 @@
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                             <button class="decrement-qty btn btn-black rounded-0" 
-                                                data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                                data-item_id="{{ replay.id }}" id="decrement-qty_{{ replay.id }}">
                                                 <span class="icon">
                                                     <i class="fas fa-minus"></i>
                                                 </span>
@@ -62,11 +62,11 @@
                                         </div>
                                         <input class="form-control qty_input" type="number"
                                             name="quantity" value="1" min="1" max="99"
-                                            data-item_id="{{ product.id }}"
-                                            id="id_qty_{{ product.id }}">
+                                            data-item_id="{{ replay.id }}"
+                                            id="id_qty_{{ replay.id }}">
                                         <div class="input-group-append">
                                             <button class="increment-qty btn btn-black rounded-0"
-                                                data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                                data-item_id="{{ replay.id }}" id="increment-qty_{{ replay.id }}">
                                                 <span class="icon">
                                                     <i class="fas fa-plus"></i>
                                                 </span>
@@ -77,7 +77,7 @@
                             </div>
 
                             <div class="col{% if s %}-12 mt-2{% endif %}">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                                <a href="{% url 'replays' %}" class="btn btn-outline-black rounded-0 mt-5">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
@@ -96,5 +96,5 @@
 {% endblock %}
 {% block postloadjs %}
 {{ block.super }}
-{% include 'products/includes/quantity_input_script.html' %}
+{% include 'replays/includes/quantity_input_script.html' %}
 {% endblock %}
