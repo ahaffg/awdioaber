@@ -6,16 +6,16 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container mb-2">
-        <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="logo-font mb-4 text-center">Shopping Bag</h2>
-                <hr>
-            </div>
+<div class="overlay"></div>
+<div class="container my-auto">
+    <div class="row">
+        <div class="col mt-3">
+            <hr>
+            <h2 class="display-4 logo-font text-black text-center">Shopping Bag</h2>
+            <hr>
+            <br>
         </div>
-
+    </div>        
         <div class="row">
             <div class="col">
                 {% if bag_items %}
@@ -110,6 +110,7 @@
             </div>
         </div>
     </div>
+</div>
 {% endblock %}
 
 {% block postloadjs %}
