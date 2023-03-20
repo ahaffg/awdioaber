@@ -437,6 +437,6 @@ input[name='q']::placeholder {
     font-family: 'Megrim', cursive;
 }
 
-#about-logo {
+#about-logo, #clwb-logo, #faq-logo {
     max-height: 30vh;
 }
