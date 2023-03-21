@@ -15,7 +15,7 @@ def contact(request):
 
 def policy(request):
     """ A view to return the privacy policy page """
-    
+
     return render(request, 'home/policy.html')
 
 
@@ -24,10 +24,12 @@ def terms(request):
 
     return render(request, 'home/terms.html')
 
+
 def construction(request):
     """ A view to return the construction page """
 
     return render(request, 'home/construction.html')
+
 
 def about(request):
     """ A view to return the about page """

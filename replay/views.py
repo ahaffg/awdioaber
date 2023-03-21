@@ -33,7 +33,7 @@ def all_replays(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             replays = replays.order_by(sortkey)
-            
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             replays = replays.filter(category__name__in=categories)
@@ -42,10 +42,12 @@ def all_replays(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(
+                    request, "You didn't enter any search criteria!")
                 return redirect(reverse('replays'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query)
             replays = replays.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -86,10 +88,11 @@ def add_replay(request):
             messages.success(request, 'Successfully added replay!')
             return redirect(reverse('replay_detail', args=[replay.id]))
         else:
-            messages.error(request, 'Failed to add replay. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to add replay. Please ensure the form is valid.')
     else:
         form = ReplayForm()
-        
+
     template = 'replay/add_replay.html'
     context = {
         'form': form,
@@ -113,7 +116,8 @@ def edit_replay(request, replay_id):
             messages.success(request, 'Successfully updated replay!')
             return redirect(reverse('replay_detail', args=[replay.id]))
         else:
-            messages.error(request, 'Failed to update replay. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to update replay. Please ensure the form is valid.')
     else:
         form = ReplayForm(instance=replay)
         messages.info(request, f'You are editing {replay.name}')
