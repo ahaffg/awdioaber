@@ -21,16 +21,21 @@
                 <br>
                 <br>
                 <p>
-                    Are you new to the hobby and don't know where  to begin? Or do you want to try out all the latest gear but just don't have the budget? If so, why not give Clwb Awdio a try?
+                    Are you new to the hobby and don't know where to begin? Or do you want to try out all the latest
+                    gear but just don't have the budget? If so, why not give Clwb Awdio a try?
                 </p>
                 <p>
-                    For a low monthly subscription, you will recieve either headphones, a DAP or an amp to try for a month. We arrange the shipping and collection for free, using industry standard damage proof packaging, so all you have to do is sit back and enjoy playing with the gear!
+                    For a low monthly subscription, you will recieve either headphones, a DAP or an amp to try for a
+                    month. We arrange the shipping and collection for free, using industry standard damage proof
+                    packaging, so all you have to do is sit back and enjoy playing with the gear!
                 </p>
                 <p>
-                    Also if you decide that you really like your product, you can buy it at a 10% reduction - as well as that months subscription off, of course!
+                    Also if you decide that you really like your product, you can buy it at a 10% reduction - as well as
+                    that months subscription off, of course!
                 </p>
                 <p>
-                    What's even better is that if you take out a subscription, your first month is absolutely free! So what are you waiting for?
+                    What's even better is that if you take out a subscription, your first month is absolutely free! So
+                    what are you waiting for?
                 </p>
                 <br>
                 <br>
@@ -41,12 +46,16 @@
                 </h4>
             </div>
             <div class="text-center">
-                <h4>
-                    <a href="https://buy.stripe.com/test_6oE4ikgbd4md1nW9AA" target="_blank" class="btn btn-outline-black rounded-0">Sign me up!</a>
-                </h4>
+                <stripe-buy-button buy-button-id="buy_btn_1Mo8gAEQhK7XUVQZ21qFb5rr"
+                    publishable-key="pk_test_51MZzM9EQhK7XUVQZqhCG7R6eufg2EPEOWcZPICbBzQFMpdOp5Cfy4Ho4IpGJYQHyWKf9OVWrzjM3z77LsgqPgrti00TNVEqbUI">
+                </stripe-buy-button>
             </div>
         </div>
     </div>
 </div>
+{% block postloadjs %}
 
+<script async src="https://js.stripe.com/v3/buy-button.js">
+</script>
+{% endblock %}
 {% endblock %}

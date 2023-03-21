@@ -69,14 +69,22 @@
             <div class="text-center">
                 <h3>I'm sold! Gimme, gimme, gimme!</h3>
             </div>
+            <br>
             <div class="text-center">
-                <br>
-                <h4>
-                    <a href="https://buy.stripe.com/test_6oE4ikgbd4md1nW9AA" class="btn btn-outline-black rounded-0">Sign me up!</a>
-                </h4>
+
+                <stripe-buy-button
+  buy-button-id="buy_btn_1Mo8gAEQhK7XUVQZ21qFb5rr"
+  publishable-key="pk_test_51MZzM9EQhK7XUVQZqhCG7R6eufg2EPEOWcZPICbBzQFMpdOp5Cfy4Ho4IpGJYQHyWKf9OVWrzjM3z77LsgqPgrti00TNVEqbUI"
+>
             </div>
         </div>
     </div>
 </div>
 </div>
+{% block postloadjs %}
+
+<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+{% endblock %}
 {% endblock %}
