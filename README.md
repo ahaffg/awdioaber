@@ -1,6 +1,7 @@
+# Code Institute - Level 5 Diploma in Web Application Development - Milestone Project 4
+# Awdio Aber
 ![Awdio Aber Mockup](/media/all-devices-black%20(1).png)
 
-# Awdio Aber
 ## Backstory
 For my fourth Milestone project with Code Institute I want to create a n app that will really push me outside of my comfort zone and show my ability to create solutions to problems outside my immediate field of knowledge.
 My father gave me the initial seed of an idea that I should build an app for my husband. So, from there, this is how the idea had grown.
@@ -12,6 +13,8 @@ His primary hub for this has been [Head-Fi](https://www.head-fi.org/), a forum f
 I seem to forever be posting and receiving equipment for my husband to the point where it feels like our home is part of an audio equipment conveyor belt! Members of this community are always swapping equipment as a sort of informal “try before you buy” arrangement. We especially are challenged by our location (living in far west Wales) and are unable to pop to a local audio shop to browse or buy. Also, sites like Amazon and Ebay are not ideal for selling as the second-hand market is treacherous for sellers with the risk of unhappy customers and high commission costs.
 
 To that end, based on what I see as an opportunity within this community and driven by my husband’s knowledge and passion, I want to build an app that would allow my husband to establish as formal membership programme whereby members could sign up to hire equipment either to buy or just to try.
+
+The live site can be seen [here](https://awdioaber.herokuapp.com/).
 
 ## Contents
 ---
