@@ -14,49 +14,50 @@
   {% block extra_meta %}
   {% endblock %}
 
-<!-- FAVICON -->
-{% block favicon %}
-<link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
-<link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
-<link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
-<link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
-{% endblock %}
+  <!-- FAVICON -->
+  {% block favicon %}
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+  <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
+  {% endblock %}
 
-{% block corecss %}
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  {% block corecss %}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Megrim&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap">
-<link rel="stylesheet" href="{% static 'css/base.css' %}">
-{% endblock %}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Megrim&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  {% endblock %}
 
 
 
-{% block extra_css %}
-{% endblock %}
+  {% block extra_css %}
+  {% endblock %}
 
-{% block corejs %}
-<script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-</script>
-<script src="https://js.stripe.com/v3/"></script>
-<script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
-{% endblock %}
+  {% block corejs %}
+  <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+  {% endblock %}
 
-{% block extra_js %}
-{% endblock %}
+  {% block extra_js %}
+  {% endblock %}
 
-<title>Awdio Aber {% block extra_title %}{% endblock %}</title>
+  <title>Awdio Aber {% block extra_title %}{% endblock %}</title>
 </head>
 <!--Logo-->
+
 <body class="random_bg">
   <header class="container-fluid top">
     <div id="main-nav-header" class="row">
@@ -65,7 +66,7 @@
           <h1 class="logo-font text-black my-0">Awdio Aber</h1>
         </a>
       </div>
-<!--Search-->
+      <!--Search-->
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <form method="GET" action="{% url 'products' %}">
           <div class="input-group w-100">
@@ -81,32 +82,33 @@
           </div>
         </form>
       </div>
-<!-- Account login icon-->
+      <!-- Account login icon-->
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-            <li class="list-inline-item dropdown">
-                <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <div class="text-center">
-                        <div><i class="fas fa-user fa-lg"></i></div>
-                        <p class="my-0">My Account</p>
-                    </div>
-                </a>
-                <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                    {% if request.user.is_authenticated %}
-                        {% if request.user.is_superuser %}
-                            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                            <a href="{% url 'add_blog' %}" class="dropdown-item">Blog Management</a>
-                        {% endif %}
-                        <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                        <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                    {% else %}
-                        <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                        <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                    {% endif %}
-                </div>
-            </li>
-            
-<!--Bag total-->
+          <li class="list-inline-item dropdown">
+            <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <div class="text-center">
+                <div><i class="fas fa-user fa-lg"></i></div>
+                <p class="my-0">My Account</p>
+              </div>
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+              {% if request.user.is_authenticated %}
+              {% if request.user.is_superuser %}
+              <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+              <a href="{% url 'add_blog' %}" class="dropdown-item">Blog Management</a>
+              {% endif %}
+              <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+              <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+              {% else %}
+              <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+              <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+              {% endif %}
+            </div>
+          </li>
+
+          <!--Bag total-->
           <li class="list-inline-item">
             <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
               href="{% url 'view_bag' %}">
@@ -124,8 +126,8 @@
           </li>
         </ul>
       </div>
-    </div>      
-<!-- Toggler-->
+    </div>
+    <!-- Toggler-->
     <div class="row bg-white">
       <nav class="navbar navbar-expand-lg navbar-light w-100">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
@@ -135,110 +137,118 @@
         <!--{% include 'includes/mobile-top-header.html' %}-->
         {% include 'includes/main-nav.html' %}
       </nav>
-    </div> 
-<!-- Ticker code adapted from https://code-boxx.com/html-css-news-ticker-horizontal-vertical/-->
+    </div>
+    <!-- Ticker code adapted from https://code-boxx.com/html-css-news-ticker-horizontal-vertical/-->
     <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
     </div>
     <div id="delivery-banner" class="row text-center">
       <div class="col bg-black text-white">
-        <div class="vwrap bg-black"><div class="vmove">
-          <div class="vitem">Hire and Buy with confidence!</div>
-          <div class="vitem">New FiiO gear in stock!</div>
-          <div class="vitem">Free Shipping - Forever!</div>
-        </div></div>
+        <div class="vwrap bg-black">
+          <div class="vmove">
+            <div class="vitem">Hire and Buy with confidence!</div>
+            <div class="vitem">New FiiO gear in stock!</div>
+            <div class="vitem">Free Shipping - Forever!</div>
+          </div>
+        </div>
       </div>
     </div>
-</header>
+  </header>
 
-{% if messages %}
-<div class="message-container">
-  {% for message in messages %}
-  {% with message.level as level %}
-  {% if level == 40 %}
-  {% include 'includes/toasts/toast_error.html' %}
-  {% elif level == 30 %}
-  {% include 'includes/toasts/toast_warning.html' %}
-  {% elif level == 25 %}
-  {% include 'includes/toasts/toast_success.html' %}
-  {% else %}
-  {% include 'includes/toasts/toast_info.html' %}
-  {% endif %}
-  {% endwith %}
-  {% endfor %}
-  {% endif %}
-</div>
-{% block page_header %}
-{% endblock %}
+  {% if messages %}
+  <div class="message-container">
+    {% for message in messages %}
+    {% with message.level as level %}
+    {% if level == 40 %}
+    {% include 'includes/toasts/toast_error.html' %}
+    {% elif level == 30 %}
+    {% include 'includes/toasts/toast_warning.html' %}
+    {% elif level == 25 %}
+    {% include 'includes/toasts/toast_success.html' %}
+    {% else %}
+    {% include 'includes/toasts/toast_info.html' %}
+    {% endif %}
+    {% endwith %}
+    {% endfor %}
+    {% endif %}
+  </div>
+  {% block page_header %}
+  {% endblock %}
 
-{% block content %}
-{% endblock %}
-<br>
-<br>
-<hr>
-<br>
-<br>
-<!-- Footer -->
-<footer class="container-fluid bottom">
-  <div id="footer-div" class="container">
-    <div class="row">
-      <div class="col l6 s12 text-center">
-        <h5 class="white-text text-shadow">Awdio Aber
-        </h5>
-        <ul>
-          <li><a href="{% url 'contact' %}" class="nav-link main-logo-link logo-font text-black my-0"><i class="far fa-paper-plane"></i>
-              Contact
-            </a></li>
-          <li><a href="{% url 'terms' %}" class="nav-link main-logo-link logo-font text-black my-0"><i class="far fa-file-alt"></i>
-              Terms and Conditions
-            </a></li>
-          <li><a href="{% url 'policy' %}" class="nav-link main-logo-link logo-font text-black my-0"><i class="fas fa-user-lock"></i>
-              Privacy Policy
-            </a></li>
-        </ul>
-      </div>
-<!-- Payment Section -->
-  <div class="col l6 s12 text-center">
-    <h5 class="text-center">Payments</h5>
-    <br>
-    <h6>Payments facilitated by <a href="https://stripe.com/gb" target="_blank" class="nav-link main-logo-link logo-font text-black my-0 text-center"></a><i class="fab fa-cc-stripe"></i> Stripe</a></h6>
-    <h6 class="text-center">Cards Accepted:</h6>
-<i class="fab fa-cc-visa"><span class="fa-sr-only"></span></i>
-<i class="fab fa-cc-mastercard"><span class="fa-sr-only"></span></i>
-<i class="fab fa-cc-amex"><span class="fa-sr-only"></span></i>
-<i class="fab fa-cc-discover"><span class="fa-sr-only"></span></i>
-<i class="fab fa-cc-diners-club"><span class="fa-sr-only"></span></i>
-</div>
-<!-- Social Media Links-->
-      <div class="col l6 s12">
-        <h5 class="text-center">Connect
-        </h5>
-        <ul class="text-center">
-          <li><a href="https://en-gb.facebook.com/" target="_blank"
-              class="nav-link main-logo-link logo-font text-black my-0 text-center"><i class="fab fa-facebook-f"></i>
-              Facebook
-            </a></li>
-          <li><a href="https://www.instagram.com/" target="_blank"
-              class="nav-link main-logo-link logo-font text-black my-0"><i class="fab fa-instagram"></i>
-              Instagram
-            </a></li>
-          <li><a href="https://www.tiktok.com/" target="_blank"
-              class="nav-link main-logo-link logo-font text-black my-0"><i class="fab fa-tiktok"></i>
-              Tik Tok
-            </a></li>
-        </ul>
-    </div> 
-<br>
-<!-- Educational project disclaimer-->
-    <div class="row educational-purposes text-center pb-5">
-      <div class="col text-center">
-        <br>
-        <p>Awdio Aber has been created by <a href="https://github.com/ahaffg" target="_blank">Angharad Griffiths</a> as
-          a portfolio project for the Code Institutes Level 5 Diploma in Web Application Development.</p>
+  {% block content %}
+  {% endblock %}
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+  <!-- Footer -->
+  <footer class="container-fluid bottom">
+    <div id="footer-div" class="container">
+      <div class="row">
+        <div class="col l6 s12 text-center">
+          <h5 class="white-text text-shadow">Awdio Aber
+          </h5>
+          <ul>
+            <li><a href="{% url 'contact' %}" class="nav-link main-logo-link logo-font text-black my-0"><i
+                  class="far fa-paper-plane"></i>
+                Contact
+              </a></li>
+            <li><a href="{% url 'terms' %}" class="nav-link main-logo-link logo-font text-black my-0"><i
+                  class="far fa-file-alt"></i>
+                Terms and Conditions
+              </a></li>
+            <li><a href="{% url 'policy' %}" class="nav-link main-logo-link logo-font text-black my-0"><i
+                  class="fas fa-user-lock"></i>
+                Privacy Policy
+              </a></li>
+          </ul>
+        </div>
+        <!-- Payment Section -->
+        <div class="col l6 s12 text-center">
+          <h5 class="text-center">Payments</h5>
           <br>
-          <p>As this site has been created for educational purposes, no orders received will be fulfilled.</p>
+          <h6>Payments facilitated by <a href="https://stripe.com/gb" target="_blank"
+              class="nav-link main-logo-link logo-font text-black my-0 text-center"></a><i class="fab fa-cc-stripe"></i>
+            Stripe</a></h6>
+          <h6 class="text-center">Cards Accepted:</h6>
+          <i class="fab fa-cc-visa"><span class="fa-sr-only"></span></i>
+          <i class="fab fa-cc-mastercard"><span class="fa-sr-only"></span></i>
+          <i class="fab fa-cc-amex"><span class="fa-sr-only"></span></i>
+          <i class="fab fa-cc-discover"><span class="fa-sr-only"></span></i>
+          <i class="fab fa-cc-diners-club"><span class="fa-sr-only"></span></i>
+        </div>
+        <!-- Social Media Links-->
+        <div class="col l6 s12">
+          <h5 class="text-center">Connect
+          </h5>
+          <ul class="text-center">
+            <li><a href="https://en-gb.facebook.com/" target="_blank"
+                class="nav-link main-logo-link logo-font text-black my-0 text-center"><i class="fab fa-facebook-f"></i>
+                Facebook
+              </a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"
+                class="nav-link main-logo-link logo-font text-black my-0"><i class="fab fa-instagram"></i>
+                Instagram
+              </a></li>
+            <li><a href="https://www.tiktok.com/" target="_blank"
+                class="nav-link main-logo-link logo-font text-black my-0"><i class="fab fa-tiktok"></i>
+                Tik Tok
+              </a></li>
+          </ul>
+        </div>
+        <br>
+        <!-- Educational project disclaimer-->
+        <div class="row educational-purposes text-center pb-5">
+          <div class="col text-center">
+            <br>
+            <p>Awdio Aber has been created by <a href="https://github.com/ahaffg" target="_blank">Angharad Griffiths</a>
+              as
+              a portfolio project for the Code Institutes Level 5 Diploma in Web Application Development.</p>
+            <br>
+            <p>As this site has been created for educational purposes, no orders received will be fulfilled.</p>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
@@ -247,24 +257,22 @@
           </script> Awdio Aber</p>
         <span id="copyright">
         </span>
-        </p>
       </div>
     </div>
-    </footer>
-    
+  </footer>
 
-{% block postloadjs %}
-<script src="{% static 'js/script.js' %}"></script>
 
-<script type="text/javascript">
-  $('.toast').toast('show');
-</script>
+  {% block postloadjs %}
+  <script src="{% static 'js/script.js' %}"></script>
 
-<script async
-  src="https://js.stripe.com/v3/buy-button.js">
-</script>
+  <script>
+    $('.toast').toast('show');
+  </script>
 
-{% endblock %}
+  <script async src="https://js.stripe.com/v3/buy-button.js">
+  </script>
+
+  {% endblock %}
 </body>
 
 </html>
