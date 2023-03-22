@@ -2,7 +2,6 @@
 {% load static %}
 
 {% block page_header %}
-<div class="row"></div>
 {% endblock %}
 
 {% block content %}
@@ -21,31 +20,26 @@
                 <br>
                 <br>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut esse, enim ratione nihil porro qui
-                    recusandae. Officia libero distinctio assumenda tempore, veniam adipisci minus vitae, quod,
-                    asperiores excepturi eligendi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore ut modi totam a? Consectetur quaerat maxime officiis tenetur minima repellendus sed sequi
-                    ipsa vitae sint voluptatem, veniam temporibus, aliquam Lorem ipsum, dolor sit amet consectetur
-                    adipisicing elit. Nostrum, reprehenderit repellat aperiam explicabo beatae at impedit delectus.
-                    Omnis laudantium dolorem iusto. Nulla sint expedita consectetur omnis? Cum minus suscipit harum.
+                    At the tender age of 9, a young boy living in the west Wales countryside recieved his very first
+                    album on casette. It was the start of a life-long obsession with music that began with listening
+                    to and collecting as much music as he could. He wanted to sample every genre from every continent.
+                    If it was good he wanted to hear it After some time however, he realised that how you were
+                    listening to the music was just as important as the music itself. That young lad was the founder
+                    of this store.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut esse, enim ratione nihil porro qui
-                    recusandae. Officia libero distinctio assumenda tempore, veniam adipisci minus vitae, quod,
-                    asperiores excepturi eligendi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore ut modi totam a? Consectetur quaerat maxime officiis tenetur minima repellendus sed sequi
-                    ipsa vitae sint voluptatem, veniam temporibus, aliquam Lorem ipsum, dolor sit amet consectetur
-                    adipisicing elit. Nostrum, reprehenderit repellat aperiam explicabo beatae at impedit delectus.
-                    Omnis laudantium dolorem iusto. Nulla sint expedita consectetur omnis? Cum minus suscipit harum.
+                    An avid member of the audiophile community for several years now, Lord Gazzington (as he's known
+                    to many) is a respected audio reviewer known for his integrity and impartiality. With an interest
+                    in a miriad different music genres, his knowledge of the best gear to suit the music is uncanny.
+                    He was frustrated however by not being able to try audio equiptment- being restricted by his
+                    location in west Wales, as well as the biased reviews common on other sites.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut esse, enim ratione nihil porro qui
-                    recusandae. Officia libero distinctio assumenda tempore, veniam adipisci minus vitae, quod,
-                    asperiores excepturi eligendi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore ut modi totam a? Consectetur quaerat maxime officiis tenetur minima repellendus sed sequi
-                    ipsa vitae sint voluptatem, veniam temporibus, aliquam Lorem ipsum, dolor sit amet consectetur
-                    adipisicing elit. Nostrum, reprehenderit repellat aperiam explicabo beatae at impedit delectus.
-                    Omnis laudantium dolorem iusto. Nulla sint expedita consectetur omnis? Cum minus suscipit harum.
+                    And so, Awdio Aber was born! We aim to bring the best quality products, service and advice
+                    to experienced audiophiles as well as those new to the hobby. We draw upon many years of experience
+                    to sell only equiptment that we believe is of great quality and are not affiliated with brands or
+                    or music journalists. Wether you are buying or hiring from us, you can do so with the utmost
+                    confidence that you will be recieving a quality audio product.
                 </p>
                 <br>
                 <br>
@@ -57,8 +51,21 @@
                         Shop!</a>
                 </h4>
             </div>
+            <br>
+            <div class="text-center">
+                <p>Find out more about Clwb Awdio here</p>
+            </div>
+            <div class="text-center">
+                <stripe-buy-button buy-button-id="buy_btn_1Mo8gAEQhK7XUVQZ21qFb5rr"
+                    publishable-key="pk_test_51MZzM9EQhK7XUVQZqhCG7R6eufg2EPEOWcZPICbBzQFMpdOp5Cfy4Ho4IpGJYQHyWKf9OVWrzjM3z77LsgqPgrti00TNVEqbUI">
+                </stripe-buy-button>
+            </div>
         </div>
     </div>
 </div>
+{% block postloadjs %}
 
+<script async src="https://js.stripe.com/v3/buy-button.js">
+</script>
+{% endblock %}
 {% endblock %}
