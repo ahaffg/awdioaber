@@ -440,3 +440,7 @@ input[name='q']::placeholder {
 #about-logo, #clwb-logo, #faq-logo {
     max-height: 30vh;
 }
+
+a:hover {
+    color: #000;
+}
