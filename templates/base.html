@@ -253,9 +253,12 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-        <p class="copyright text-muted white-text text-center">Copyright <script>
-            $("#copyright").text(new Date().getFullYear());
-          </script> Awdio Aber</p>
+        <!-- Date function taken from Flask Framework project:
+https://github.com/Code-Institute-Solutions/FlaskFramework
+/blob/master/04-RoutingAndTemplates/04-providing_feedback_to_
+the_user/templates/base.html-->
+        <p class="copyright text-muted white-text text-center">Copyright &copy; Awdio Aber <span id="copyright"></span>
+        </p>
         <span id="copyright">
         </span>
       </div>
@@ -271,6 +274,10 @@
   </script>
 
   <script async src="https://js.stripe.com/v3/buy-button.js">
+  </script>
+
+  <script>
+    $("#copyright").text(new Date().getFullYear());
   </script>
 
   {% endblock %}
