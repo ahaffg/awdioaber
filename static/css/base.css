@@ -441,7 +441,7 @@ input[name='q']::placeholder {
     max-height: 30vh;
 }
 
-/* Links */
+/* Links 
 
 a:link, a:visited {
     color: var(--link-fg);
@@ -469,3 +469,4 @@ a.section:link, a.section:visited {
 a.section:focus, a.section:hover {
     text-decoration: underline;
 }
+*/
