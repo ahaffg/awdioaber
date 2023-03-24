@@ -17,7 +17,8 @@ class Category(models.Model):
 
 
 class Blog(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey(
+        'Category', null=True, blank=True, on_delete=models.SET_NULL)
     title = models.CharField(max_length=500)
     description = models.TextField()
     content = models.TextField()
