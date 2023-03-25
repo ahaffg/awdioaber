@@ -89,7 +89,8 @@ def add_replay(request):
             return redirect(reverse('replay_detail', args=[replay.id]))
         else:
             messages.error(
-                request, 'Failed to add replay. Please ensure the form is valid.')
+                request, 'Failed to add replay. \
+                    Please ensure the form is valid.')
     else:
         form = ReplayForm()
 
@@ -117,7 +118,8 @@ def edit_replay(request, replay_id):
             return redirect(reverse('replay_detail', args=[replay.id]))
         else:
             messages.error(
-                request, 'Failed to update replay. Please ensure the form is valid.')
+                request, 'Failed to update replay. \
+                    Please ensure the form is valid.')
     else:
         form = ReplayForm(instance=replay)
         messages.info(request, f'You are editing {replay.name}')
