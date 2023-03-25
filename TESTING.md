@@ -1,6 +1,6 @@
 # Awdio Aber - Testing
 
-![Awdio Aber Logo](documentation/readme/banner.png)
+![Awdio Aber](media/logo.png)
 
 [Visit Awdio Aber Here](https://awdioaber.herokuapp.com/)
 
@@ -26,7 +26,7 @@
 
 Testing was ongoing throughout the entire build. During development I made use of Googles Developer Tools to ensure everything was working as expected and to assist me with troubleshooting when things didn't work as they should.
 
-I have gone through each page of the site using the Chrome Developer Tools to ensure each page is responsive on a variety of different screen sizes and devices, as well as manually testing this using a variety of devices in person.
+I have gone through each page of the site using the Chrome Developer Tools to ensure each page is responsive on a variety of different screen sizes and devices, as well as manually testing this using a variety of devices in person. My husband and father have also provided feedback of any issues they found whilst navigating the site.
 
 ---
 
@@ -71,8 +71,10 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 
 | File | Result | Evidence |
 | :--- | :--- | :---: |
-| checkout/static/checkout/js/stripe-elements.js | - | [stripe-elements.js]|
+| checkout/static/checkout/js/stripe-elements.js | - | [stripeelementsjs.png]|
+| clwbawdio/static/js/client.js | - | [clientjs.png]|
 | profiles/static/profiles/js/countryfield.js | - |[countryfield.js]|
+| static/js/script.js | Pass |[scriptjs.png]|
 
 ### Python
 
