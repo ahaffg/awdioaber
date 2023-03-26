@@ -72,19 +72,16 @@
             <br>
             <div class="text-center">
 
-                <stripe-buy-button
-  buy-button-id="buy_btn_1Mo8gAEQhK7XUVQZ21qFb5rr"
-  publishable-key="pk_test_51MZzM9EQhK7XUVQZqhCG7R6eufg2EPEOWcZPICbBzQFMpdOp5Cfy4Ho4IpGJYQHyWKf9OVWrzjM3z77LsgqPgrti00TNVEqbUI"
->
+                <stripe-buy-button buy-button-id="buy_btn_1Mo8gAEQhK7XUVQZ21qFb5rr"
+                    publishable-key="pk_test_51MZzM9EQhK7XUVQZqhCG7R6eufg2EPEOWcZPICbBzQFMpdOp5Cfy4Ho4IpGJYQHyWKf9OVWrzjM3z77LsgqPgrti00TNVEqbUI">
             </div>
         </div>
     </div>
 </div>
-</div>
+
 {% block postloadjs %}
 
-<script async
-  src="https://js.stripe.com/v3/buy-button.js">
+<script async src="https://js.stripe.com/v3/buy-button.js">
 </script>
 {% endblock %}
 {% endblock %}
