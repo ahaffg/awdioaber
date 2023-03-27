@@ -82,75 +82,84 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 
 | File | Result | Evidence |
 | :--- | :--- | :---: |
-| custom_storages.py | - | [custom_storages.py validation]|
 | **AWDIO_ABER** |
-| seaside_sewing/settings.py | - | [settings.py validation]|
-| seaside_sewing/urls.py | - | [urls.py validation]|
+| awdio_aber/settings.py | Pass | [settings.py validation](static/testing/Python/awdioaber/settingspy.png)|
+| awdio_aber/asgi.py | Pass | [asgi.py validation](static/testing/Python/awdioaber/asgipy.png)|
+| awdio_aber/wsgipy.py | Pass | [wisgi.py validation](static/testing/Python/awdioaber/wsgipy.png)|
+| awdio_aber/urls.py | Pass | [settings.py validation](static/testing/Python/awdioaber/urlspy.png)|
 | **BAG** |
-| bag/apps.py | - | [apps.py validation]|
-| bag/contexts.py | - | [contexts.py validation]|
-| bag/urls.py | - | [urls.py validation]|
-| bag/views.py | - | [views.py validation]|
-| bag/templatetags/bag_tools.py | - | [bag_tools.py validation]|
-| bag/test_views.py | - | [test_views.py validation]|
+| bag/admin.py | Pass | [admin.py validation](static/testing/Python/bag/adminpy.png)|
+| bag/apps.py | Pass | [apps.py validation](static/testing/Python/bag/appspy.png)|
+| bag/bagtools.py | Pass | [bagtools.py validation](static/testing/Python/bag/bagtoolspy.png)|
+| bag/contexts.py | Pass | [contexts.py validation](static/testing/Python/bag/contextspy.png)|
+| bag/models.py | Pass | [models.py validation](static/testing/Python/bag/modelspy.png)|
+| bag/urls.py | Pass | [urls.py validation](static/testing/Python/bag/urlspy.png)|
+| bag/views.py | Pass | [views.py validation](static/testing/Python/bag/viewspy.png)|
+| bag/tests.py | Pass | [tests.py validation](static/testing/Python/bag/testspy.png)|
+| **BLOG** |
+| blog/admin.py | Pass | [admin.py validation](static/testing/Python/blog/adminpy.png)|
+| blog/apps.py | Pass | [apps.py validation](static/testing/Python/blog/appspy.png)|
+| blog/forms.py | Pass | [forms.py validation](static/testing/Python/blog/formspy.png)|
+| blog/models.py | Pass | [models.py validation](static/testing/Python/blog/modelspy.png)|
+| blog/urls.py | Pass | [urls.py validation](static/testing/Python/blog/urlspy.png)|
+| blog/views.py | Pass | [views.py validation](static/testing/Python/blog/viewspy.png)|
+| blog/widgets.py | Pass | [widgets.py validation](static/testing/Python/blog/widgetspy.png)|
+| blog/tests.py | Pass | [tests.py validation](static/testing/Python/blog/testspy.png)|
 | **CHECKOUT** |
-| checkout/admin.py | - | [admin.py validation]|
-| checkout/apps.py | - | [apps.py validation]|
-| checkout/forms.py | - | [forms.py validation]|
-| checkout/models.py | - | [models.py validation]|
-| checkout/signals.py | - | [signals.py validation]|
-| checkout/urls.py | - | [urls.py validation]|
-| checkout/views.py | - | [views.py]|
-| checkout/webhook_handler.py | - | [webhook_handler.py]|
-| checkout/webhooks.py | -| [webhooks.py]|
-| checkout/test_forms.py | - | [test_forms.py validation]|
-| checkout/test_views.py | - | [test_views.py validation]|
+| checkout/admin.py | Pass | [admin.py validation](static/testing/Python/checkout/adminpy.png)|
+| checkout/apps.py | Pass | [apps.py validation](static/testing/Python/checkout/appspy.png)|
+| checkout/forms.py | Pass | [forms.py validation](static/testing/Python/checkout/formspy.png)|
+| checkout/models.py | Pass | [models.py validation](static/testing/Python/checkout/modelspy.png)|
+| checkout/signals.py | Pass | [signals.py validation](static/testing/Python/checkout/signalspy.png)|
+| checkout/urls.py | Pass | [urls.py validation](static/testing/Python/checkout/urlspy.png)|
+| checkout/views.py | Pass | [views.py validation](static/testing/Python/checkout/viewspy.png)|
+| checkout/webhook_handler.py | Pass | [webhook_handler.py validation](static/testing/Python/checkout/webhookhandlerpy.png)|
+| checkout/webhooks.py | Pass| [webhooks.py validation](static/testing/Python/checkout/webhookspy.png)|
+| checkout/tests.py | Pass | [test_views.py validation](static/testing/Python/checkout/testspy.png)|
 | **CLWBAWDIO** |
-| clwbawdio/admin.py | - | [admin.py validation]|
-| clwbawdio/apps.py | - | [apps.py validation]|
-| clwbawdio/urls.py | - | [urls.py validation]|
-| clwbawdio/views.py | - | [views.py validation]|
-| **HOME** |
-| home/apps.py | - | [apps.py validation]|
-| home/urls.py | - | [urls.py validation]|
-| home/views.py | - | [views.py validation]|
-| home/test_views.py | - | [test_views.py validation] |
-| **PRODUCTS** |
-| products/admin.py | - | [admin.py validation]|
-| products/apps.py | - | [apps.py validation]|
-| products/forms.py | - | [forms.py validation]
-| products/models.py | - | [models.py validation]|
-| products/urls.py | - | [urls.py validation]|
-| products/views.py | - | [views.py validation]|
-| products/widgets.py | - | [widgets.py validation]|
-| products/test_models.py | - | [test_models.py validation]|
-| **REPLAY** |
-| replay/admin.py | - | [admin.py validation]|
-| replay/apps.py | - | [apps.py validation]|
-| replay/forms.py | - | [forms.py validation]
-| replay/models.py | - | [models.py validation]|
-| replay/urls.py | - | [urls.py validation]|
-| replay/views.py | - | [views.py validation]|
-| replay/widgets.py | - | [widgets.py validation]|
-| replay/test_models.py | - | [test_models.py validation]|
-| **PROFILES** |
-| profiles/apps.py | - | [apps.py validation]|
-| profiles/forms.py | - | [forms.py validation]|
-| profiles/models.py | - | [models.py validation]|
-| profiles/urls.py | - | [urls.py validation]|
-| profiles/views.py | - | [views.py validation]|
-| profiles/test_views.py | - | [test_views.py validation]|
-| profiles/test_models.py | - | [test_models.py validation]|
+| clwbawdio/admin.py | Pass | [admin.py validation](static/testing/Python/clwbawdio/adminpy.png)|
+| clwbawdio/apps.py | Pass | [apps.py validation](static/testing/Python/clwbawdio/adminpy.png)|
+| clwbawdio/tests.py | Pass | [tests.py validation](static/testing/Python/clwbawdio/adminpy.png)|
+| clwbawdio/urls.py | Pass | [urls.py validation](static/testing/Python/clwbawdio/adminpy.png)|
+| clwbawdio/views.py | Pass | [views.py validation](static/testing/Python/clwbawdio/adminpy.png)|
 | **CONTACT** |
-| contact/admin.py | - |[admin.py validation]|
-| contact/apps.py | - | [apps.py validation]|
-| contact/forms.py | - | [forms.py validation]|
-| contact/models.py | - | [models.py validation]|
-| contact/urls.py | - | [urls.py validation]|
-| contact/views.py | - | [views.py validation]|
-| contact/test_forms.py | - | [test_forms.py validation]|
-| contact/test_models.py | - | [test_models.py validation]|
-| contact/test_views.py | - | [test_views.py validation]|
+| contact/admin.py | Pass |[admin.py validation](static/testing/Python/contact/adminpy.png)|
+| contact/apps.py | Pass | [apps.py validation](static/testing/Python/contact/appspy.png)|
+| contact/forms.py | Pass | [forms.py validation](static/testing/Python/contact/formspy.png)|
+| contact/models.py | Pass | [models.py validation](static/testing/Python/contact/modelspy.png)|
+| contact/urls.py | Pass | [urls.py validation](static/testing/Python/contact/urlspy.png)|
+| contact/views.py | Pass | [views.py validation](static/testing/Python/contact/viewspy.png)|
+| contact/tests.py | Pass | [tests.py validation](static/testing/Python/contact/testspy.png)|
+| **HOME** |
+| home/admin.py | Pass | [admin.py validation](static/testing/Python/home/adminpy.png)|
+| home/apps.py | Pass | [apps.py validation](static/testing/Python/home/appspy.png)|
+| home/urls.py | Pass | [urls.py validation](static/testing/Python/home/urlspy.png)|
+| home/views.py | Pass | [views.py validation](static/testing/Python/home/viewspy.png)|
+| home/models.py | Pass | [test_views.py validation](static/testing/Python/home/modelspy.png)|
+| **PRODUCTS** |
+| products/admin.py | Pass | [admin.py validation](static/testing/Python/products/adminpy.png)|
+| products/apps.py | Pass | [apps.py validation](static/testing/Python/products/appspy.png)|
+| products/forms.py | Pass | [forms.py validation](static/testing/Python/products/formspy.png)|
+| products/models.py | Pass | [models.py validation](static/testing/Python/products/modelspy.png)|
+| products/urls.py | Pass | [urls.py validation](static/testing/Python/products/urlspy.png)|
+| products/views.py | Pass | [views.py validation](static/testing/Python/products/viewspy.png)|
+| products/widgets.py | Pass | [widgets.py validation](static/testing/Python/products/widgetspy.png)|
+| products/tests.py | Pass | [tess.py validation](static/testing/Python/products/testspy.png)|
+| **REPLAY** |
+| replay/admin.py | Pass | [admin.py validation](static/testing/Python/replay/adminpy.png)|
+| replay/apps.py | Pass | [apps.py validation](static/testing/Python/replay/appspy.png)|
+| replay/forms.py | Pass | [forms.py validation](static/testing/Python/replay/formsspy.png)|
+| replay/models.py | Pass | [models.py validation](static/testing/Python/replay/modelspy.png)|
+| replay/urls.py | Pass | [urls.py validation](static/testing/Python/replay/urlspy.png)|
+| replay/views.py | - | [views.py validation]|
+| replay/widgets.py | Pass | [widgets.py validation](static/testing/Python/replay/widgetspy.png)|
+| **PROFILES** |
+| profiles/apps.py | Pass | [apps.py validation](static/testing/Python/profiles/appspy.png)|
+| profiles/forms.py | Pass | [forms.py validation](static/testing/Python/profiles/formsspy.png)|
+| profiles/models.py | Pass | [models.py validation](static/testing/Python/profiles/modelsspy.png)|
+| profiles/urls.py | Pass | [urls.py validation](static/testing/Python/profiles/urlspy.png)|
+| profiles/views.py | Pass | [views.py validation](static/testing/Python/profiles/viewspy.png)|
+
 
 ### Lighthouse
 
@@ -218,8 +227,6 @@ WAVE(Web Accessibility Evaluation Tool) allows developers to create content that
 Automated testing for this project was carried out with [Django TestCase](https://docs.djangoproject.com/en/4.1/topics/testing/overview/). I would write a test, run the test and fix any issues raised before running the test again to confirm it passed. When a test passed I committed it to GitHub.
 
 I also used [coverage](https://pypi.org/project/coverage/) to enable me to see where I was missing tests from to enable me to test my application more thoroughly.
-
-I have really enjoyed using unit tests for this project, and am looking forward to delving deeper into the topic to enable me to be able to test my applications more thoroughly.
 
 ### Coverage Testing
 
