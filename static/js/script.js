@@ -9,4 +9,4 @@ window.onload=function(){
   var spot =Math.floor(Math.random()* imgarray.length);  
  console.
 log(spot); thediv.style.background="url("+imgarray[spot]+")";
-};
+};s

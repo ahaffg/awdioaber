@@ -71,10 +71,10 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 
 | File | Result | Evidence |
 | :--- | :--- | :---: |
-| checkout/static/checkout/js/stripe-elements.js | - | [stripeelementsjs.png]|
-| clwbawdio/static/js/client.js | - | [clientjs.png]|
-| profiles/static/profiles/js/countryfield.js | - |[countryfield.js]|
-| static/js/script.js | Pass |[scriptjs.png]|
+| checkout/static/checkout/js/stripe-elements.js | Two warnings - but CI code | [stripeelementsjs.png](static/testing/JS/checkout/stripeelementsjs.png)|
+| clwbawdio/static/js/client.js | 4 warnings - but Stripe code | [scriptjs.png](static/testing/JS/clwbawdio/clientjs.png)|
+| profiles/static/profiles/js/countryfield.js | One warning - but CI code |[countryfield.js](static/testing/JS/profiles/countryfieldjs.png)|
+| static/js/script.js | Pass |[scriptjs.png](static/testing/JS/static/scriptjs.png)|
 
 ### Python
 
@@ -83,7 +83,7 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 | File | Result | Evidence |
 | :--- | :--- | :---: |
 | custom_storages.py | - | [custom_storages.py validation]|
-| **SEASIDE_SEWING** |
+| **AWDIO_ABER** |
 | seaside_sewing/settings.py | - | [settings.py validation]|
 | seaside_sewing/urls.py | - | [urls.py validation]|
 | **BAG** |
@@ -105,6 +105,11 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 | checkout/webhooks.py | -| [webhooks.py]|
 | checkout/test_forms.py | - | [test_forms.py validation]|
 | checkout/test_views.py | - | [test_views.py validation]|
+| **CLWBAWDIO** |
+| clwbawdio/admin.py | - | [admin.py validation]|
+| clwbawdio/apps.py | - | [apps.py validation]|
+| clwbawdio/urls.py | - | [urls.py validation]|
+| clwbawdio/views.py | - | [views.py validation]|
 | **HOME** |
 | home/apps.py | - | [apps.py validation]|
 | home/urls.py | - | [urls.py validation]|
@@ -119,7 +124,15 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 | products/views.py | - | [views.py validation]|
 | products/widgets.py | - | [widgets.py validation]|
 | products/test_models.py | - | [test_models.py validation]|
-| products/test_views.py | - | [test_views.py]|
+| **REPLAY** |
+| replay/admin.py | - | [admin.py validation]|
+| replay/apps.py | - | [apps.py validation]|
+| replay/forms.py | - | [forms.py validation]
+| replay/models.py | - | [models.py validation]|
+| replay/urls.py | - | [urls.py validation]|
+| replay/views.py | - | [views.py validation]|
+| replay/widgets.py | - | [widgets.py validation]|
+| replay/test_models.py | - | [test_models.py validation]|
 | **PROFILES** |
 | profiles/apps.py | - | [apps.py validation]|
 | profiles/forms.py | - | [forms.py validation]|
