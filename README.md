@@ -100,8 +100,6 @@ Below is a table of opportunities for the project, together with a score of thei
 | Wishlist | 3 | 3 | | |
 | Product Reviews | 3 | 4 | | |
 | Blog | 1 | 3 |  | |
-| Forum | 1 | 3 |  | |
-
 
 ---
 

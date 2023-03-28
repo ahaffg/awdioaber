@@ -15,8 +15,6 @@
   * [Python](#python)
   * [Lighthouse](#lighthouse)
   * [Wave](#wave)
-* [Automated Testing](#automated-testing)
-  * [Coverage](#coverage-testing)
 * [Manual Testing](#manual-testing)
   * [Testing User Stories](#testing-user-stories)
   * [Full Testing](#full-testing)
@@ -222,23 +220,6 @@ WAVE(Web Accessibility Evaluation Tool) allows developers to create content that
 | Delivery Policy Page | - |
 | 404 Error Page | - |
 
-## Automated Testing
-
-Automated testing for this project was carried out with [Django TestCase](https://docs.djangoproject.com/en/4.1/topics/testing/overview/). I would write a test, run the test and fix any issues raised before running the test again to confirm it passed. When a test passed I committed it to GitHub.
-
-I also used [coverage](https://pypi.org/project/coverage/) to enable me to see where I was missing tests from to enable me to test my application more thoroughly.
-
-### Coverage Testing
-
-| Coverage for | Total | Evidence |
-| :---| :--- | :--- |
-| Bag | - | [Coverage Bag]|
-| Checkout | - | [Coverage Checkout]|
-| Contact | - | [Coverage Contact]|
-| Home | - | [Coverage Home]|
-| Products | - | [Coverage Products]|
-| Profiles | -  | [Coverage Profiles]|
-
 ## Manual Testing
 
 ### Testing User Stories
@@ -247,7 +228,7 @@ I also used [coverage](https://pypi.org/project/coverage/) to enable me to see w
 | :--- | :--- | :--- | :---| :--- | :---: |
 | **VIEWING & NAVIGATION** |
 | 1 | Shopper | Easily navigate the site | Find products/information that I am require | A navbar is provided at the top of the page which allows users easy access to their account, shopping bag, search bar and the product categories.   | [Lg Screen Navbar](documentation/testing/user-stories/us-1-a.png) & [Sm Screen Navbar](documentation/testing/user-stories/us-1-b.png) |
-| 2 | Shopper | View a category of products/filter products | Find specific items I am interested in without having to scroll through all products | When a user clicks on a category, they are then provided a dropdown with a breakdown of items within the chosen category. If a user choses the view all link, the page will display all items but the user will also be given the choice to refine the products shown via links to the sub-categories at the top of the page. | [Categories Dropdown Menu](documentation/testing/user-stories/us-2.png) |
+| 2 | Shopper | View a category of products/filter products | Find specific items I am interested in without having to scroll through all products | When a user clicks on a category, they are then provided a dropdown with a breakdown of items within the chosen category. If a user choses the view all link, the page will display all items but the user will also be given the choice to refine the products shown via links to the sub-categories at the top of the page. | [Categories Dropdown Menu](static/testing/userstories/navbar.mp4) |
 | 3 | Shopper | View more detail on products | to make an informed decision of if the item suits my requirements | When the user selects a product, they will be taken to the product detail page which lists more information about the item, such as the item name, price and description. A tag will display showing what category the product belongs to, along with a stock tag that displays the stock level for the product. If a rating and colour are available for the product, these will also be displayed in the tags section. A user may hover over the image and they will be shown a magnified view of the item. If they wish to view a larger image, they may click on the image and a larger version of the image will open in a new browser tab.  | [Product Details](documentation/testing/user-stories/us-3.png) |
 | 4 | Shopper | View items on clearance/sale easily | Save money  | There is a category choice for users called special offers which allows users to view deals or clearance items. | [View Special Offers](documentation/testing/user-stories/us-4.png) |
 | 5 | Shopper | View my running total of purchases throughout my visit | Make sure I don't overspend & am able to track whether I meet any thresholds for site offers (e.g. free delivery) | When a user adds a product to their shopping bag, a toast will display to let the user know their addition to their bag was successful, along with showing them the items currently in their bag with their value and price. The toast also displays their total. If a user hasn't reached the threshold for the free delivery offer, they will be notified of this within the toast, which will let them know how much more they need to spend to take advantage of this offer. The shopping bag icon on the navbar will also display their total throughout their visit to the site. | [Toast (free delivery not met)](documentation/testing/user-stories/us-5-a.png) -  [Toast (delivery met)](documentation/testing/user-stories/us-5-b.png) - [Bag Running Total](documentation/testing/user-stories/us-5-c.png) |
