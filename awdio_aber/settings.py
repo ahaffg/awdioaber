@@ -33,7 +33,7 @@ DEBUG = "DEVELOPMENT" in os.environ
 ALLOWED_HOSTS = ["awdioaber.herokuapp.com", "localhost"]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://8000-ahaffg-awdioaber-3qziemkg4i2.ws-eu90.gitpod.io",
+    "https://8000-ahaffg-awdioaber-3qziemkg4i2.ws-eu92.gitpod.io",
 ]
 
 
