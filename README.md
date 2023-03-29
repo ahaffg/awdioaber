@@ -334,12 +334,72 @@ Each page of the site shares the following:
 
 * Navbar - The navbar on the site is split into two sections, the first section contains the search bar, an account icon and the bag icon. The second section contains the sites products categories. The navbar is fully responsive, and utilises a hamburger menu toggle on smaller screens.
 
+The Categories links in the navbar have a transition that moves the category name up when hovered over to give the user feedback that they are selecting that category. A dropdown menu will then show with further options. The account icon also contains a dropdown menu which displays different options depending on whether a user is logged in, and whether the user has a superuser account.
+
 ![Navbar](/static/images/readme/navbar-toggle.png)
 
 * Banner Ticker - The code for the banner ticker has been adapted from [Code-Boxx](https://code-boxx.com/html-css-news-ticker-horizontal-vertical/) and I feel helps the site feel more dynamic. The code allows for messages to be rotated through the banner continuously. I like that the imformation can be changed regularly, even providing links, giving users an opertunity to see wider aspects of the store.
 
-![Banner Ticker](/static/images/readme/ticker-banner.png)
+![Banner Ticker](/static/testing/userstories/ticker.mp4)
 
+* Footer - The footer is broken into 3 distinct sections - a section that contains information about the site, such as terms and conditions and policies and contact information for the site, such as a link to the contact form. Next is the information on the payment processor for the site, Stripe, along with the cards accepted. The final section has links to social media sites.
+
+Below this there disclaimer to let users know this site was created as an educational product and to remind users that no orders will be processed. The copyright element utilises date code from the Thorin project. The footer is fully responsive, and on small screens stacks the sections.
+
+![Footer](static/testing/userstories/footer.png)
+
+* Sites header and footer images, and hero image.
+The current implementation of the site does not feature the header and footer image as envisaged in the mockup, due to issues I faced with trying to resize image files. However, I used some code from http://jsbin.com/pozadujeca/edit?js,console,output and https://stackoverflow.com/questions/32288049/how-to-set-full-page-background-image-of-a-div-that-changes-on-page-load as well as help from tutor Ed to create the image change on refresh function for the hero iamge. I think this is really effective on larger screens, but unfortunately is lost on smaller screens. This is something that I would want to look at again in the future.
+
+![Hero-image-reload](static/testing/userstories/hero-image-refresh.mp4)
+
+### Pages
+
+#### Home Page
+I wanted the home page to be really impressive and reflect the stylish photography I've used throughout the site. Colours are reflected in the logo, and the Megrim text logo is very eyecatching across all devices.
+
+![Home-Page](static/testing/userstories/homepage.png)
+
+#### Products Page
+
+Although I have utilised code from Boutique Ado for this app, I feel Awdio Aber sets itself apart with the stylish Dosis font and eyecatching photography. It has all the search functions as found on Boutique Ado, as well as the function to scroll quickly to the top with the button in the bottom right corner. It utilises the same media queries to stck items evenly on smaller screens.
+
+![Products](static/testing/userstories/products.png)
+
+#### Equipment
+
+The Equipment drop menu allows customers to quickly see products according to their category. The layout is exactly the same as the main product page, and the same group of products can be called through using the search categories on the products menu dropdown.
+
+![Equipment](static/testing/userstories/equipment.mp4)
+
+#### Discover - About Us
+
+This section of the site is intended to give the user a sense of the stores mission as well as laying the foundations of a community. The about page is simple, with a logo and text. It is aesthetically similar to all the other pages on the site with buttons linking to other pages at the bottom.
+
+![About](static/testing/userstories/about.png)
+
+#### Blog
+
+I have adapted the code from the products functionality to power the Blog app. Like a product, the site manager has full CRUD functionality over Blog posts which can be accessed from the profile dropdown menu when logged in, or from the admin console.
+
+![Blog](static/testing/userstories/blog.png)
+
+#### Forum
+
+When you select the Forum link, you are presented with the construction holding image, and a button that takes you to the contact form. This code and image can be applied anywhere across the site and is useful for giving users an idea of how the site is going to be developed and how they can keep up to date on those developments.
+
+![Construction](static/testing/userstories/construction.png)
+
+#### Defensive programming
+
+Defensive programming has been used throughout the site to prevent users accessing pages when they don't have the relevant permissions. This has been accomplished by checking whether a user is a superuser for admin related tasks. If users try to access pages that they don't have the required permission level for, they will be shown an error toast which gives feedback to the user to let them know they don't have the required permissions as only an administrator can perform those tasks.
+
+#### Features for next version
+Due to time constraints, I have not had chance to implement the forum, but this did give me the opportunity to implement an 'Under Construction' page which would be useful to a site manager as a site develops.
+
+I also wasn't able to implement the hiring system quite as I had hoped and have had to settle for a simple subscription service at this point. Given more time, I think a wishlist-like system would be great to offer customers.
+
+As ever I would like to be able to offer a bilingual site in the future also.
 ---
 
 ## Technologies Used
@@ -382,7 +442,6 @@ sqlite3 for development.
 
 [django-storages](https://pypi.org/project/django-storages/) - a storage backend library
 
-[magnify.js](https://thdoan.github.io/magnify/) - Used to add the magnify lens to the product details product image
 
 ### Programs Used
 
@@ -695,9 +754,8 @@ pip3 install -r requirements.txt
 
 ### Code Used
 
-This project was created using methods taught in the Code Institutes walkthrough project for Boutique Ado.
+This project was created using methods taught in the Code Institutes walkthrough project for Boutique Ado and Thorin.
 
-The code to create the image zoom on the products page was taken from [Thdoan Magnify JS](https://thdoan.github.io/magnify/)
 
 ### Content
 
