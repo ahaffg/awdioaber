@@ -1,6 +1,6 @@
 # Awdio Aber - Testing
 
-![Awdio Aber](media/logo.png)
+![Awdio Aber](static/testing/awdioabertextlogo.png)
 
 [Visit Awdio Aber Here](https://awdioaber.herokuapp.com/)
 
