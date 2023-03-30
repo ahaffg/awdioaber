@@ -340,7 +340,7 @@ The Categories links in the navbar have a transition that moves the category nam
 
 * Banner Ticker - The code for the banner ticker has been adapted from [Code-Boxx](https://code-boxx.com/html-css-news-ticker-horizontal-vertical/) and I feel helps the site feel more dynamic. The code allows for messages to be rotated through the banner continuously. I like that the imformation can be changed regularly, even providing links, giving users an opertunity to see wider aspects of the store.
 
-![Banner Ticker](/static/testing/userstories/ticker.mp4)
+![Banner Ticker](/static/testing/userstories/ticker.png)
 
 * Footer - The footer is broken into 3 distinct sections - a section that contains information about the site, such as terms and conditions and policies and contact information for the site, such as a link to the contact form. Next is the information on the payment processor for the site, Stripe, along with the cards accepted. The final section has links to social media sites.
 
@@ -351,7 +351,7 @@ Below this there disclaimer to let users know this site was created as an educat
 * Sites header and footer images, and hero image.
 The current implementation of the site does not feature the header and footer image as envisaged in the mockup, due to issues I faced with trying to resize image files. However, I used some code from http://jsbin.com/pozadujeca/edit?js,console,output and https://stackoverflow.com/questions/32288049/how-to-set-full-page-background-image-of-a-div-that-changes-on-page-load as well as help from tutor Ed to create the image change on refresh function for the hero iamge. I think this is really effective on larger screens, but unfortunately is lost on smaller screens. This is something that I would want to look at again in the future.
 
-![Hero-image-reload](static/testing/userstories/hero-image-refresh.mp4)
+![Hero-image-reload](static/testing/userstories/heroimagereload.png)
 
 ### Pages
 
@@ -370,7 +370,7 @@ Although I have utilised code from Boutique Ado for this app, I feel Awdio Aber 
 
 The Equipment drop menu allows customers to quickly see products according to their category. The layout is exactly the same as the main product page, and the same group of products can be called through using the search categories on the products menu dropdown.
 
-![Equipment](static/testing/userstories/equipment.mp4)
+![Equipment](static/testing/userstories/equipment.png)
 
 #### Discover - About Us
 
@@ -771,7 +771,7 @@ Product descriptions for this site were adapted from reviews from [Headfonics](h
 
 I would like to acknowledge the following people who have helped me with completing this project:
 
-* [Kera Cudmore](https://github.com/kera-cudmore/) for having fantastic example of README and TESTING documents.
+* [Kera Cudmore](https://github.com/kera-cudmore/) for having fantastic examples of README and TESTING documents.
 * My family for their patience and support whilst working on my final project.
 * My fantastic mentor Martina Terlević for always being so helpful and flexible, as well as all round awesome human!
 * The Code Institute Tutors who assisted me at so many points along the way especially Ed, Oisin, Gemma and Ger, you are complete legends!

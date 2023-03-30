@@ -58,7 +58,6 @@ INSTALLED_APPS = [
     "contact",
     "blog",
     "clwbawdio",
-    "replay",
     # Other
     "crispy_forms",
     "storages",
