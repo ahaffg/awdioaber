@@ -362,9 +362,15 @@ I wanted the home page to be really impressive and reflect the stylish photograp
 
 #### Products Page
 
-Although I have utilised code from Boutique Ado for this app, I feel Awdio Aber sets itself apart with the stylish Dosis font and eyecatching photography. It has all the search functions as found on Boutique Ado, as well as the function to scroll quickly to the top with the button in the bottom right corner. It utilises the same media queries to stck items evenly on smaller screens.
+Although I have utilised code from Boutique Ado for this app, I feel Awdio Aber sets itself apart with the stylish Dosis font and eyecatching photography. It has all the search functions as found on Boutique Ado, as well as the function to scroll quickly to the top with the button in the bottom right corner. It utilises the same media queries to stack items evenly on smaller screens.
 
 ![Products](static/testing/userstories/products.png)
+
+#### Products Detail Page
+
+When a user clicks on a product image they are taken to a page with further details about the product. Its category and rating are higlighted with fontawesome icons, and quantity, add to bag and continue shopping buttons are below each description to allow the user to shop easily or move easily around the site.
+
+![Product Detail](static/testing/userstories/productdetail.png)
 
 #### Equipment
 
@@ -389,6 +395,36 @@ I have adapted the code from the products functionality to power the Blog app. L
 When you select the Forum link, you are presented with the construction holding image, and a button that takes you to the contact form. This code and image can be applied anywhere across the site and is useful for giving users an idea of how the site is going to be developed and how they can keep up to date on those developments.
 
 ![Construction](static/testing/userstories/construction.png)
+
+#### Clwb Awdio
+
+The Clwb Awdio page gives customers information about the subscription service on offer. There are button links to the FAQ page which answers further questions the service, as well as a button which opens up the stripe payment portal.
+
+![ClwbAwdio](static/testing/userstories/clwbawdio.png)
+
+#### FAQs
+
+The FAQs page aims to answer common questions about the subscription page, with a further option to contact the store if any of their questions are unanswered, as well as another direct link to the subscription service portal.
+
+![FAQs](static/testing/userstories/faqs.png)
+
+#### Contact
+
+The contact form allows customers to get in touch easily, and has buttons styled in the same way as the rest of the site to allow users to easily navigate the site.
+
+![Contact](static/testing/userstories/contact.png)
+
+#### Terms and Conditions
+
+The terms and conditions page gives users information about any terms, with buttons at the bottom to give users the options to either get in touch or continue shopping.
+
+![Terms](static/testing/userstories/terms.png)
+
+#### Privacy Policy
+
+As with the Terms and conditions page the Privacy Policy page gives users information about any terms, with buttons at the bottom to give users the options to either get in touch or continue shopping.
+
+![Privacy](static/testing/userstories/policy.png)
 
 #### Defensive programming
 
