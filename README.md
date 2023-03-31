@@ -426,6 +426,14 @@ As with the Terms and conditions page the Privacy Policy page gives users inform
 
 ![Privacy](static/testing/userstories/policy.png)
 
+#### 404 & 500
+
+If any errors occur whilst a user is on the site, the appropriate error pages will be triggered advising what the user should do next.
+
+![404](static/testing/userstories/404.png)
+
+![500](static/testing/userstories/500.png)
+
 #### Defensive programming
 
 Defensive programming has been used throughout the site to prevent users accessing pages when they don't have the relevant permissions. This has been accomplished by checking whether a user is a superuser for admin related tasks. If users try to access pages that they don't have the required permission level for, they will be shown an error toast which gives feedback to the user to let them know they don't have the required permissions as only an administrator can perform those tasks.
