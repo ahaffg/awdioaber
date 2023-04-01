@@ -791,6 +791,10 @@ To clone the repository:
 ```bash
 pip3 install -r requirements.txt
 ```
+---
+## Testing
+
+Please refer to the [TESTING.md](TESTING.md) file for all testing performed.
 
 ---
 
