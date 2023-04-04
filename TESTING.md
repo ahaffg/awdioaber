@@ -34,23 +34,45 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 
 [W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the site. It was also used to validate the CSS. As the site is created with Django and utilises Django templating language within the HTML, I have checked the HTML by inspecting the page source and then running this through the validator.
 
+Unfortunately as sson as I started this process I immediately saw that there was a stray </div> tag showing on every page. Because of the way that this site is constructed I have had to check every page for stray tags as it was not made clear where the missing one was being called from.
+
+I began by comparing the number of open <div> tags with the number of closed </div> tags on the home page page source.
+
+![Page Source](static/testing/userstories/pagesourcediv.png)
+
+As you can see, there are more closed </div> tags than open, however, when I conducted the same check within my gitpod workspace, the numbers are even, suggesting there is no stray </div> tag.
+
+![Workspace Search](static/testing/userstories/workspacediv.png)
+
+At this point I realised that I would have to check every html file in my workspace in case anything had been missed. After the first time I checked and couldn't find anything, I decided to check all the python and txt files too...just in case. So, below are screen grabs of all the searches from every page. If no </div>'s were found I've only taken one screen grab. If </div>'s were found I also then searched for <div>'s to check that the numbers the same.
+
+![Due Diligence](static/testing/userstories/div.png)
+
+At a complete loss, a very kind tutor, and even my poor Dad had a go at looking! Here are my Dad's notes as evidence:
+
+![Dad's Notes](static/testing/userstories/dadnotes.jpg)
+
+Unfortunately none of us were able to find it. So, the following tests technically failed in that they all show the same stray </div> tag error, but no other errors. NB if you are able to find it, you get a coconut!
+
 | Page | Result | Evidence |
 | :--- | :--- | :---: |
-| Home Page | - | [Home Page Validation] |
-| Privacy Page | - | [Privacy Page Validation]|
-| Terms & Conditions Page | - | [Terms & Conditions Page Validation]|
-| Delivery Policy Page | - | [Delivery Page Validation]|
-| Contact Form Page | - | [Contact Form Page Validation]|
-| Contact Form Success Page| - | [Contact Success Page Validation]|
-| Product Page | - |[Product Page Validation]|
-| Product Detail Page | - | [Product Detail Page]|
-| Profile Page | - | [Profile Page Validation]|
-| Bag Page | - | [Bag Page Validation]|
-| Checkout Page | - | [Checkout Page Validation]|
-| Checkout Success Page | - | [Checkout Success Page]|
-| 404 Error Page | - | [404 Page Validation]|
-| Add Product Page | - | [Add Product Page Validation]|
-| Edit Product Page | - | [Edit Product Page Validation]|
+| Home Page | - | [Home Page](static/testing/userstories/w3chome.png)|
+| Policy Page | - | [Policy Page](static/testing/userstories/w3cpolicy.png)|
+| Terms & Conditions Page | - |[Terms Page](static/testing/userstories/w3cterms.png)|
+| Contact Form Page | - | [Contact Page](static/testing/userstories/w3ccontact.png)|
+| Product Page | - |[Products Page](static/testing/userstories/w3cproducts.png)|
+| Amps Page | - | [Product Detail Page](static/testing/userstories/w3cequipmentamps.png) |
+| Headphones Page | - | [Product Detail Page](static/testing/userstories/w3cequipmentheadphones.png) |
+| IEMs Page | - | [Product Detail Page](static/testing/userstories/w3cequipmentiems.png) |
+| DAPs Page | - | [Product Detail Page](static/testing/userstories/w3cequipmentdaps.png) |
+| DACs Page | - | [Product Detail Page](static/testing/userstories/w3cequipmentdacs.png) |
+| Bag Page | - | [Bag Page](static/testing/userstories/w3cbag.png)|
+| Checkout Page | - | [Checkout Page](static/testing/userstories/w3ccheckout.png) |
+| Blog Page | - | [Blog Page](static/testing/userstories/w3cblogs.png) |
+| About Page | - | [About Page](static/testing/userstories/w3cabout.png) |
+| ClwbAwdio Page | - | [Clwb Awdio Page](static/testing/userstories/w3cclwb.png) |
+| FAQ Page | - | [FAQ Page](static/testing/userstories/w3cfaq.png) |
+
 
 ### CSS
 
@@ -58,10 +80,11 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 
 | File | Result | Evidence |
 | :--- | :--- | :---: |
-| static/base.css | - | [static/base.css validation]|
-| checkout/static/checkout/css/checkout.css | - | [checkout.css validation]|
-| profiles/static/profiles/css/profile.css | - | [profile.css validation]|
-| static/admin/css/base.css| - | [base.css validation]|
+| static/base.css | Pass | [base.css](static/testing/userstories/basecss.png)|
+| checkout/static/checkout/css/checkout.css | Pass | [checkout.css](static/testing/userstories/stripecss.png)|
+| profiles/static/profiles/css/profile.css | Pass | [profile.css](static/testing/userstories/profilecss.png)|
+
+
 
 ### JavaScript
 
