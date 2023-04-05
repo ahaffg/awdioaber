@@ -439,11 +439,15 @@ If any errors occur whilst a user is on the site, the appropriate error pages wi
 Defensive programming has been used throughout the site to prevent users accessing pages when they don't have the relevant permissions. This has been accomplished by checking whether a user is a superuser for admin related tasks. If users try to access pages that they don't have the required permission level for, they will be shown an error toast which gives feedback to the user to let them know they don't have the required permissions as only an administrator can perform those tasks.
 
 #### Features for next version
+
 Due to time constraints, I have not had chance to implement the forum, but this did give me the opportunity to implement an 'Under Construction' page which would be useful to a site manager as a site develops.
 
 I also wasn't able to implement the hiring system quite as I had hoped and have had to settle for a simple subscription service at this point. Given more time, I think a wishlist-like system would be great to offer customers.
 
+I would like to develop the subscription management system further, I think it would be great if there was a way that subscriptions could be viewed so that the store manager can easily check if they have recieved their subscription, and if they have returned their subscription. This could be taken even further to have inbuilt sysems to manage late-returns or penalties for damaged/lost equiptment.
+
 As ever I would like to be able to offer a bilingual site in the future also.
+
 ---
 
 ## Technologies Used
@@ -454,7 +458,7 @@ HTML, CSS, JavaScript, Python.
 
 ### Database Used
 
-sqlite3 for development.
+Sqlite3 for development.
 
 [ElephantSQL](https://www.elephantsql.com/) for deployment.
 

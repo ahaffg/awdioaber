@@ -18,9 +18,6 @@
 * [Manual Testing](#manual-testing)
   * [Testing User Stories](#testing-user-stories)
   * [Full Testing](#full-testing)
-* [Bugs](#bugs)
-  * [Solved Bugs](#solved-bugs)
-  * [Known Bugs](#known-bugs)
 
 Testing was ongoing throughout the entire build. During development I made use of Googles Developer Tools to ensure everything was working as expected and to assist me with troubleshooting when things didn't work as they should.
 
@@ -166,14 +163,6 @@ Unfortunately none of us were able to find it. So, the following tests technical
 | products/views.py | Pass | [views.py validation](static/testing/Python/products/viewspy.png)|
 | products/widgets.py | Pass | [widgets.py validation](static/testing/Python/products/widgetspy.png)|
 | products/tests.py | Pass | [tess.py validation](static/testing/Python/products/testspy.png)|
-| **REPLAY** |
-| replay/admin.py | Pass | [admin.py validation](static/testing/Python/replay/adminpy.png)|
-| replay/apps.py | Pass | [apps.py validation](static/testing/Python/replay/appspy.png)|
-| replay/forms.py | Pass | [forms.py validation](static/testing/Python/replay/formsspy.png)|
-| replay/models.py | Pass | [models.py validation](static/testing/Python/replay/modelspy.png)|
-| replay/urls.py | Pass | [urls.py validation](static/testing/Python/replay/urlspy.png)|
-| replay/views.py | - | [views.py validation]|
-| replay/widgets.py | Pass | [widgets.py validation](static/testing/Python/replay/widgetspy.png)|
 | **PROFILES** |
 | profiles/apps.py | Pass | [apps.py validation](static/testing/Python/profiles/appspy.png)|
 | profiles/forms.py | Pass | [forms.py validation](static/testing/Python/profiles/formsspy.png)|
@@ -190,7 +179,7 @@ I have used Googles Lighthouse testing to test the performance, accessibility, b
 | :--- | :--- |
 | Home Page | ![Home  Lighthouse Testing](static/testing/userstories/homelighthouse.png)|
 | Products Page | ![Products  Lighthouse Testing](static/testing/userstories/lighthouseproduct.png) |
-| Product Details Page | ![Product Detail  Lighthouse Testing]|
+| Product Details Page | ![Product Detail Lighthouse Testing](static/testing/userstories/lighthouseproductdetail.png)|
 | Add Product Page | ![Add Product  Lighthouse Testing](static/testing/userstories/lighthouseadd.png)|
 | Equipment Page | ![Equipment Page  Lighthouse Testing](static/testing/userstories/lighthouseamps.png)|
 | Add Blog Page| ![Add Blog Page Lighthouse Testing](static/testing/userstories/lighthouseblogadd.png)|
@@ -200,7 +189,7 @@ I have used Googles Lighthouse testing to test the performance, accessibility, b
 | Profile Page | ![Profile  Lighthouse Testing](static/testing/userstories/lighthouseprofile.png)|
 | Contact Us Page | ![Contact Us  Lighthouse Testing]|
 | Privacy Policy Page| ![Privacy  Lighthouse Testing](static/testing/userstories/lighthousepolicy.png)|
-| Terms & Conditions Page | ![Terms  Lighthouse Testing]|
+| Terms & Conditions Page | ![Terms  Lighthouse Testing](static/testing/userstories/lighthouseterms.png)|
 | Blog Page| ![Blog Page Lighthouse Testing](static/testing/userstories/lighthouseblog.png)|
 | Add Blog Page| ![Add Blog Page Lighthouse Testing](static/testing/userstories/lighthouseblogadd.png)|
 
@@ -212,20 +201,22 @@ WAVE(Web Accessibility Evaluation Tool) allows developers to create content that
 
 | Page | Errors |
 | :--- | :--- |
-| Home Page | -|
-| Products Page | - |
-| Product Details Page | - |
-| Add Product Page | - |
-| Edit Product Page | - |
-| Bag Page | - |
-| Checkout Page | - |
-| Checkout Success Page | - |
-| Profile Page |- |
-| Contact Us Page | - |
-| Privacy Policy Page| - |
-| Terms & Conditions Page | - |
-| Delivery Policy Page | - |
-| 404 Error Page | - |
+| Home Page | ![Home Page](static/testing/userstories/wavehome.png) |
+| Products Page | ![Products Page](static/testing/userstories/waveproducts.png) |
+| Product Details Page | ![Product Details](static/testing/userstories/waveproductdetail.png) |
+| Add Product Page | ![Add Product](static/testing/userstories/waveproductadd.png) |
+| About Page | ![About Product](static/testing/userstories/waveabout.png) |
+| Bag Page | ![Bag Page](static/testing/userstories/wavebag.png) |
+| Blog Page | ![Blog Page](static/testing/userstories/waveblog.png) |
+| Checkout Page | ![Checkout Page](static/testing/userstories/wavecheckout.png) |
+| Checkout Success Page | ![Checkout Success Page](static/testing/userstories/wavecheckoutsuccess.png) |
+| Clwb Awdio Page | ![Clwb Awdio Page](static/testing/userstories/waveclwbawdio.png) |
+| Profile Page | ![Profile Page](static/testing/userstories/waveprofile.png) |
+| Login Page | ![Login Page](static/testing/userstories/wavelogin.png) |
+| Contact Us Page | ![Contact Page] |
+| Privacy Policy Page| ![Privacy Policy Page](static/testing/userstories/wavepolicy.png) |
+| Terms & Conditions Page | ![Terms and Conditions Page](static/testing/userstories/waveterms.png) |
+| 404 Error Page | ![404 Page](static/testing/userstories/wave404.png) |
 
 ## Manual Testing
 
@@ -252,7 +243,6 @@ WAVE(Web Accessibility Evaluation Tool) allows developers to create content that
 | Shopper | Sort multiple categories of products simultaneously | Find the best-rated products across broad categories, such as DAPs or by brand name. | Users may select the all products link on the navbar and then choose how they wish to sort | [Sorted Products](static/testing/userstories/productssorted.png) |
 | Shopper | Search for a product by name or description | Find a specific product I'd like to purchase | Users are provided with a search bar in the navbar which allows them to search for items. The search not only checks the product name, but also their description for the search term used.  | [Specific Item Search](static/testing/userstories/itemnamesearch.png) |
 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available | Users are given feedback on their search term and the number of products which match the search term on the results page in the top left. | [Brand Search](static/testing/userstories/brandsearch.png) |
-| **PURCHASING & CHECKOUT** |
 | Shopper | Easily select the quantity of a product when purchasing it | Ensure I don't accidentally select the wrong product quantity | Users are provided a quantity input box on the product detail page which allows them to increase or decrease the quantity required using the plus or minus buttons. The buttons are coloured to also provide visual understanding for the user of their purpose. Users may also type the value they wish to purchase directly into the quantity box. Once a user adds a product to their bag they receive a toast notification of the product they've added together with the quantity.  | [Quantity](static/testing/userstories/quantity.png) |
 | Shopper | View items in my bag to be purchased | Identify the total cost of my purchase and all items I will receive | When the user views their bag, they will be presented with a list of all items selected for purchase, information shown will include an image of the item, the items name, the quantity of the item selected, the unit price of the item and the subtotal price for that item. At the bottom of the bag the user will be given the subtotal for all the items they are purchasing, the delivery fee (if applicable) and the grand total of their order. | [Shopping Bag](static/testing/userstories/shoppingbag.png) |
 | Shopper | Adjust the quantity of individual items in my bag | Easily make changes to my purchase before checkout | The users are given a quantity selector in the bag that looks the same as on the product detail page to provide continuity and familiarity for the user. Once the user has selected the new quantity of the item, they click the update link under the quantity input and the page will reload with the new quantities. If a user decides they would like to remove the item completely from their bag they can remove the item by clicking the remove link under the product. This removes the product and shows a toast which confirms that the user has successfully deleted the selected item from their bag.  | [Shopping Bag](static/testing/userstories/shoppingbag.png) |
@@ -260,15 +250,19 @@ WAVE(Web Accessibility Evaluation Tool) allows developers to create content that
 | Shopper | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase | Awdio Aber provides its checkout facilities through Stripe | [Stripe](static/testing/userstories/stripe.png) |
 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes | Users are taking to an order confirmation page once they have successfully checked out which provides them with their order information, such as their order details and the order date.  They are also shown their order details which lists the items they have purchased along with their quantity and the price of the item. A delivery section provides them with information on where they are having their order delivered to and finally they are shown the billing information section which provides them with the grand total for their order. | [Payment](static/testing/userstories/payment.png)  |
 | Shopper | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records | Upon successful checkout, a user will be sent a confirmation email to the email address provided at checkout to confirm their order. | [Confirmation Email](static/testing/userstories/confirmationemail.png) |
+| **SUBSCRIPTIONS** |
+| Shopper | Learn about the subscription service on offer, and easily find answers to commonquestions. | The Clwbawdio and FAQ pages are easy to find and navigate. | Links to the pages are found on the dropdown from the main nav bar, which is sticky across all pages. | [Clwbawdio](static/testing/userstories/clwbawdio.png) [FAQs](static/testing/userstories/faqs.png) |
+| Shopper | Be able to ask further questions easily should 'About' and 'FAQs' not address them. | Extra buttons and signposts to the contact page are on both pages to encourage shoppers to get in touch. | Customers will recieve success notifacation that their message has been recieved. | [Contact](static/testing/userstories/contact.png) |
+| Shopper | Easily sign up to the subscription service. | Recieve confirmation of successful payment. | Upon successful payment the shopper will recieve a confirmation message.  | | [Subscription Successs](static/testing/userstories/subscribesuccess.png) |
 | **ADMIN & STORE MANAGEMENT** |
 | Store Owner | Add a product | Add new items to my store | Admin are able to add new products to the store directly from the store website when logged in as a superuser. This option is provided to them under the account icon in the navbar - product management. If an admin clicks on this link, they will be taken to the add product page where they can add a new item to be added to the store. | [Add Product](static/testing/userstories/addproduct.png) |
 | Store Owner | Edit/update a product | Change product prices, descriptions, images and other product criteria | When a superuser is logged in, they are shown an edit button underneath each product on the products page, and are also shown an edit button when viewing a product. Once clicked they will be taken to a page similar in layout to the add product page (to provide continuity and familiarity) and are able to edit the products information. | [Edit](static/testing/userstories/edit.png) |
 | Store Owner | Delete a product | Remove items that are no longer for sale | When a superuser is logged in, they are shown a delete button underneath each product on the products page, and are also shown a delete button when viewing a product. Once clicked they a modal will pop up asking them to confirm they wish to delete this product, and notifying them that this action cannot be undone. The superuser is given a choice to delete the product or cancel. The modal provides a layer of protection to product deletion and should prevent accidental deletion of products. | [Delete](static/testing/userstories/delete.png) |
+| Store Owner | Manage Subscribers | See who his subscribed to Clwbawdio and ensure they recieve their subscriptions on time| The store owner can see all subscribers information on the Stripe dashboard. | [Subscribe Admin](static/testing/userstories/stripecustomers.png) |
 | **BLOG MANAGEMENT** |
-| Store Owner | Add a blog | Add new items to my store | Admin are able to add new blogs to the store directly from the store website when logged in as a superuser. This option is provided to them under the account icon in the navbar - blog management. If an admin clicks on this link, they will be taken to the add blog page where they can add a new item to be added to the store. | [Add Blog](static/testing/userstories/addblog.png) |
-| Store Owner | Edit/update a blog | Change blog prices, descriptions, images and other blog criteria | When a superuser is logged in, they are shown an edit button underneath each blog on the blogs page, and are also shown an edit button when viewing a blog. Once clicked they will be taken to a page similar in layout to the add blog page (to provide continuity and familiarity) and are able to edit the blogs information. | [Edit](static/testing/userstories/edit.png) |
-| Store Owner | Delete a blog | Remove items that are no longer for sale | When a superuser is logged in, they are shown a delete button underneath each blog on the blogs page, and are also shown a delete button when viewing a blog. Once clicked they a modal will pop up asking them to confirm they wish to delete this blog, and notifying them that this action cannot be undone. The superuser is given a choice to delete the blog or cancel. The modal provides a layer of protection to product deletion and should prevent accidental deletion of blogs. | [Delete](static/testing/userstories/delete.png) |
-
+| Store Owner | Add a blog | Add new blogs to my blog | Admin are able to add new blogs to the store directly from the store website when logged in as a superuser. This option is provided to them under the account icon in the navbar - blog management. If an admin clicks on this link, they will be taken to the add blog page where they can add a new item to be added to the store. | [Add Blog](static/testing/userstories/addblog.png) |
+| Store Owner | Edit/update a blog | Change blog prices, descriptions, images and other blog criteria | When a superuser is logged in, they are shown an edit button underneath each blog on the blogs page, and are also shown an edit button when viewing a blog. Once clicked they will be taken to a page similar in layout to the add blog page (to provide continuity and familiarity) and are able to edit the blogs information. | [Edit Blog](static/testing/userstories/editblog.png) |
+| Store Owner | Delete a blog | Remove blogs that are no longer wanted | When a superuser is logged in, they are shown a delete button underneath each blog on the blogs page, and are also shown a delete button when viewing a blog. Once clicked the toast confirms that the blog has been succesfully deleted. | [Delete Blog](static/testing/userstories/deleteblog.png) |
 
 ### Full Testing
 
@@ -314,7 +308,7 @@ Additional testing was carried out by friends and family on a variety of devices
 | Footer Responsiveness | The footer sections should become stacked on smaller screens | Looked at site on smaller screens | Sections of footer became stacked | Pass |
 ||||||
 | **HOME PAGE** |||||
-| Shop Now Button | Clicking on th button takes you to the main categories page. | Clicked button and product page loads | All products are displayed | Pass |
+| Shop Now Button | Clicking on the button takes you to the main products page. | Clicked button and product page loads | All products are displayed | Pass |
 | Hero Image | Refreshing the pages displays a new hero image. | Refreshed page several times to reveal new image. | Random image displayed every time the page is refreshed. | Pass |
 ||||||
 | **PRODUCTS PAGE** ||||||
@@ -325,7 +319,7 @@ Additional testing was carried out by friends and family on a variety of devices
 ||||||
 | **PRODUCT DETAIL PAGE** |||||
 | Click on image | When you click on an image, a new tab should open displaying the image| Clicked on the product image | A new browser tab opened with the image | Pass |
-| Quantity Plus Button | When you click the plus button the quantity should increase by one until you reach the stock level for the product. Once you reach the stock level, the button becomes disabled. If you lower the quantity, the plus button will reenable. | Clicked on the plus button to the stock level | Clicking on the plus button increments the quantity by 1, and once you reach the stock level the button is disabled. Lowering the quantity reenabled the plus button. | - |
+| Quantity Plus Button | When you click the plus button the quantity should increase by one until you reach the stock level for the product. Once you reach the stock level, the button becomes disabled. If you lower the quantity, the plus button will reenable. | Clicked on the plus button to the stock level | Clicking on the plus button increments the quantity by 1, and once you reach the stock level the button is disabled. Lowering the quantity reenabled the plus button. | Pass |
 | Quantity Minus Button | The minus button will be disabled at 1, if the quantity is more than one, the minus button will be enabled. The minus button should decrement the quantity by one | Added product, then used the minus button to lower the quantity |The button is disabled when the product quantity is 1. The quantity is decreased by 1 each time you click. | Pass |
 | Quantity input | If a user manually enters a value larger than the stock level and tries to add the product to their bag, they will be presented with a tooltip that lets them know the value must be equal to or less than the stock level | Add 200 to quantity input for a product with stock level of 44 and click add to bag. | A tooltip pops up with a message letting me know that the value must be equal or less than 44. | Pass |
 | Add to bag button | When clicked the quantity of the item will be added to the bag. A success toast message will display letting the user know the quantity of the product added to the bag. | Incremented quantity to 4 and clicked add to bag button | A toast displays to let the user know that they have added 4 of the product to their bag and shows the image of the item with the title and quantity in the bag | Pass |
@@ -367,9 +361,9 @@ Additional testing was carried out by friends and family on a variety of devices
 | Edit Product Link | This link should only be shown when logged in as a superuser. When the edit link is clicked (either on the products page or from the product detail page) superusers are taken to the edit product page. If a regular user tries to manually access the edit page using the url, they are given an error toast letting them know only administrators can perform that action | Clicked the Edit link as a superuser.  Logged in as regular user and manually enter the url into the address bar. | The edit link is only shown when logged in as a superuser. Superusers are shown the edit product page and regular users are shown an error toast letting them know that only administrators have permission to perform that action. | Pass |
 | Delete Product Link | This link should only be shown to superusers. when clicked a superuser should be shown a modal asking them to confirm they would like to delete the product, and reminds them that this action cannot be undone. If a regular user tries to manually access this page using the url, they should be shown an error toast telling them they cannot perform the action. | Clicked the link as a superuser. Manually accessed the url as a regular user. | This link is only shown to superusers. The superuser is shown a modal that asks if they are sure they want to delete the product as this action cannot be undone. Regular users are shown an error toast letting them know that only administrators can perform that action | Pass |
 | Contact form sent | All contact forms submitted to the site are stored in the contact form section of the admin page. It will display the name, email address, phone number (if filled in) and message, and will also detail the date of the contact along with a replied checkbox to enable the admin to keep track of whether they have responded | Open the admin page and navigate to the contact form section, select a contact email and view the information. | Information is displayed about the users name, email address, phone number (if entered), message sent and the date it was sent along with a checkbox for replied. | Pass |
-
-## Bugs
-
-### Solved Bugs
-
-### Known Bugs
+||||||
+| **BLOG PAGES** |||||
+| Blog Management | When a superuser is logged in they can add a blog via the blog management link. | Link is not visible to non-superusers. | When logged in I am taken to the Add blog form via the link on the profile drop down menu. This is not visible as a normal user. | Pass |
+| Add Blog | Filling out the relevant fields in the Add blog form and clicking 'Add Blog' results in the blog being posted to the main blog pages as well as a success notification. | Filled in the Add blog form and clicked add. | Blog displays in main blog page with a success toast displaying letting me know the blog posted successfully. | Pass |
+| Edit Blog | Edit/Delete buttons are displayed under each blog post on the main and detailed pages to a logged in superuser.| Clicking on the edit button and editing the blog via the form, and clicking 'Edit Blog' results in the blog being re-posted with edits to the main blog pages as well as a success notification being displayed. | Clicked the 'Edit' button and filled in the Edit blog form and Edit Blog. Blog displays in main blog page with a success toast displaying letting me know the edited blog re-posted successfully. | Pass |
+| Delete Blog | Edit/Delete buttons are displayed under each blog post on the main and detailed pages to a logged in superuser.| Clicking on the delete button and deleting the blog results in the blog post deleted. | Clicked the 'Delete' button, Blog is removed and a success toast displaying letting me know the blog has been deleted successfully. | Pass |
