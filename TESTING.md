@@ -186,41 +186,25 @@ Unfortunately none of us were able to find it. So, the following tests technical
 
 I have used Googles Lighthouse testing to test the performance, accessibility, best practices and SEO of the site.
 
-#### Desktop Results
-
 | Page | Result |
 | :--- | :--- |
-| Home Page | ![Home Desktop Lighthouse Testing]|
-| Products Page | ![Products Desktop Lighthouse Testing] |
-| Product Details Page | ![Product Detail Desktop Lighthouse Testing]|
-| Add Product Page | ![Add Product Desktop Lighthouse Testing]|
-| Edit Product Page | ![Edit Product Desktop Lighthouse Testing]|
-| Bag Page | ![Bag Desktop Lighthouse Testing]|
-| Checkout Page | ![Checkout Desktop Lighthouse Testing]|
-| Checkout Success Page | ![Checkout Success Desktop Lighthouse Testing]|
-| Profile Page | ![Profile Desktop Lighthouse Testing]|
-| Contact Us Page | ![Contact Us Desktop Lighthouse Testing]|
-| Privacy Policy Page| ![Privacy Desktop Lighthouse Testing]|
-| Terms & Conditions Page | ![Terms Desktop Lighthouse Testing]|
-| Delivery Policy Page | ![Delivery Desktop Lighthouse Testing]|
+| Home Page | ![Home  Lighthouse Testing](static/testing/userstories/homelighthouse.png)|
+| Products Page | ![Products  Lighthouse Testing](static/testing/userstories/lighthouseproduct.png) |
+| Product Details Page | ![Product Detail  Lighthouse Testing]|
+| Add Product Page | ![Add Product  Lighthouse Testing](static/testing/userstories/lighthouseadd.png)|
+| Equipment Page | ![Equipment Page  Lighthouse Testing](static/testing/userstories/lighthouseamps.png)|
+| Add Blog Page| ![Add Blog Page Lighthouse Testing](static/testing/userstories/lighthouseblogadd.png)|
+| Bag Page | ![Bag  Lighthouse Testing](static/testing/userstories/lighthousebag.png)|
+| Checkout Page | ![Checkout  Lighthouse Testing](static/testing/userstories/lighthousecheckout.png)|
+| Checkout Success Page | ![Checkout Success  Lighthouse Testing](static/testing/userstories/lighthousecheckoutsuccess.png)|
+| Profile Page | ![Profile  Lighthouse Testing](static/testing/userstories/lighthouseprofile.png)|
+| Contact Us Page | ![Contact Us  Lighthouse Testing]|
+| Privacy Policy Page| ![Privacy  Lighthouse Testing](static/testing/userstories/lighthousepolicy.png)|
+| Terms & Conditions Page | ![Terms  Lighthouse Testing]|
+| Blog Page| ![Blog Page Lighthouse Testing](static/testing/userstories/lighthouseblog.png)|
+| Add Blog Page| ![Add Blog Page Lighthouse Testing](static/testing/userstories/lighthouseblogadd.png)|
 
-#### Mobile Results
-
-| Page | Result |
-| :--- | :--- |
-| Home Page | ![Home Page Mobile Lighthouse Testing]|
-| Products Page | ![Product Mobile Lighthouse Testing]|
-| Product Details Page | ![Product Detail Mobile Lighthouse Testing]|
-| Add Product Page | ![Add Product Mobile Lighthouse Testing]|
-| Edit Product Page | ![Edit Product Mobile Lighthouse Testing]|
-| Bag Page | ![Bag Mobile Lighthouse Testing]|
-| Checkout Page | ![Checkout Mobile Lighthouse Testing]|
-| Checkout Success Page | ![Checkout Success Mobile Lighthouse Testing]|
-| Profile Page | ![Profile Mobile Lighthouse Testing] |
-| Contact Us Page | ![Contact Us Mobile Lighthouse Testing] |
-| Privacy Policy Page| ![Privacy Mobile Lighthouse Testing] |
-| Terms & Conditions Page | ![Terms Mobile Lighthouse Testing]|
-| Delivery Policy Page | ![Delivery Mobile Lighthouse Testing] |
+Although the results aren't brilliant, they are at lease consistent. I suspect the lower scores are down to the size of the images I've used, however as the quality of the images are an important part of the site, I'm not sure it would be wise to change this at this point.
 
 ### Wave
 

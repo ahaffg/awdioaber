@@ -70,8 +70,7 @@
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <form method="GET" action="{% url 'products' %}">
           <div class="input-group w-100">
-            <input class="form-control border border-black rounded-0" type="text" name="q"
-              placeholder="Search our site">
+            <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site" aria-label="search">
             <div class="input-group-append">
               <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                 <span class="icon">
@@ -206,9 +205,10 @@
         <div class="col l6 s12 text-center">
           <h5 class="text-center">Payments</h5>
           <br>
-          <h6>Payments facilitated by <a href="https://stripe.com/gb" target="_blank"
-              class="nav-link main-logo-link logo-font text-black my-0 text-center"></a><i class="fab fa-cc-stripe"></i>
-            Stripe</h6>
+          <h6>Payments facilitated by</h6>
+          <a href="https://stripe.com/gb" target="_blank" class="text-black"><i class="fab fa-cc-stripe"></i>
+            Stripe</a>
+          <br>
           <h6 class="text-center">Cards Accepted:</h6>
           <i class="fab fa-cc-visa"><span class="fa-sr-only"></span></i>
           <i class="fab fa-cc-mastercard"><span class="fa-sr-only"></span></i>
@@ -240,14 +240,15 @@
     </div>
     <hr>
     <!-- Educational project disclaimer-->
-        <div class="row educational-purposes text-center pb-5">
-          <div class="col text-center">
-            <br>
-            <p>Awdio Aber has been created by <a href="https://github.com/ahaffg" target="_blank">Angharad Griffiths</a>
-              as a portfolio project for the Code Institutes Level 5 Diploma in Web Application Development.</p>
-            <p>As this site has been created for educational purposes, no orders received will be fulfilled.</p>
-          </div>
-        </div>
+    <div class="row educational-purposes text-center pb-5">
+      <div class="col text-center">
+        <br>
+        <p>Awdio Aber has been created by <a class="text-black" href="https://github.com/ahaffg"
+            target="_blank"><b>Angharad Griffiths</b></a>
+          as a portfolio project for the Code Institutes Level 5 Diploma in Web Application Development.</p>
+        <p>As this site has been created for educational purposes, no orders received will be fulfilled.</p>
+      </div>
+    </div>
     <hr>
     <div class="footer-copyright">
       <div class="container">
