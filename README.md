@@ -442,11 +442,21 @@ Defensive programming has been used throughout the site to prevent users accessi
 
 Due to time constraints, I have not had chance to implement the forum, but this did give me the opportunity to implement an 'Under Construction' page which would be useful to a site manager as a site develops.
 
-I also wasn't able to implement the hiring system quite as I had hoped and have had to settle for a simple subscription service at this point. Given more time, I think a wishlist-like system would be great to offer customers.
+I think a forum would be really beneficial for helping to build a community for the site, however I understand that there would be a large amount of planning and coding that would be needed to support this. Different levels of user permissions would be required to alllow for posting, moderating and overall mangement of users. Were this to become a useful site to my husband this is absolutely something I would want to develop.
+
+I also wasn't able to implement the hiring system quite as I had hoped and have had to settle for a simple subscription service at this point. Given more time, I think a wishlist-like system would be great to offer customers, or offering the items that had been out on subscription for a reduced price. I did begin to build a "Replay" app to support this idea, but I felt at this time - code wise - I didn't have enough time to make it sufficientlt unique to make it worth the time it was taking to set up properly.
 
 I would like to develop the subscription management system further, I think it would be great if there was a way that subscriptions could be viewed so that the store manager can easily check if they have recieved their subscription, and if they have returned their subscription. This could be taken even further to have inbuilt sysems to manage late-returns or penalties for damaged/lost equiptment.
 
-As ever I would like to be able to offer a bilingual site in the future also.
+Having gone through the Stripe documentation I understand that it is also possible for customers to have a portal thorough which they can manage their own billing and subscriprion issues. I feel that setting up a customer portal via the site would be very beneficial for site management, as it would mean that many payment issues could be handled by the customers themselves. I think it would also be attractive to customers, as having control over billing issues makes a customer feel more secure in buying items online.
+
+Added to this I think it would be really good to implement more payment options specifically Paypal, and as the site has many high price tag items, services like Klarna which offer installment payments might be attractive too.
+
+I've also seen tools like Magnify JS utilised on other students sites, and thought that would be good to implement also. If this were to be developed into a viable site. it would be vital to find a way on displaying multiple views of a product. There are many great tools available that offer buyers a means of seeing the product in a non-static way before buying, from 360 views, to videos and I feel it would be really beneficial to explore those.
+
+In addition to this, at the last minute I realised that I really should have found a way to easyily close the expanded image (created when the image on the product detail view is clicked upon) and return to the product detail view. But alas, time and hayfever won in the end.
+
+As ever I would also like to be able to offer a bilingual site in the future.
 
 ---
 
