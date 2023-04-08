@@ -187,9 +187,9 @@ I have used Googles Lighthouse testing to test the performance, accessibility, b
 | Checkout Page | ![Checkout  Lighthouse Testing](static/testing/userstories/lighthousecheckout.png)|
 | Checkout Success Page | ![Checkout Success  Lighthouse Testing](static/testing/userstories/lighthousecheckoutsuccess.png)|
 | Profile Page | ![Profile  Lighthouse Testing](static/testing/userstories/lighthouseprofile.png)|
-| Contact Us Page | ![Contact Us  Lighthouse Testing]|
-| Privacy Policy Page| ![Privacy  Lighthouse Testing](static/testing/userstories/lighthousepolicy.png)|
-| Terms & Conditions Page | ![Terms  Lighthouse Testing](static/testing/userstories/lighthouseterms.png)|
+| Contact Us Page | ![Contact Us Lighthouse Testing](/static/testing/userstories/lighthousecontact.png) |
+| Privacy Policy Page| ![Privacy Lighthouse Testing](static/testing/userstories/lighthousepolicy.png)|
+| Terms & Conditions Page | ![Terms Lighthouse Testing](static/testing/userstories/lighthouseterms.png)|
 | Blog Page| ![Blog Page Lighthouse Testing](static/testing/userstories/lighthouseblog.png)|
 | Add Blog Page| ![Add Blog Page Lighthouse Testing](static/testing/userstories/lighthouseblogadd.png)|
 
@@ -213,7 +213,7 @@ WAVE(Web Accessibility Evaluation Tool) allows developers to create content that
 | Clwb Awdio Page | ![Clwb Awdio Page](static/testing/userstories/waveclwbawdio.png) |
 | Profile Page | ![Profile Page](static/testing/userstories/waveprofile.png) |
 | Login Page | ![Login Page](static/testing/userstories/wavelogin.png) |
-| Contact Us Page | ![Contact Page] |
+| Contact Us Page | ![Contact Page](static/testing/userstories/wavecontact.png) |
 | Privacy Policy Page| ![Privacy Policy Page](static/testing/userstories/wavepolicy.png) |
 | Terms & Conditions Page | ![Terms and Conditions Page](static/testing/userstories/waveterms.png) |
 | 404 Error Page | ![404 Page](static/testing/userstories/wave404.png) |
@@ -238,7 +238,7 @@ WAVE(Web Accessibility Evaluation Tool) allows developers to create content that
 | Shopper | View a profile page | Set a default delivery address and view previous purchases | Users are able to view their profile page once logged in via the account icon on the navbar which is accessible on all pages of the site. Their profile allows them to select their default delivery information (which if filled out will pre-populate the checkout delivery information if the user is signed in). Users are also able to view their previous orders within their profile. These are listed most recent first and give the first part of the order number, the date and time of the order, items ordered with their quantities along with the order total. If the user clicks on the order number, they will then be taken to a more detailed breakdown of their order. | [Profile](static/testing/userstories/profile.png) |
 | Shopper | Reset my password | Recover my account | If a user has forgotten their password, they can click on the forgotten password button during login to reset their password. | [Password Reset](static/testing/userstories/passwordreset.png) |
 | **SORTING & SEARCHING** |
-| Shopper | Sort the list of available products | Easily identify the best rated, best priced and categorically sort products | Users may view products bases on their price, rating or category from the navbar by selecting all products and then the option they want from the dropdown.  | - |
+| Shopper | Sort the list of available products | Easily identify the best rated, best priced and categorically sort products | Users may view products bases on their price, rating or category from the navbar by selecting all products and then the option they want from the dropdown.  | [Sorted Items](static/testing/userstories/productssorted.png) |
 | Shopper | Sort a specific category of products | Find the best-priced or best-rated product in a specific category, or sort the products in that category by name | Users are given chance to sort products on the products pages via a sort dropdown in the top right. This allows users to sort products by their name, price, rating and category - ascending or descending. | [Categories](static/testing/userstories/equipment.png) |
 | Shopper | Sort multiple categories of products simultaneously | Find the best-rated products across broad categories, such as DAPs or by brand name. | Users may select the all products link on the navbar and then choose how they wish to sort | [Sorted Products](static/testing/userstories/productssorted.png) |
 | Shopper | Search for a product by name or description | Find a specific product I'd like to purchase | Users are provided with a search bar in the navbar which allows them to search for items. The search not only checks the product name, but also their description for the search term used.  | [Specific Item Search](static/testing/userstories/itemnamesearch.png) |

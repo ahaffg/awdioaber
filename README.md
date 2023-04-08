@@ -162,9 +162,17 @@ I have decided to use a relational database as this will best suit my requiremen
 
 This is the first version of the Schema I intend to use for the project. I decided to focus on the sales aspect of the app and ensure that was all running correctly before building the "Hire" functionality, though I expect this to work in a similar way to a "Wishlist" function. The profile schema will pull username and email data from the registration database. Potentially this process could also be used to part autofill the order form.
 
+![Revised Schema](/static/images/readme/revisedschema.png)
+
+After building the site however I found that I needed to revise some of the data categories. I decided not to specify Brand information at this point as there are so many brands stocked, but this is something I should definately do if the site were to develop further. 
+
+I also did not set up the different membership levels at this point as I haven't had the chance to develop the forum app so there was no need, but again this is something that would need to be built as part of a forum app in the future.
+
+The hire boolean was also removed as I did not have the opportunity to implement the hire system at this pont. This again would be something needed for future development.
+                                                                           
 ---
 
-### Skeleton Plane
+### Skeleton Plane                                                                          
 
 #### **Wireframes**
 
@@ -616,7 +624,7 @@ We have been using the sqlite3 database in development, however this is only ava
 11. Create a `Procfile` in the root directory. This tells Heroku to create a web dyno which runs gunicorn and serves our django app. Add the following to the file (making sure not to leave any blank lines underneath):
 
     ```Procfile
-    web: gunicorn seaside_sewing.wsgi:application
+    web: gunicorn awdio_aber.wsgi:application
     ```
 
 12. Log into the Heroku CLI in the terminal and then run the following command to disable collectstatic. This command tells Heroku not to collect static files when we deploy:
@@ -693,15 +701,15 @@ We have been using the sqlite3 database in development, however this is only ava
 #### **Creating AWS groups, policies and users**
 
 1. Click the services icon on the top right of the page and navigate to IAM - manage access to AWS services. On the left hand navigation menu click user groups and then click the create group button in the top right. This will create the group that our user will be placed in.
-2. Choose a name for your group - for example manage-seaside-sewing, and click the create policy button on the right. This will open a new page.
+2. Choose a name for your group - for example manage-awdio-aber, and click the create policy button on the right. This will open a new page.
 3. Click on the JSON tab and then click the link for import managed policy on the top right of the page.
 4. Search for S3 and select the one called AmazonS3FullAccess, then click import.
 5. We need to make a change to the resources, we need to make resources an array and then change the value for resources. Instead of a `*` which allows all access, we want to paste in our ARN. followed by a comma, and then paste the ARN in again on the next line with `/*` at the end. This allows all actions on our bucket, and all the resources in it.
 6. Click the next: tags button and then the next:review .
-7. Give the policy a name and description (e.g. seaside-sewing-policy | Access to S3 bucket for seaside sewing static files.) Click the create policy button.
+7. Give the policy a name and description (e.g. awdio-aber-policy | Access to S3 bucket for awdio aber static files.) Click the create policy button.
 8. Now we need to atach the policy we just created. On the left hand navigation menu click user groups, select the group and go to the permissions tab. Click the add permissions button on the right and choose attach policies from the dropdown.
 9. Select the policy you just created and then click add permissions at the bottom.
-10. Now we'll create a user for the group by clicking on the user link in the left hand navigation menu, clicking the add users button on the top right and giving our user a username (e.g. seaside-sewing-staticfiles-user). Select programmatic access and then click the next: permissions button.
+10. Now we'll create a user for the group by clicking on the user link in the left hand navigation menu, clicking the add users button on the top right and giving our user a username (e.g. awdio-aber-staticfiles-user). Select programmatic access and then click the next: permissions button.
 11. Add the user to the group you just created and then click next:tags button, next:review button and then create user button.
 12. You will now need to download the CSV file as this contains the user access key and secret access key that we need to insert into the Heroku config vars. Make sure you download the CSV now as you won't be able to access it again.
 
@@ -780,7 +788,7 @@ To fork the repository:
 
 1. Log in (or sign up) to GitHub.
 
-2. Go to the repository for this project, [seaside-sewing](https://github.com/kera-cudmore/seaside-sewing).
+2. Go to the repository for this project, [Awdioaber](https://github.com/ahaffg/awdioaber).
 
 3. Click on the fork button in the top right of the page.
 
@@ -790,7 +798,7 @@ To clone the repository:
 
 1. Log in (or sign up) to GitHub.
 
-2. Go to the repository for this project, [seaside-sewing](https://github.com/kera-cudmore/seaside-sewing).
+2. Go to the repository for this project, [Awdioaber](https://github.com/ahaffg/awdioaber).
 
 3. Click the Code button, select whether you would like to clone with HTTPS, SSH or the GitHub CLI and copy the link given.
 
