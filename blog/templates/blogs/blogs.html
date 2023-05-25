@@ -53,6 +53,7 @@
                     </p>
                 </div>
             </div>
+<div></div>
             <!-- Articles -->
             {% for blog in blogs %}
             <div class="container">
@@ -64,7 +65,7 @@
 
                         {% else %}
                         <a href="{% url 'blog_detail' blog.id %}">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ blog.name }}">
+                            <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ blog.name }}">
                         </a>
                         {% endif %}
                         <div class="card-body pb-0">
