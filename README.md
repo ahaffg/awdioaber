@@ -843,4 +843,4 @@ I would like to acknowledge the following people who have helped me with complet
 * [Kera Cudmore](https://github.com/kera-cudmore/) for having fantastic examples of README and TESTING documents.
 * My family for their patience and support whilst working on my final project.
 * My fantastic mentor [Martina Terlević](https://www.linkedin.com/in/martinaterlevic/?originalSubdomain=de) for always being so helpful and flexible, as well as all round awesome human!
-* The Code Institute Tutors who assisted me at so many points along the way especially Ed, Oisin, Gemma and Ger, you are complete legends!
+* The Code Institute Tutors who assisted me at so many points along the way especially Ed, Oisin, Gemma and Ger, you are complete legends! Thank you!
