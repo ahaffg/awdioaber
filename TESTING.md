@@ -371,3 +371,12 @@ Additional testing was carried out by friends and family on a variety of devices
 | **CLWBAWDIO** |||||
 | Subscribe | When a shopper wants to subscribe to the Clwbawwdio service, they can easily subscribe via the buttons on the Clwbawdio or FAQ pages. | Clicking the button takes shoppers to the Clwbawdio/Stripe payment portal. | Filling out the details correctly gives me a success message, lets me know when my free trial will end and when I will start to be charged. | Pass |
 | Manage Subscriptions | As a site admin I want to be able to see who has subscribed to the service. | Logging into stripe and clicking on the customers tab. I can see all subscribers and cancel or update subscriptions as neccesary. | Pass |
+
+## Bugs
+
+### Solved Bugs
+
+| No | Bug | How I solved the issue | Evidence |
+|:--- | :--- | :--- | :---: |
+| 1 | When logged in as a registered user, navigating to Contact Page throws a 500 error. Issue does not occur with non-registered users. | I compared the code with similar apps, as well as the code of of other students who were trying to achieve similar functionality. I  realised in through a tutorial session that I had not properly defined the fields properly in forms.py. I rectified this and now the fom works perfectly for registered and non-registered users. | |
+| 2 | The blog preview cards were not displaying correctly , i.e. the fist card would always be smaller than the other cards. | I re-read the Bootstrap documents on cards and compared it to the Boutique Ado code which I had adapted for the function of the Blog previews. Eventually It was pointed out to me that I had unneccesary <div>'s in the code, and had inadvertently nested two contatiner <div>'s -there should only be one per page. Also two end <div>'s should have been outside a 'for' loop, but were initially inside. | |
