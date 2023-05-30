@@ -74,7 +74,7 @@
                         <div class="card-footer bg-white pt-0 border-0 text-right">
                             <div class="row">
                                 <div class="col">
-                                    <p class="small mt-1 mb-0">
+                                    <p class="mt-1 mb-0">
                                         <a class="text-muted"
                                             href="{% url 'blogs' %}?category={{ blog.category.name }}">
                                             <i class="fas fa-star mr-1"></i>{{ blog.category.friendly_name }}
@@ -84,19 +84,19 @@
                             </div>
                         </div>
                     </a>
-                </div>
+                
             
             <!-- Blog Management -->
             {% if request.user.is_superuser %}
-            <small class="ml-3">
+            <p class="ml-3">
                 <a href="{% url 'edit_blog' blog.id %}">Edit</a> |
                 <a class="text-danger" href="{% url 'delete_blog' blog.id %}">Delete</a>
-            </small>
+            </p>
             {% endif %}
-        
+        </div>
 {% endfor %}
 </div>
-    </div>
+</div>
 </div>
 {% endblock %}
 
