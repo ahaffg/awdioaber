@@ -13,6 +13,17 @@
             <h2 class="display-4 logo-font text-black text-center">Blog</h2>
             <hr>
             <br>
+    <!-- Blog mamangement for superuser-->
+    <div class="col text-center mt-3">
+        {% if request.user.is_authenticated %}
+        {% if request.user.is_superuser %}
+        <a class="category-badge text-decoration-none" href="{% url 'add_blog' %}">
+            <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">Add Blog
+            </span>
+        </a>
+        {% endif %}
+        {% endif %}
+    </div>
             {% for c in current_categories %}
             <a class="category-badge text-decoration-none" href="{% url 'blogs' %}?category={{ c.name }}">
                 <span
