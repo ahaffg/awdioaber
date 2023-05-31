@@ -1,0 +1,85 @@
+[{
+    "pk": 1,
+    "model": "clwb.category",
+    "fields": {
+        "name": "june2023",
+        "friendly_name": "June 2023"
+    }
+}, {
+    "pk": 2,
+    "model": "clwb.category",
+    "fields": {
+        "name": "may2023",
+        "friendly_name": "May 2023"
+    }
+}, {
+    "pk": 3,
+    "model": "clwb.category",
+    "fields": {
+        "name": "april",
+        "friendly_name": "April 2023"
+    }
+}, {
+    "pk": 4,
+    "model": "blogs.category",
+    "fields": {
+        "name": "march2023",
+        "friendly_name": "March 2023"
+    }
+}, {
+    "pk": 5,
+    "model": "clwb.category",
+    "fields": {
+        "name": "february2023",
+        "friendly_name": "February 2023"
+    }
+}, {
+    "pk": 6,
+    "model": "clwb.category",
+    "fields": {
+        "name": "january2023",
+        "friendly_name": "January 2023"
+    }
+}, {
+    "pk": 7,
+    "model": "clwb.category",
+    "fields": {
+        "name": "december2022",
+        "friendly_name": "December 2022"
+    }
+}, {
+    "pk": 8,
+    "model": "clwb.category",
+    "fields": {
+        "name": "november2022",
+        "friendly_name": "November 2022"
+    }
+}, {
+    "pk": 9,
+    "model": "clwb.category",
+    "fields": {
+        "name": "october2022",
+        "friendly_name": "October 2022"
+    }
+}, {
+    "pk": 10,
+    "model": "clwb.category",
+    "fields": {
+        "name": "september2022",
+        "friendly_name": "September 2022"
+    }
+}, {
+    "pk": 11,
+    "model": "clwb.category",
+    "fields": {
+        "name": "august2022",
+        "friendly_name": "August 2022"
+    }
+}, {
+    "pk": 12,
+    "model": "clwb.category",
+    "fields": {
+        "name": "july2022",
+        "friendly_name": "July 2022"
+    }
+}]

@@ -1,0 +1,29 @@
+[{
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340155",
+        "name": "Dekoni Audio Blue",
+        "description": "If you are looking for a fun headphone to listen to, one with further improvement capability and robust enough so you do not have to handle them with white gloves then give the Dekoni Audio Blue a try by all means. Dark V shaped and fun sound signature. Rugged construction. Leagues above the original variant in comfort levels.",
+        "price": 249.99,
+        "category": 3,
+        "rating": 4.6,
+        "image_url": "https://headfonics.com/wp-content/uploads/2023/01/dekoni-audio-blue-review-feature-image.jpg.webp",
+        "image": "dekoni-audio-blue.jpg"
+    }
+},
+{
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001600425",
+        "name": " HIFIMAN Sundara Closed Back Review",
+        "description": " Is the HIFIMAN Sundara Closed Back better than the original Sundara? Each model has its selling points. The Closed Back seems to be unveiled, but it lacks some low-end grunt which can be easily remedied up to a point. So there is the tradeoff. Very good midrange definition. Excellent isolation levels and very little bleed. Beautiful Beechwood cups",
+        "price": 399,
+        "category": 3,
+        "rating": 4.7,
+        "image_url": "https://headfonics.com/wp-content/uploads/2022/12/HIFIMAN-Sundara-Closed-Back-Featured-Image.jpg.webp",
+        "image": "HIFIMAN-Sundara-Closed-Back.jpg"
+    }
+}
+]
