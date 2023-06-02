@@ -1,0 +1,123 @@
+[{
+    "pk": 1,
+    "fields": {
+        "month": "June 2023",
+        "title": "HarmonicDyne Athena",
+        "image_url": "https://headfonics.com/wp-content/uploads/2023/05/HarmonicDyne-Athena-Review-feature-image.jpg.webp",
+        "image": "HarmonicDyne-Athena.jpg",
+        "description": "The HarmonicDyne has evolved with the Athena. A semi-closed design that packs a lot of value, the solid build and easily likable tuning give it an interesting proposition. It has a smooth timbre, balanced vocal presence and is easy to drive
+
+        ."
+    }
+},
+{
+    "pk": 2,
+    "fields": {
+        "month": "May 2023",
+        "title": "FiiO Q11",
+        "image_url": "https://headfonics.com/wp-content/uploads/2023/05/FiiO-Q11-Review-Featured-Image.jpg.webp",
+        "image": "FiiO-Q11.jpg",
+        "description": "FiiO has focused on improving the sound quality this time around since there seems to be some features on previous models now removed. So, you lose a bass boost feature plus a line input which is a type of connectivity that’s losing popularity nowadays but, in its place, you get an upgraded and refined tuning. Neutral and natural sounding, plenty of driving power and a long battery life."
+    }
+},
+{
+    "pk": 3,
+    "fields": {
+        "month": "April 2023",
+        "title": "SMSL SU-1",
+        "image_url": "https://headfonics.com/wp-content/uploads/2023/05/SMSL-SU-1-Review-featured-image.jpg.webp",
+        "image": "SMSL-SU-1.jpg",
+        "description": "As a sub-£100 dedicated DAC, the SMSL SU-1 is hard to beat. Considering its input flexibility, clean implementation of the AKAK4493S dac, and good dynamics, this could be a perfect upgrade or starter DAC for audiophiles assembling their first desktop audio stack. Good dynamics, small footprint and native MQA unfolding."
+    }
+},
+{
+    "pk": 4,
+    "fields": {
+        "month": "March 2023",
+        "title": "HiBy R2 II",
+        "image_url": "https://headfonics.com/wp-content/uploads/2023/05/HiBy-R2-II-Review-feature-image.jpg.webp",
+        "image": "HiBy-R2-II.jpg",
+        "description": "The HiBy R2 II is not only a good performer far as sound quality is concerned but it has a ton of features for the average price of a dinner for two which makes it quite a high-value purchase. Good range of features, and a warm vocal forward presentation."
+    }
+},
+{
+    "pk": 5,
+    "fields": {
+        "month": "February 2023",
+        "title": "Shanling M1s",
+        "image_url": "https://headfonics.com/wp-content/uploads/2023/04/Shanling-M1s-review-feature-image.jpg.webp",
+        "image": "Shanling-M1s.jpg",
+        "description": "The Shanling M1s has so many features and functions that it can technically replace several components and at the same time demonstrate what separate audio components can do for you. Balanced sound signature. Feature rich with stable wireless connectivity."
+    }
+},
+{
+    "pk": 6,
+    "fields": {
+        "month": "January 2023",
+        "title": "HIDIZS MS5",
+        "image_url": "https://headfonics.com/wp-content/uploads/2023/04/Hidizs-MS5-Review-Feature-image.jpg.webp",
+        "image": "Hidizs-MS5.jpg",
+        "description": "The Hidizs MS5 has many faces or should I say many sound signatures, all of which bring something new and interesting to the table for the listener. Swappable filters work well. Uniform imaging and instrument isolation. Shell dimension lets it sit comfortably in the ear."
+    }
+},
+{
+    "pk": 7,
+    "fields": {
+        "month": "December 2022",
+        "title": "Thieaudio Ghost",
+        "image_url": "https://headfonics.com/wp-content/uploads/2023/04/Thieaudio-Ghost-Review-Feature-Image.jpg.webp",
+        "image": "Thieaudio-Ghost.jpg",
+        "description": "The Thieaudio Ghost includes traits that will not alienate budding enthusiasts while sprinkling a healthy proportion of personality making it a unique and interesting set. It won’t be dethroning any higher-priced products but for a casual headphone at $129, the positives outweigh some minor snags. Non-fatiguing and great for casual listening. Easy time pairing with multiple sources. Includes a hard-shell case."
+    }
+},
+{
+    "pk": 8,
+    "fields": {
+        "month": "November 2022",
+        "title": "Attitud EarCITY",
+        "image_url": "https://headfonics.com/wp-content/uploads/2023/04/attitud-EarCITY-Review-feature-image.jpg.webp",
+        "image": "attitud-EarCITY.jpg",
+        "description": "The Attitud EarCITY looks promising, and if the manufacturer improves on some key areas, we could get a high-quality and interesting product with a unique sound character and unusual technology at its core. Interesting technology and offbeat sound. Stylish modern design. The ability to hear the environment is a plus for runners and outdoor enthusiasts."
+    }
+},
+{
+    "pk": 9,
+    "fields": {
+        "month": "October 2022",
+        "title": "Campfire Audio Orbit",
+        "image_url": "https://headfonics.com/wp-content/uploads/2023/02/campfire-audio-orbit-review-feature-image.jpg.webp",
+        "image": "campfire-audio-orbit.jpg",
+        "description": "Everything about this TWS screams Campfire from the fascinating blend of retro colors for the finishing to the instantly recognizable edging on the driver faceplate design. It is definitely going to stand out in this crowded market. This is a big sound with a heavy punch and is surprisingly good for staging capability. Excellent soundstage capability. Good battery life. App EQ works quite well."
+    }
+},
+{
+    "pk": 10,
+   "fields": {
+        "month": "September 2022",
+        "title": "Topping E70",
+        "image_url": "https://headfonics.com/wp-content/uploads/2023/01/Topping-E70-Review-featured-image.jpg.webp",
+        "image": "Topping-E70.jpg",
+        "description": "The Topping E70 is a surprisingly good DAC that feels right at home in a desktop scenario or injected into a home theatre hub. The E70 sound quality is on par with more expensive DAC sections, particularly in staging and 3D presentation plus it also excels with a very low noise floor. Excellent staging capabilities. Natural tonality/ good dynamics. Good input and output capability."
+    }
+},
+{
+    "pk": 11,
+    "fields": {
+        "month": "August 2022",
+        "title": "MOONDROP Alice",
+        "image_url": "https://headfonics.com/wp-content/uploads/2023/01/moondrop-alice-review-featured-image.jpg.webp",
+        "image": "moondrop-alice.jpg",
+        "description": "Moondrop Alice is the latest flagship TWS on their lineup having reviewed the cheaper Nekocake last year. It’s said to use similar drivers from the popular Moondrop KATO and made it in TWS form. When it comes to battery life, the Alice houses 8 hours of playtime and an additional 40 hours through the charging case. Clear midrange. Long battery life. aptX Adaptive."
+    }
+  },
+  {
+    "pk": 12,
+    "fields": {
+        "month": "July 2022",
+        "title": "Thieaudio Elixir",
+        "image_url": "https://headfonics.com/wp-content/uploads/2023/01/thieaudio-elixir-review-featured-image.jpg.webp",
+        "image": "thieaudio-elixir.jpg",
+        "description": "I don’t usually associate the word analog or vintage with IEMs but Thieaudio proved it can be done in the form of the Elixir. Listeners can expect a clever negotiation of tonal balance between the usual V-shaped and neutral presentation without upsetting either use case. Achieves balance between flavor and resolution. Trims the shout off sharp gears without losing transparency. Genuine burl wood adds character and uniqueness."
+    }
+  }
+]

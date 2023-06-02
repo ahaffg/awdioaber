@@ -7,12 +7,11 @@ from .models import Clwb
 class ClwbAdmin(admin.ModelAdmin):
     list_display = (
         'month',
-        'name',
         'image',
+        'title',
         'description',
-        'date',
     )
 
-    ordering = ('date',)
+    ordering = ('month',)
 
 admin.site.register(Clwb)
