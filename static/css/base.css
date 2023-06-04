@@ -72,7 +72,7 @@ body {
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
+    background: black !important;
     color: white !important;
 }
 
@@ -130,6 +130,11 @@ a.category-badge > span.badge:hover {
 
 input[name='q']::placeholder {
     color: #aab7c4;
+}
+
+#reset:hover{
+    background: #000;
+    color: white;
 }
 
 /* ------------------------------- bootstrap toasts */	

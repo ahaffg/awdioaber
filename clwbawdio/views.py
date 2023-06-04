@@ -19,10 +19,12 @@ def faqs(request):
 
     return render(request, 'clwbawdio/faqs.html')
 
+
 def clwbs(request):
     """ A view to return the clwbss page """
 
     return render(request, 'clwbawdio/clwbs.html')
+
 
 def all_clwbs(request):
     """ A view to show all clwbs, including sorting and search queries """
@@ -44,7 +46,12 @@ def all_clwbs(request):
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
-            clwbs =clwbs.order_by(sortkey)
+            clwbs = clwbs.order_by(sortkey)
+
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            clwbs = clwbs.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -67,6 +74,17 @@ def all_clwbs(request):
     }
 
     return render(request, 'clwbawdio/clwbs.html', context)
+
+def clwb_detail(request, clwb_id):
+    """ A view to show individual clwbs """
+
+    clwb = get_object_or_404(Clwb, pk=clwb_id)
+
+    context = {
+        'clwb': clwb,
+    }
+
+    return render(request, 'clwbs/clwb_detail.html', context)
 
 @login_required
 def add_clwb(request):
@@ -94,7 +112,6 @@ def add_clwb(request):
     }
 
     return render(request, template, context)
-
 
 @login_required
 def edit_clwb(request, clwb_id):

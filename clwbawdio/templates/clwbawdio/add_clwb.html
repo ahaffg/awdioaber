@@ -15,25 +15,25 @@
             <hr>
         </div>
     </div>
-    <div class="container mb-2">
-        <div class="container mb-2">
-            <form method="POST" action="{% url 'add_clwb' %}" class="form mb-2" enctype="multipart/form-data">
-                {% csrf_token %}
-                {% for field in form %}
-                {% if field.name != 'image' %}
-                {{ field | as_crispy_field }}
-                {% else %}
-                {{ field }}
-                {% endif %}
-                {% endfor %}
-                <div class="text-right">
-                    <a class="btn btn-outline-black rounded-0" href="{% url 'clwbs' %}">Cancel</a>
-                    <button class="btn btn-black rounded-0" type="submit">Add Clwb</button>
-                </div>
-            </form>
+<div class="container mb-2">
+            <div class="container mb-2">
+                <form method="POST" action="{% url 'add_clwb' %}" class="form mb-2" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% for field in form %}
+                    {% if field.name != 'image' %}
+                    {{ field | as_crispy_field }}
+                    {% else %}
+                    {{ field }}
+                    {% endif %}
+                    {% endfor %}
+                    <div class="text-right">
+                        <a class="btn btn-outline-black rounded-0" href="{% url 'clwbs' %}">Cancel</a>
+                        <button class="btn btn-black rounded-0" type="submit">Add Clwb</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 {% endblock %}
 
 {% block postloadjs %}
