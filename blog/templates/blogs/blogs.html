@@ -57,7 +57,7 @@
                 <div class="col-12 col-md-6 order-md-first">
                     <p class="text-muted mt-3 text-center text-md-left">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
-                        <span class="small"><a href="{% url 'blogs' %}">Blogs Home</a> | </span>
+                        <span class="text-black"><a class="text-black" href="{% url 'blogs' %}">Blogs Home</a> | </span>
                         {% endif %}
                         {{ blogs|length }} Blogs{% if search_term %} found for
                         <strong>"{{ search_term }}"</strong>{% endif %}

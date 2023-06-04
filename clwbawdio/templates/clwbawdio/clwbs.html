@@ -16,18 +16,18 @@
             <hr>
             <br>
 
-</div>
- <!-- Clwb mamangement for superuser-->
- <div class="col text-center mt-3">
-    {% if request.user.is_authenticated %}
-    {% if request.user.is_superuser %}
-    <a class="category-badge text-decoration-none" href="{% url 'clwb' %}">
-        <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">Add Clwb
-        </span>
-    </a>
-    {% endif %}
-    {% endif %}
-</div>
+        </div>
+        <!-- Clwb mamangement for superuser-->
+        <div class="col text-center mt-3">
+            {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}-
+            <a class="category-badge text-decoration-none" href="{% url 'add_clwb' %}">
+                <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">Add Clwb
+                </span>
+            </a>
+            {% endif %}
+            {% endif %}
+        </div>
     </div>
 </div>
 <!-- Search functioning-->
@@ -59,47 +59,44 @@
         </div>
         <!-- Clwbs -->
         {% for clwb in clwbs %}
-        
-            <div class="card mb-3">
-                {% if clwb.image %}
-                <a href="{% url 'clwb_detail' clwb.id %}">
-                    <img class="card-img-top" src="{{ clwb.image.url }}" alt="{{ clwb.name }}">
-                    {% else %}
-                    <a href="{% url 'clwb_detail' clwb.id %}">
-                        <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ clwb.name }}">
-                    </a>
-                    {% endif %}
-                    <div class="card-body pb-0">
-                        <h3 class="mb-0 text-black">{{ clwb.title }}</h3>
+
+        <div class="card mb-3">
+            <div class="card-body pb-0">
+                <h2 class="mb-0 text-black">{{ clwb.month }}</h2>
+            </div>
+            {% if clwb.image %}
+            <img class="card-img-top" src="{{ clwb.image.url }}" alt="{{ clwb.title }}">
+            {% else %}
+            <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ clwb.title }}">
+            {% endif %}
+            <div class="card-body pb-0">
+                <h3 class="mb-0 text-black">{{ clwb.title }}</h3>
+            </div>
+            <div class="card-body pb-0">
+                <h5 class="mb-0 text-black">{{ clwb.description }}</h5>
+            </div>
+            <div class="card-footer bg-white pt-0 border-0 text-right">
+                <div class="row">
+                    <div class="col">
+                        <!-- Clwb Management -->
+                        {% if request.user.is_superuser %}
+                        <p class="ml-3">
+                            <a href="{% url 'edit_clwb' clwb.id %}">Edit</a> |
+                            <a class="text-danger" href="{% url 'delete_clwb' clwb.id %}">Delete</a>
+                        </p>
+                        {% endif %}
                     </div>
-                    <div class="card-body pb-0">
-                        <h5 class="mb-0 text-black">{{ clwb.description }}</h5>
-                    </div>
-                    <div class="card-footer bg-white pt-0 border-0 text-right">
-                        <div class="row">
-                            <div class="col">
-                                <p class="mt-1 mb-0">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            
-        
-        <!-- Clwb Management -->
-        {% if request.user.is_superuser %}
-        <p class="ml-3">
-            <a href="{% url 'edit_clwb' clwb.id %}">Edit</a> |
-            <a class="text-danger" href="{% url 'delete_clwb' clwb.id %}">Delete</a>
-        </p>
-        {% endif %}
-    </div>
+                </div>
+            </div>
+            </a>
+
+        </div>
         {% endfor %}
 
-{% block postloadjs %}
+        {% block postloadjs %}
 
-<script async src="https://js.stripe.com/v3/buy-button.js">
-</script>
+        <script async src="https://js.stripe.com/v3/buy-button.js">
+        </script>
 
-{% endblock %}
-{% endblock %}
+        {% endblock %}
+        {% endblock %}

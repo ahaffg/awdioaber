@@ -68,19 +68,6 @@ def all_clwbs(request):
 
     return render(request, 'clwbawdio/clwbs.html', context)
 
-
-def clwb_detail(request, clwb_id):
-    """ A view to show individual clwb """
-
-    clwb = get_object_or_404(Clwb, pk=clwb_id)
-
-    context = {
-        'clwb': clwb,
-    }
-
-    return render(request, 'clwbawdio/clwb_detail.html', context)
-
-
 @login_required
 def add_clwb(request):
     """ Add a clwb to the page """
@@ -93,7 +80,7 @@ def add_clwb(request):
         if form.is_valid():
             clwb = form.save()
             messages.success(request, 'Successfully added clwb!')
-            return redirect(reverse('clwb_detail', args=[clwb.id]))
+            return redirect(reverse('clwbs', args=[clwb.id]))
         else:
             messages.error(
                 request, 'Failed to add clwb. \
