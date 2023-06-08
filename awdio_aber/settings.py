@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = "DEVELOPMENT" in os.environ
 
-ALLOWED_HOSTS = ["awdioaber.herokuapp.com", "localhost", "8000-ahaffg-awdioaber-3qziemkg4i2.ws-eu98.gitpod.io"]
+ALLOWED_HOSTS = ["awdioaber.herokuapp.com", "localhost", "8000-ahaffg-awdioaber-3qziemkg4i2.ws-eu98.gitpod.io", "8000-ahaffg-awdioaber-3qziemkg4i2.ws-eu99.gitpod.io"]
 
 CSRF_TRUSTED_ORIGINS = [
     "https://8000-ahaffg-awdioaber-3qziemkg4i2.ws-eu92.gitpod.io",

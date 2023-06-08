@@ -10,3 +10,5 @@ window.onload=function(){
  console.
 log(spot); thediv.style.background="url("+imgarray[spot]+")";
 };s
+
+$('.carousel').carousel()

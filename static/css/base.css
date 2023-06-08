@@ -445,3 +445,34 @@ input[name='q']::placeholder {
 #about-logo, #clwb-logo, #faq-logo {
     max-height: 30vh;
 }
+
+.card-month {
+    font-family: 'Megrim';
+}
+
+.carousel-indicators li
+{
+      background-color: #000 !important;
+       /*more custom style*/
+}
+
+.carousel-indicators .active {
+    background-color: grey !important;
+}
+
+.carousel-control-prev {
+    background-color: #000 !important;
+}
+
+.carousel-control-next {
+    background-color: #000 !important;
+}
+
+.carousel-item > div {
+    max-width: 85%;
+    padding-left: 10em;
+}
+
+h4 > .review  {
+    float:right;
+}
