@@ -453,7 +453,6 @@ input[name='q']::placeholder {
 .carousel-indicators li
 {
       background-color: #000 !important;
-       /*more custom style*/
 }
 
 .carousel-indicators .active {
@@ -462,6 +461,7 @@ input[name='q']::placeholder {
 
 .carousel-control-prev {
     background-color: #000 !important;
+    width: 2em;
 }
 
 .carousel-control-next {
@@ -470,9 +470,13 @@ input[name='q']::placeholder {
 
 .carousel-item > div {
     max-width: 85%;
-    padding-left: 10em;
+    position: relative;
 }
 
-h4 > .review  {
-    float:right;
+.review  {
+    float: right !important;
+}
+
+.clwb {
+    font-size: larger;
 }
