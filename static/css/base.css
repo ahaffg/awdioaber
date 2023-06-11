@@ -450,9 +450,15 @@ input[name='q']::placeholder {
     font-family: 'Megrim';
 }
 
+.carousel-description {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .carousel-indicators li
 {
-      background-color: #000 !important;
+    background-color: #000 !important;
 }
 
 .carousel-indicators .active {
@@ -466,11 +472,7 @@ input[name='q']::placeholder {
 
 .carousel-control-next {
     background-color: #000 !important;
-}
-
-.carousel-item > div {
-    max-width: 85%;
-    position: relative;
+    width: 2em;
 }
 
 .review  {
