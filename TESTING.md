@@ -31,17 +31,17 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 
 [W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the site. It was also used to validate the CSS. As the site is created with Django and utilises Django templating language within the HTML, I have checked the HTML by inspecting the page source and then running this through the validator.
 
-Unfortunately as sson as I started this process I immediately saw that there was a stray </div> tag showing on every page. Because of the way that this site is constructed I have had to check every page for stray tags as it was not made clear where the missing one was being called from.
+Unfortunately as sson as I started this process I immediately saw that there was a stray "div" tag showing on every page. Because of the way that this site is constructed I have had to check every page for stray tags as it was not made clear where the missing one was being called from.
 
-I began by comparing the number of open <div> tags with the number of closed </div> tags on the home page page source.
+I began by comparing the number of open "div" tags with the number of closed "div" tags on the home page page source.
 
 ![Page Source](static/testing/userstories/pagesourcediv.png)
 
-As you can see, there are more closed </div> tags than open, however, when I conducted the same check within my gitpod workspace, the numbers are even, suggesting there is no stray </div> tag.
+As you can see, there are more closed "div" tags than open, however, when I conducted the same check within my gitpod workspace, the numbers are even, suggesting there is no stray "div" tag.
 
 ![Workspace Search](static/testing/userstories/workspacediv.png)
 
-At this point I realised that I would have to check every html file in my workspace in case anything had been missed. After the first time I checked and couldn't find anything, I decided to check all the python and txt files too...just in case. So, below are screen grabs of all the searches from every page. If no </div>'s were found I've only taken one screen grab. If </div>'s were found I also then searched for <div>'s to check that the numbers the same.
+At this point I realised that I would have to check every html file in my workspace in case anything had been missed. After the first time I checked and couldn't find anything, I decided to check all the python and txt files too...just in case. So, below are screen grabs of all the searches from every page. If no "div"'s were found I've only taken one screen grab. If "div"'s were found I also then searched for "div"'s to check that the numbers the same.
 
 ![Due Diligence](static/testing/userstories/div.png)
 
