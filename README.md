@@ -398,11 +398,19 @@ I have adapted the code from the products functionality to power the Blog app. L
 
 ![Blog](static/testing/userstories/blog.png)
 
+-Update-
+
+The fixed button that links to the top of the page has also been added to ease scrolling.
+
 #### Forum
 
 When you select the Forum link, you are presented with the construction holding image, and a button that takes you to the contact form. This code and image can be applied anywhere across the site and is useful for giving users an idea of how the site is going to be developed and how they can keep up to date on those developments.
 
 ![Construction](static/testing/userstories/construction.png)
+
+-Update-
+
+I discuss this further in the "features for next version" section. After the first assesment of this project I decided to remove this page as a result of the feedback. I understand why the assesor felt the page was unnecesary and distracting. Perhaps I could have better used the page to talk about how Awdio Aber wanted to set up a Forum, and that they are looking for moderators to help establish an online community, for example. However, due to time restrictions again, I decided that this aspect of the site was not a priority and the best use of my time would be to remove the page.
 
 #### Clwb Awdio
 
@@ -410,11 +418,21 @@ The Clwb Awdio page gives customers information about the subscription service o
 
 ![ClwbAwdio](static/testing/userstories/clwbawdio.png)
 
+-Update-
+
+Following feedback from the initial assesment that the point of the page seemed confusing and unnecesary, I decided to add 2 more sections to the page that being a rolling carousel of previous 'Clwbs' (subscriptions), as well as a reviews section. The buttons to the FAQs and Stripe payment portal are places underneath each section to make payment easier.
+
+The fixed button that links to the top of the page has also been added to ease scrolling.
+
 #### FAQs
 
 The FAQs page aims to answer common questions about the subscription page, with a further option to contact the store if any of their questions are unanswered, as well as another direct link to the subscription service portal.
 
 ![FAQs](static/testing/userstories/faqs.png)
+
+-Update-
+
+The fixed button that links to the top of the page has also been added to ease scrolling.
 
 #### Contact
 
@@ -428,11 +446,19 @@ The terms and conditions page gives users information about any terms, with butt
 
 ![Terms](static/testing/userstories/terms.png)
 
+-Update-
+
+The fixed button that links to the top of the page has also been added to ease scrolling.
+
 #### Privacy Policy
 
 As with the Terms and conditions page the Privacy Policy page gives users information about any terms, with buttons at the bottom to give users the options to either get in touch or continue shopping.
 
 ![Privacy](static/testing/userstories/policy.png)
+
+-Update-
+
+The fixed button that links to the top of the page has also been added to ease scrolling.
 
 #### 404 & 500
 
@@ -452,7 +478,11 @@ Due to time constraints, I have not had chance to implement the forum, but this 
 
 I think a forum would be really beneficial for helping to build a community for the site, however I understand that there would be a large amount of planning and coding that would be needed to support this. Different levels of user permissions would be required to alllow for posting, moderating and overall mangement of users. Were this to become a useful site to my husband this is absolutely something I would want to develop.
 
-I also wasn't able to implement the hiring system quite as I had hoped and have had to settle for a simple subscription service at this point. Given more time, I think a wishlist-like system would be great to offer customers, or offering the items that had been out on subscription for a reduced price. I did begin to build a "Replay" app to support this idea, but I felt at this time - code wise - I didn't have enough time to make it sufficientlt unique to make it worth the time it was taking to set up properly.
+After the first assesment of this project I decided to remove this page as a result of the feedback. I understand why the assesor felt the page was unnecesary and distracting. Pperhaps I could have better used the page to talk about how Awdio Aber wanted to set up a Forum, and that they are looking for moderators to help establish an online community, for example. However, due to time restrictions again, I decided that this aspect of the site was not a priority and the best use of my time would be to remove the page.
+
+![Under Construction](/media/under-construction.jpg)
+
+I also wasn't able to implement the hiring system quite as I had hoped and have had to settle for a simple subscription service at this point. Given more time, I think a wishlist-like system would be great to offer customers, or offering the items that had been out on subscription for a reduced price. I did begin to build a "Replay" app to support this idea, but I felt at this time - code wise - I didn't have enough time to make it sufficiently unique to make it worth the time it was taking to set up properly.
 
 I would like to develop the subscription management system further, I think it would be great if there was a way that subscriptions could be viewed so that the store manager can easily check if they have recieved their subscription, and if they have returned their subscription. This could be taken even further to have inbuilt sysems to manage late-returns or penalties for damaged/lost equiptment.
 
@@ -462,7 +492,9 @@ Added to this I think it would be really good to implement more payment options 
 
 I've also seen tools like Magnify JS utilised on other students sites, and thought that would be good to implement also. If this were to be developed into a viable site. it would be vital to find a way on displaying multiple views of a product. There are many great tools available that offer buyers a means of seeing the product in a non-static way before buying, from 360 views, to videos and I feel it would be really beneficial to explore those.
 
-In addition to this, at the last minute I realised that I really should have found a way to easyily close the expanded image (created when the image on the product detail view is clicked upon) and return to the product detail view. But alas, time and hayfever won in the end.
+In addition to this, at the last minute I realised that I really should have found a way to easily close the expanded image (created when the image on the product detail view is clicked upon) and return to the product detail view. But alas, time and hayfever won in the end.
+
+Following feedback from the first assesment I would also look to take on board comments on the quality of my Commits. Unfortunately I don't recall having the quality of my git comments raised and I now understant that there are standars and conventions to this. Going forward, I will absoloutly take better care to provide more verbose and accurate commit comments, as I fully understand that when working in a collaberative manner (as well as for my own memory) descriptive comments are essential for tracking progress and recording steps taken in development.
 
 As ever I would also like to be able to offer a bilingual site in the future.
 
@@ -502,7 +534,7 @@ Sqlite3 for development.
 
 [pillow](https://pypi.org/project/Pillow/) - Python imaging library
 
-[dj_databsae_url](https://pypi.org/project/dj-database-url/) - allows us to utilise the DATABASE_URL variable
+[dj_database_url](https://pypi.org/project/dj-database-url/) - allows us to utilise the DATABASE_URL variable
 
 [psycopg2](https://pypi.org/project/psycopg2/) - a postgres database adapter which allow us to connect with a postgres database
 
