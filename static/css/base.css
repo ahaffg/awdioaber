@@ -132,6 +132,7 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+
 #reset:hover{
     background: #000;
     color: white;
@@ -278,7 +279,8 @@ input[name='q']::placeholder {
     min-width: 100%;	
     min-height: 100%;	
     opacity: 0;	
-    cursor: pointer;	
+    cursor: pointer;
+    border-color: #000;	
 }	
 .custom-checkbox .custom-control-label::before {	
     border-radius: 0;	
