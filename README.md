@@ -416,7 +416,7 @@ I discuss this further in the "features for next version" section. After the fir
 
 The Clwb Awdio page gives customers information about the subscription service on offer. There are button links to the FAQ page which answers further questions the service, as well as a button which opens up the stripe payment portal.
 
-![ClwbAwdio](static/testing/userstories/clwbawdio.png)
+![ClwbAwdio](static/testing/userstories/clwbawdio.jpg)
 
 -Update-
 
