@@ -390,7 +390,8 @@ input[name='q']::placeholder {
 
 #hero-image {
     background: no-repeat center center fixed;
-    max-height: max-content;
+    background-size: cover;
+    height: calc(100vh - 164px);
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;

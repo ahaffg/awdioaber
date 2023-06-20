@@ -374,6 +374,12 @@ Although I have utilised code from Boutique Ado for this app, I feel Awdio Aber 
 
 ![Products](static/testing/userstories/products.png)
 
+-Update-
+
+An "Add Product" button is also visible at the top of the page when a user is signed in as a superuser.
+
+![Equiptment - Add Product](static/testing/userstories/products-addproduct.png)
+
 #### Products Detail Page
 
 When a user clicks on a product image they are taken to a page with further details about the product. Its category and rating are higlighted with fontawesome icons, and quantity, add to bag and continue shopping buttons are below each description to allow the user to shop easily or move easily around the site.
@@ -385,6 +391,12 @@ When a user clicks on a product image they are taken to a page with further deta
 The Equipment drop menu allows customers to quickly see products according to their category. The layout is exactly the same as the main product page, and the same group of products can be called through using the search categories on the products menu dropdown.
 
 ![Equipment](static/testing/userstories/equipment.png)
+
+-Update-
+
+An "Add Product" button is also visible at the top of the page when a user is signed in as a superuser.
+
+![Equiptment - Add Product](static/testing/userstories/categories-addproduct.png)
 
 #### Discover - About Us
 
@@ -400,7 +412,9 @@ I have adapted the code from the products functionality to power the Blog app. L
 
 -Update-
 
-The fixed button that links to the top of the page has also been added to ease scrolling.
+A fixed button that links to the top of the page has also been added (in the bottom right hand corner) for easy scrolling. An "Add Blog" button is also visible at the top of the page when a user is signed in as a superuser.
+
+![Blog - Add Blog](static/testing/userstories/blog-addblog.png)
 
 #### Forum
 
