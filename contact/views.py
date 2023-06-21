@@ -26,7 +26,6 @@ def contact(request):
             try:
                 user = UserProfile.objects.get(user=request.user)
                 contact_form = ContactForm(initial={
-                    'contact_name': user.default_full_name,
                     'contact_email': user.user.email,
                     'contact_phone_number': user.default_phone_number,
                 })
